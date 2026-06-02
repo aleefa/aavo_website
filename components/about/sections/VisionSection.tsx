@@ -9,7 +9,7 @@ export const VisionSection: React.FC = () => {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section ref={ref} className="relative w-full py-16 md:py-30 bg-white overflow-hidden">
+    <section ref={ref} className="relative w-full pt-4 md:pt-6 pb-16 md:pb-30 bg-white overflow-hidden">
       <div className="md:w-142.5 w-78 h-78 md:h-142.5 bg-brand-primary md:bg-brand-primary/20 blur-[163px] absolute top-30 md:top-0 -right-70 md:right-auto md:-left-30" />
 
       <div className="max-w-7xl mx-auto px-4 md:px-12 flex flex-col md:flex-row items-center gap-12 md:gap-16">
