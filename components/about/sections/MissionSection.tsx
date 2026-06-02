@@ -39,7 +39,7 @@ export const MissionSection: React.FC = () => {
   ];
 
   return (
-    <section ref={ref} className="relative w-full py-24 md:py-30 bg-white overflow-hidden">
+    <section ref={ref} className="relative w-full pt-6 md:pt-12 pb-24 md:pb-30 bg-white overflow-hidden">
       <div className="md:w-142.5 w-78 h-78 md:h-142.5 bg-brand-primary md:bg-brand-primary/20 blur-[163px] absolute top-30 md:-top-10 -left-70 md:left-auto md:-right-30" />
 
       <div className="max-w-7xl relative z-10 mx-auto px-4 md:px-12 flex flex-col md:flex-row items-center gap-12 md:gap-16">

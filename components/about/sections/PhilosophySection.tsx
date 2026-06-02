@@ -9,7 +9,7 @@ export const PhilosophySection: React.FC = () => {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section ref={ref} className="relative w-full bg-footer-bg py-16 md:py-30">
+    <section ref={ref} className="relative w-full bg-footer-bg py-16 pb-8 md:pb-12">
       <div className="max-w-208 mx-auto gap-8 px-4 md:px-12 flex flex-col items-center text-center">
 
         {/* Badge — zoom in */}
