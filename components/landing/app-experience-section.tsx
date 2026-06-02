@@ -64,7 +64,7 @@ export function AppExperienceSection() {
           <SectionHeading
             accent="AAVO"
             className="mt-7 max-w-[820px]"
-            description="We&apos;ve stripped away the noise. No websites, no calls-just pure, high-velocity booking at your fingertips."
+            description={<>We&apos;ve stripped away the noise. No websites, no calls-just pure, high-velocity booking <br /> at your fingertips.</>}
             title="The real AAVO experience lives inside the app."
           />
 

@@ -24,6 +24,7 @@ export function AppDownloadSection() {
                 <Apple className="h-5 w-5" strokeWidth={2.2} />
                 App Store
               </button>
+              
               <Link
                 href="https://play.google.com/store/apps/details?id=com.aavoride"
                 target="_blank"

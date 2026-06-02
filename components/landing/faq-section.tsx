@@ -94,7 +94,7 @@ export function FaqSection() {
                   className="inline-flex h-[48px] items-center justify-center rounded-full bg-[var(--primary)] px-7 text-[15px] font-bold text-white shadow-[0_14px_24px_rgba(255,62,29,0.2)]"
                   type="button"
                 >
-                  Contact Support
+                  Chat with Support
                 </button>
               </Link>
             </div>

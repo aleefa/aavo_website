@@ -45,10 +45,10 @@ export function LanguageSection() {
                 understood, wherever you are.
               </p>
 
-              <div className="mt-7 grid grid-cols-2 gap-x-4 gap-y-3 text-[14px] font-medium text-[#3d3734] sm:gap-x-7 sm:gap-y-3.5 sm:text-[15px] lg:grid-cols-4">
+              <div className="mt-7 grid grid-cols-4 gap-x-3 gap-y-3 text-[14px] font-medium text-[#3d3734] sm:gap-x-7 sm:gap-y-3.5 sm:text-[15px] lg:grid-cols-4">
                 {supportedLanguages.map((language) => (
-                  <div key={language} className="flex min-w-0 items-center gap-2.5 sm:gap-3">
-                    <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#3d3734]" />
+                  <div key={language} className="flex min-w-0 items-center gap-1 sm:gap-3">
+                    <span className="h-1 w-1 shrink-0 rounded-full bg-[#3d3734]" />
                     <span className="overflow-hidden text-ellipsis whitespace-nowrap sm:overflow-visible sm:whitespace-normal">
                       {language}
                     </span>

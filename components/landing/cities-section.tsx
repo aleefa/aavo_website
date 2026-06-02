@@ -110,7 +110,7 @@ export function CitiesSection() {
             title="Operating in the heart of India."
           />
 
-          <div className="full-bleed-strip city-slider-strip mt-8">
+          <div className="full-bleed-strip city-slider-strip mt-4">
             <div className="auto-slide-showcase city-slide-showcase w-full p-0" style={sliderStyle}>
               <CityAutoSlideTrack>
                 <CityRail idPrefix="cities-primary" />

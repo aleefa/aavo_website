@@ -101,7 +101,8 @@ export function TravelSolutionsSection() {
         <SectionHeading
           accent="Every Journey"
           className="max-w-[860px]"
-          description="From airport rides to outstation adventures experience smarter, safer, and more comfortable travel with AAVORide."
+          description={<>
+          From airport rides to outstation adventures experience smarter, safer, and more<br />comfortable travel with AAVORide.</>}
           title="Travel Solutions for Every Journey"
         />
 

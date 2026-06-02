@@ -38,12 +38,12 @@ export function MobileBottomCta({ label = "Book Now" }: { label?: string }) {
     <div
       aria-hidden={!isVisible}
       className={cn(
-        "pointer-events-none fixed inset-x-0 bottom-0 z-50 px-3 transition-[opacity,transform] duration-300 ease-out md:hidden",
+        "pointer-events-none fixed inset-x-0 bottom-0 z-50 transition-[opacity,transform] duration-300 ease-out md:hidden bg-[#FFF1EF] pt-4",
         isVisible ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0",
       )}
       style={{ paddingBottom: "calc(env(safe-area-inset-bottom, 0px) + 12px)" }}
     >
-      <div className="mx-auto max-w-[420px]">
+      <div className="mx-auto max-w-[420px] px-3 pt-3">
         <a
           href="https://play.google.com/store/apps/details?id=com.aavoride"
           target="_blank"
