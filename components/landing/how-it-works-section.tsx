@@ -63,7 +63,7 @@ const steps: Array<{
 
 export function HowItWorksSection() {
   return (
-    <section className="how-it-works-section relative overflow-x-visible py-20 md:py-24">
+    <section className="how-it-works-section relative overflow-x-visible py-12 md:py-16">
       <SectionContainer className="max-w-[1268px]">
         <div className="flex justify-center">
           <Eyebrow
@@ -168,7 +168,7 @@ export function HowItWorksSection() {
                 <Flag className="h-6 w-6" strokeWidth={2.2} />
               </div>
 
-              <div className="relative z-10 grid grid-cols-6 gap-4 how-it-works-steps-grid xl:gap-5 pb-[90px]!">
+              <div className="relative z-10 grid grid-cols-6 gap-4 how-it-works-steps-grid xl:gap-5 pb-8!">
                 {steps.map((item, index) => {
                   const Icon = item.icon;
 

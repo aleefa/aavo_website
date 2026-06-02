@@ -112,7 +112,7 @@ export function CityAutoSlideTrack({ children }: { children: ReactNode }) {
     <HorizontalAutoSlideTrack
       scrollSpeed={42}
       sliderClassName="city-vertical-auto-slider py-[90px]!"
-      trackClassName="city-auto-slide-track"
+      trackClassName="city-auto-slide-track gap-4!"
     >
       {children}
     </HorizontalAutoSlideTrack>

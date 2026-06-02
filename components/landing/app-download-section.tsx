@@ -4,7 +4,7 @@ import { SectionContainer } from "./shared";
 
 export function AppDownloadSection() {
   return (
-    <section className="relative overflow-hidden bg-[#1c1c1c] py-20 text-white md:py-24">
+    <section className="relative overflow-hidden bg-[#1c1c1c] py-12 text-white md:py-16">
       <div className="absolute inset-0 bg-[linear-gradient(180deg,#1e1e1e_0%,#1b1b1b_52%,#191919_100%)]" />
       <SectionContainer className="relative z-10">
         <div className="landing-section-body">

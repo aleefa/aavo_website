@@ -101,7 +101,7 @@ function ComparisonPanel({
 
 export function ComparisonSection() {
   return (
-    <section className="relative overflow-hidden py-[72px] md:py-24">
+    <section className="relative overflow-hidden py-12 md:py-16">
       <AmbientGlow
         className="right-[-252px] top-1/2 -translate-y-1/2"
         style={{ width: "570px", height: "570px" }}

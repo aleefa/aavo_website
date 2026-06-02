@@ -91,7 +91,7 @@ function SolutionCard({
 
 export function TravelSolutionsSection() {
   return (
-    <section className="relative overflow-hidden pb-[72px] md:pb-24" id="services">
+    <section className="relative overflow-hidden pb-12 md:pb-16" id="services">
       <AmbientGlow
         className="left-[-252px] top-1/2 -translate-y-1/2"
         style={{ width: "570px", height: "570px" }}

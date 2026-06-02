@@ -72,8 +72,8 @@ function CityRail({
   className?: string;
 }) {
   return (
-    <div className={cn("flex w-max gap-2.5! ms-2.5 md:ms-0! py-3.5", className)}>
-      {cities.map((city) => (
+    <div className={cn("flex w-max gap-[clamp(1rem,2vw,1rem)] py-3.5", className)}>
+      {cities.map((city, index) => (
         <CityCard key={`${idPrefix}-${city.title}`} city={city} />
       ))}
     </div>
@@ -86,7 +86,7 @@ export function CitiesSection() {
   } as CSSProperties;
 
   return (
-    <section className="relative overflow-hidden py-20 md:py-24">
+    <section className="relative overflow-hidden pt-6 pb-4 md:pt-8 md:pb-6">
       <AmbientGlow
         className="left-[-252px] top-1/2 -translate-y-1/2"
         style={{ width: "570px", height: "570px" }}
@@ -105,12 +105,12 @@ export function CitiesSection() {
 
           <SectionHeading
             accent="India."
-            className="mt-7 max-w-[820px]"
+            className="mt-4 max-w-[820px]"
             description="Connecting India&apos;s top cities with trusted rides and seamless travel experiences."
             title="Operating in the heart of India."
           />
 
-          <div className="full-bleed-strip city-slider-strip mt-14">
+          <div className="full-bleed-strip city-slider-strip mt-8">
             <div className="auto-slide-showcase city-slide-showcase w-full p-0" style={sliderStyle}>
               <CityAutoSlideTrack>
                 <CityRail idPrefix="cities-primary" />

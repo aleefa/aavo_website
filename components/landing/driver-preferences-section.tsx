@@ -39,7 +39,7 @@ const toneStyles = {
 
 export function DriverPreferencesSection() {
   return (
-    <section className="relative overflow-hidden pt-8 pb-8 md:py-24">
+    <section className="relative overflow-hidden pt-8 pb-8 md:py-16">
       <SectionContainer>
         <div className="landing-section-body">
           <div className="mx-auto max-w-[760px] text-center">

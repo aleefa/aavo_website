@@ -6,7 +6,7 @@ import { AmbientGlow } from "./ambient-glow";
 
 export function LanguageSection() {
   return (
-    <section className="relative h-auto pb-8 md:pb-24" id="about">
+    <section className="relative h-auto pb-8 md:pb-16" id="about">
       <AmbientGlow
         className="md:left-[-25%] md:translate-x-1/2 bottom-0 right-[-25%] w-[312px]! h-[312px]! md:w-[570px]! md:h-[570px]!"
         style={{ width: "570px", height: "570px" }}

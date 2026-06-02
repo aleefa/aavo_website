@@ -102,7 +102,7 @@ export function FleetSection() {
   } as CSSProperties;
 
   return (
-    <section className="relative py-[72px] md:py-24">
+    <section className="relative py-12 md:py-16">
       <AmbientGlow
         className="-translate-x-1/2 -top-[10%] md:right-[-252px] md:top-1/2 md:-translate-y-1/2 w-[312px]! h-[312px]! md:w-[570px]! md:h-[570px]!"
         style={{ width: "570px", height: "570px" }}
