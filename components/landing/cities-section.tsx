@@ -86,7 +86,7 @@ export function CitiesSection() {
   } as CSSProperties;
 
   return (
-    <section className="relative overflow-hidden pt-4 pb-2">
+    <section className="relative overflow-hidden pt-12 pb-2 md:pt-36">
       <AmbientGlow
         className="left-[-252px] top-1/2 -translate-y-1/2"
         style={{ width: "570px", height: "570px" }}
@@ -110,7 +110,7 @@ export function CitiesSection() {
             title="Operating in the heart of India."
           />
 
-          <div className="full-bleed-strip city-slider-strip mt-2">
+          <div className="full-bleed-strip city-slider-strip -mt-4 md:-mt-6">
             <div className="auto-slide-showcase city-slide-showcase w-full p-0" style={sliderStyle}>
               <CityAutoSlideTrack>
                 <CityRail idPrefix="cities-primary" />
