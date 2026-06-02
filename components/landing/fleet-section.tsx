@@ -29,7 +29,7 @@ function VehicleFeatureIcon({
 
 function VehicleCard({ vehicle }: { vehicle: (typeof vehicles)[number] }) {
   return (
-    <article className="vehicle-category-card lg:motion-card-hover box-border flex h-auto md:h-[421px] w-[357px] shrink-0 flex-col overflow-visible md:rounded-[20px] bg-transparent md:bg-white md:px-[11px] md:py-[18px] shadow-none lg:shadow-[0_8px_24px_rgba(0,0,0,0.1)] my-0">
+    <article className="vehicle-category-card lg:motion-card-hover box-border flex h-[421px] w-[357px] shrink-0 flex-col overflow-visible md:rounded-[20px] bg-transparent md:bg-white md:px-[11px] md:py-[18px] shadow-none lg:shadow-[0_8px_24px_rgba(0,0,0,0.1)] my-0">
       <div className="relative h-[132px] w-full shrink-0 bg-transparent !bg-transparent">
         <Image
           alt={vehicle.imageAlt}
@@ -40,7 +40,7 @@ function VehicleCard({ vehicle }: { vehicle: (typeof vehicles)[number] }) {
         />
       </div>
 
-      <div className="mt-6 flex min-h-0 flex-1 flex-col gap-4 md:bg-transparent hidden md:flex">
+      <div className="mt-6 flex min-h-0 flex-1 flex-col gap-4 md:bg-transparent">
         <div className="shrink-0 space-y-1">
           <h3 className="text-[18px] font-semibold leading-[1.2] tracking-[-0.02em] text-[#201d1b]">
             {vehicle.title}
@@ -69,7 +69,7 @@ function VehicleCard({ vehicle }: { vehicle: (typeof vehicles)[number] }) {
       </div>
 
       <button
-        className="mt-6 flex h-[44px] w-full shrink-0 items-center justify-center gap-2 rounded-full bg-[var(--primary)] text-[14px] font-semibold text-white shadow-[0_12px_24px_rgba(255,62,29,0.2)] md:bg-[var(--primary)] hidden md:flex"
+        className="mt-6 flex h-[44px] w-full shrink-0 items-center justify-center gap-2 rounded-full bg-[var(--primary)] text-[14px] font-semibold text-white shadow-[0_12px_24px_rgba(255,62,29,0.2)] md:bg-[var(--primary)]"
         type="button"
       >
         Ride via App

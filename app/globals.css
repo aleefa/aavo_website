@@ -1121,6 +1121,8 @@ a {
 
   .vehicle-category-card img {
     background: transparent;
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
   }
 
   .vehicle-category-card .relative {
@@ -1132,6 +1134,10 @@ a {
   }
 
   .fleet-vertical-auto-slider__track {
+    background: transparent !important;
+  }
+
+  .flex.w-max {
     background: transparent !important;
   }
 }
