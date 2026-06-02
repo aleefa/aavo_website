@@ -63,7 +63,7 @@ const steps: Array<{
 
 export function HowItWorksSection() {
   return (
-    <section className="how-it-works-section relative overflow-x-visible py-12 md:py-16">
+    <section className="how-it-works-section relative overflow-x-visible py-12 md:py-12 pb-0">
       <SectionContainer className="max-w-[1268px]">
         <div className="flex justify-center">
           <Eyebrow

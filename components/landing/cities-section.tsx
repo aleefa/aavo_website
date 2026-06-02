@@ -86,7 +86,7 @@ export function CitiesSection() {
   } as CSSProperties;
 
   return (
-    <section className="relative overflow-hidden pt-6 pb-4 md:pt-8 md:pb-6">
+    <section className="relative overflow-hidden pt-0 pb-2 md:pt-0 md:pb-2">
       <AmbientGlow
         className="left-[-252px] top-1/2 -translate-y-1/2"
         style={{ width: "570px", height: "570px" }}

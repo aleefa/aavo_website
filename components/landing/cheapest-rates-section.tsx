@@ -136,7 +136,7 @@ export function CheapestRatesSection() {
             </div>
 
             <div className="relative order-1 z-10 w-full max-w-[560px] text-left lg:order-2 lg:max-w-[520px] lg:justify-self-start lg:pl-2">
-              <h2 className="text-left text-[clamp(2rem,6.5vw,3.25rem)] font-extrabold leading-[1.02] tracking-[-0.055em] text-[#201d1b]">
+              <h2 className="text-left text-[clamp(2rem,6.5vw,3.25rem)] font-extrabold leading-[1.4] md:leading-[1.02] tracking-[-0.055em] text-[#201d1b]">
                 Instant Nearby Cars
                 <span className="block text-[var(--primary)]">at Cheapest Rates.</span>
               </h2>

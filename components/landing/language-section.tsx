@@ -35,7 +35,7 @@ export function LanguageSection() {
                 Growing Across Indian States
               </Eyebrow>
 
-              <h2 className="mt-5 text-[clamp(2rem,6.5vw,3.35rem)] font-extrabold leading-[1] tracking-[-0.055em] text-[#201d1b]">
+              <h2 className="mt-5 text-[clamp(2rem,6.5vw,3.35rem)] font-extrabold leading-[1.4] md:leading-[1] tracking-[-0.055em] text-[#201d1b]">
                 Language-Based Driver Matching
               </h2>
 

@@ -128,7 +128,7 @@ export function SectionHeading({
         className,
       )}
     >
-      <h2 className="text-[clamp(2rem,7vw,3.375rem)] font-extrabold leading-[1.04] tracking-[-0.04em] text-[#201d1b]">
+      <h2 className="text-[clamp(2rem,7vw,3.375rem)] font-extrabold leading-[1.3] md:leading-[1.08] tracking-[-0.04em] text-[#201d1b]">
         {accent ? (
           <>
             {beforeAccent}
