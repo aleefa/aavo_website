@@ -47,8 +47,13 @@ export function DriverPreferencesSection() {
               Driver Preferences
             </h2>
             <p className="mx-auto mt-5 max-w-[760px] text-[17px] leading-[1.75] text-[var(--muted-foreground)]">
-              Personalize your ride experience based on what matters most to you. Select
-              filters to find the perfect professional for your journey.
+              <span className="max-md:hidden">
+                Personalize your ride experience based on what matters most to you. Select
+                filters to find the perfect professional for your journey.
+              </span>
+              <span className="hidden max-md:block">
+                Personalize your ride experience based on what matters most to you. Select filters to find the perfect professional for your journey.
+              </span>
             </p>
           </div>
 
