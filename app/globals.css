@@ -1095,6 +1095,45 @@ a {
   .auto-slide-showcase::after {
     width: 18px;
   }
+
+  .fleet-slide-showcase.auto-slide-showcase::before,
+  .fleet-slide-showcase.auto-slide-showcase::after {
+    display: none;
+  }
+
+  .vehicle-category-card {
+    background: transparent !important;
+  }
+
+  .fleet-vertical-auto-slider,
+  .fleet-vertical-auto-slider__track {
+    background: transparent !important;
+  }
+
+  .fleet-cards-strip,
+  .fleet-slide-showcase {
+    background: transparent !important;
+  }
+
+  .full-bleed-strip {
+    background: transparent !important;
+  }
+
+  .vehicle-category-card img {
+    background: transparent;
+  }
+
+  .vehicle-category-card .relative {
+    background: transparent !important;
+  }
+
+  .vehicle-category-card article {
+    background: transparent !important;
+  }
+
+  .fleet-vertical-auto-slider__track {
+    background: transparent !important;
+  }
 }
 
 @media (min-width: 1024px) {

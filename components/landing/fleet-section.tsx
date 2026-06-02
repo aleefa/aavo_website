@@ -29,8 +29,8 @@ function VehicleFeatureIcon({
 
 function VehicleCard({ vehicle }: { vehicle: (typeof vehicles)[number] }) {
   return (
-    <article className="vehicle-category-card lg:motion-card-hover box-border flex h-[421px] w-[357px] shrink-0 flex-col overflow-visible rounded-[20px] bg-transparent md:bg-white px-[11px] py-[18px] shadow-none lg:shadow-[0_8px_24px_rgba(0,0,0,0.1)] my-5">
-      <div className="relative h-[132px] w-full shrink-0 bg-transparent">
+    <article className="vehicle-category-card lg:motion-card-hover box-border flex h-auto md:h-[421px] w-[357px] shrink-0 flex-col overflow-visible md:rounded-[20px] bg-transparent md:bg-white md:px-[11px] md:py-[18px] shadow-none lg:shadow-[0_8px_24px_rgba(0,0,0,0.1)] my-0">
+      <div className="relative h-[132px] w-full shrink-0 bg-transparent !bg-transparent">
         <Image
           alt={vehicle.imageAlt}
           className="motion-card-media object-contain object-center"
@@ -40,7 +40,7 @@ function VehicleCard({ vehicle }: { vehicle: (typeof vehicles)[number] }) {
         />
       </div>
 
-      <div className="mt-6 flex min-h-0 flex-1 flex-col gap-4">
+      <div className="mt-6 flex min-h-0 flex-1 flex-col gap-4 md:bg-transparent hidden md:flex">
         <div className="shrink-0 space-y-1">
           <h3 className="text-[18px] font-semibold leading-[1.2] tracking-[-0.02em] text-[#201d1b]">
             {vehicle.title}
@@ -57,7 +57,7 @@ function VehicleCard({ vehicle }: { vehicle: (typeof vehicles)[number] }) {
           {vehicle.features.map((feature) => (
             <div
               key={feature.label}
-              className="inline-flex items-center gap-1.5 rounded-full bg-[#FFF2EC] px-3 py-1.5 text-[12px] font-medium leading-none text-[#4a4440]"
+              className="inline-flex items-center gap-1.5 rounded-full bg-[#FFF2EC] px-3 py-1.5 text-[12px] font-medium leading-none text-[#4a4440] md:bg-[#FFF2EC]"
             >
               <span className="text-[var(--primary)]">
                 <VehicleFeatureIcon icon={feature.icon} />
@@ -69,7 +69,7 @@ function VehicleCard({ vehicle }: { vehicle: (typeof vehicles)[number] }) {
       </div>
 
       <button
-        className="mt-6 flex h-[44px] w-full shrink-0 items-center justify-center gap-2 rounded-full bg-[var(--primary)] text-[14px] font-semibold text-white shadow-[0_12px_24px_rgba(255,62,29,0.2)]"
+        className="mt-6 flex h-[44px] w-full shrink-0 items-center justify-center gap-2 rounded-full bg-[var(--primary)] text-[14px] font-semibold text-white shadow-[0_12px_24px_rgba(255,62,29,0.2)] md:bg-[var(--primary)] hidden md:flex"
         type="button"
       >
         Ride via App
@@ -102,9 +102,9 @@ export function FleetSection() {
   } as CSSProperties;
 
   return (
-    <section className="relative py-12 md:py-16">
+    <section className="relative py-12 md:py-16 bg-transparent md:bg-transparent">
       <AmbientGlow
-        className="-translate-x-1/2 -top-[10%] md:right-[-252px] md:top-1/2 md:-translate-y-1/2 w-[312px]! h-[312px]! md:w-[570px]! md:h-[570px]!"
+        className="hidden md:block -translate-x-1/2 -top-[10%] md:right-[-252px] md:top-1/2 md:-translate-y-1/2 w-[312px]! h-[312px]! md:w-[570px]! md:h-[570px]!"
         style={{ width: "570px", height: "570px" }}
         tone="orange"
       />
@@ -121,7 +121,12 @@ export function FleetSection() {
         <SectionHeading
           accent="Perfect Ride."
           className="mt-8"
-          description="Browse a range of vehicles and pick the one that suits your journey."
+          description={
+            <>
+              Browse a range of vehicles and pick the{" "}
+              <span className="block md:inline">one that suits your journey.</span>
+            </>
+          }
           title="Find the Perfect Ride."
           titleClassName="whitespace-nowrap"
         />
