@@ -123,6 +123,7 @@ export function FleetSection() {
           className="mt-8"
           description="Browse a range of vehicles and pick the one that suits your journey."
           title="Find the Perfect Ride."
+          titleClassName="whitespace-nowrap"
         />
 
         <div className="full-bleed-strip fleet-cards-strip mt-12 bg-transparent px-0">

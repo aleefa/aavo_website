@@ -132,11 +132,15 @@ export function ComparisonSection() {
         </div>
 
         <SectionHeading
-          accent="AAVORide"
           className="mt-8"
           description="Safe, transparent, and hassle-free rides designed for modern travelers."
-          title="Why Travellers Prefer AAVORide"
-          titleClassName="whitespace-nowrap"
+          title={
+            <>
+              Why Travellers Prefer{" "}
+              <span className="block text-center md:inline md:text-left text-[var(--primary)]">AAVORide</span>
+            </>
+          }
+          titleClassName="md:whitespace-nowrap"
         />
 
         <div className="landing-section-body mt-14 grid gap-5 lg:grid-cols-2">
