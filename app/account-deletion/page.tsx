@@ -18,7 +18,7 @@ const termsData = [
             Inside the Mobile App: Go to Profile → Settings → Delete Account
           </li>
           <li>
-           Email us at: support@aavoride.in
+           Email us at: https://aavoride.in
           </li>
   
         </ul>
@@ -148,7 +148,7 @@ const termsData = [
           If you have any questions regarding account deletion or data privacy, please contact us: </p>
         <ul className=" list-disc pl-5 space-y-2">
           <li>
-         Email: support@aavoride.in
+         Email: aavoride@gmail.com
           </li>
           <li>
           Website: https://aavoride.in
@@ -165,7 +165,7 @@ const termsData = [
 ];
 
 export default function AccountDeletion() {
-  const title = "Terms & Account Deletion & Data Removal Policy";
+  const title = "Account Deletion & Data|Removal Policy";
 
   // Scroll reveal animation
   useEffect(() => {
@@ -191,17 +191,22 @@ export default function AccountDeletion() {
       <div className="bg-gradient-to-b from-[#FF3E1D] to-[#EC7F6C]">
         <div className="text-center px-6 pt-20 sm:pb-32 pb-24 max-w-[800px] mx-auto">
           <h1 className="text-white text-4xl leading-snug md:text-[56px] font-extrabold mb-6 sm:leading-tight tracking-tight flex justify-center flex-wrap">
-            {title.split("").map((char, index) => (
-              <span
-                key={index}
-                className="inline-block animate-fade-in-up"
-                style={{
-                  animationDelay: `${index * 40 + 800}ms`,
-                  opacity: 0,
-                  animationFillMode: "forwards",
-                }}
-              >
-                {char === " " ? "\u00A0" : char}
+            {title.split("|").map((part, partIndex) => (
+              <span key={partIndex} className="flex justify-center flex-wrap">
+                {part.split("").map((char, charIndex) => (
+                  <span
+                    key={`${partIndex}-${charIndex}`}
+                    className="inline-block animate-fade-in-up"
+                    style={{
+                      animationDelay: `${(partIndex * part.length + charIndex) * 40 + 800}ms`,
+                      opacity: 0,
+                      animationFillMode: "forwards",
+                    }}
+                  >
+                    {char === " " ? "\u00A0" : char}
+                  </span>
+                ))}
+                {partIndex < title.split("|").length - 1 && <br />}
               </span>
             ))}
           </h1>
