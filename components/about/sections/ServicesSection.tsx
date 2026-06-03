@@ -56,7 +56,7 @@ export const ServicesSection: React.FC = () => {
 
         {/* Header — split: heading from left, para from right */}
         <div className="flex flex-col gap-6 text-left max-w-5xl mb-12 md:mb-16">
-          <motion.h2
+          {/* <motion.h2
             className="text-[32px] md:text-5xl font-bold text-foreground leading-10 md:leading-[3.25rem] tracking-[0.32px]"
             initial={{ opacity: 0, x: -40 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
@@ -64,7 +64,17 @@ export const ServicesSection: React.FC = () => {
           >
             Affordable Cab Booking & Outstation Taxi{" "}
             <span className="text-brand-primary block sm:inline">Services Across India</span>
-          </motion.h2>
+          </motion.h2> */}
+          <motion.h2
+  className="text-[32px] md:text-5xl font-bold text-foreground leading-10 md:leading-[3.25rem] tracking-[0.32px]"
+>
+  Affordable Cab Booking & Outstation Taxi{" "}
+  <span className="text-brand-primary">
+    Services Across
+    <br className="md:hidden" />
+    {" "}India
+  </span>
+</motion.h2>
           <motion.p
             className="text-base md:text-lg text-muted-gray leading-7.5 font-normal max-w-3xl"
             initial={{ opacity: 0, x: 40 }}
