@@ -24,7 +24,7 @@ export const HeroSection: React.FC = () => {
         >
           <span className="text-sm font-medium text-foreground">Home</span>
           <Image
-            src="/assets/icons/icon.svg"
+            src="/assets/icons/Icon.svg"
             alt="Arrow Icon"
             width={12}
             height={12}

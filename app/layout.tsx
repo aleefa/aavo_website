@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   description: "AAVORide outstation travel landing page",
   icons: {
     icon: [
-      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/Icon.svg", type: "image/svg+xml" },
       { url: "/icon.png", type: "image/png" },
     ],
-    shortcut: "/icon.svg",
+    shortcut: "/con.svg",
     apple: "/icon.png",
   },
 };
