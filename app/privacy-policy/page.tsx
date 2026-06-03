@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { FooterSection } from "@/components/landing/footer-section";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const NAV_ITEMS = [
   { id: "about", label: "About Aavoride", num: "01" },
@@ -142,6 +143,7 @@ const sectionIcons = {
 };
 
 export default function PrivacyPolicy() {
+  const router = useRouter();
   const [activeSection, setActiveSection] = useState("about");
   const [mobileTabActive, setMobileTabActive] = useState("about");
 
@@ -187,6 +189,11 @@ export default function PrivacyPolicy() {
     document
       .getElementById(id)
       ?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
+  const handleDeleteAccountClick = () => {
+    router.push("/account-deletion");
+    window.scrollTo(0, 0);
   };
 
   return (
@@ -526,7 +533,7 @@ export default function PrivacyPolicy() {
                     </svg>
                     Access Info
                   </button>
-                  <Link href="/account-deletion" className="flex items-center gap-2 max-sm:justify-center bg-white text-gray-700 rounded-full px-5 py-2.5 text-sm font-semibold border border-gray-200 cursor-pointer hover-secondary group">
+                  <button onClick={handleDeleteAccountClick} className="flex items-center gap-2 max-sm:justify-center bg-white text-gray-700 rounded-full px-5 py-2.5 text-sm font-semibold border border-gray-200 cursor-pointer hover-secondary group">
                     <svg
                       width="10"
                       height="11"
@@ -541,7 +548,7 @@ export default function PrivacyPolicy() {
                       />
                     </svg>
                     Delete Account
-                  </Link>
+                  </button>
                   <button className="flex items-center gap-2 max-sm:justify-center bg-white text-gray-700 rounded-full px-5 py-2.5 text-sm font-semibold border border-gray-200 cursor-pointer hover-secondary group">
                     <svg
                       width="11"

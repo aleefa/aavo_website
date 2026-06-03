@@ -169,6 +169,13 @@ const termsData = [
 export default function AccountDeletion() {
   const title = "Account Deletion & Data|Removal Policy";
 
+  // Scroll to top on mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  }, []);
+
   // Scroll reveal animation
   useEffect(() => {
     const scrollRevealObserver = new IntersectionObserver(
