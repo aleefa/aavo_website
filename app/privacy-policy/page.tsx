@@ -190,7 +190,7 @@ export default function PrivacyPolicy() {
 
   return (
     <div className="min-h-screen bg-white">
-      <div className="bg-linear-to-b from-[#FF3E1D] via-[#FF5A3D] to-[#EC7F6C]">
+      <div className="bg-[#FFF1EF]">
         <div className="text-center px-6 pt-12 sm:pb-11 pb-8 max-w-[700px] mx-auto">
           <span
             className="inline-block bg-[#FF3E1D] text-white text-[11px] font-bold tracking-[2px] px-4 py-1.5 rounded-full mb-6 leading-4 animate-fade-in-up"
@@ -202,7 +202,7 @@ export default function PrivacyPolicy() {
           >
             AAVORIDE LEGAL
           </span>
-          <h1 className="text-white text-3xl leading-16 md:text-[56px] font-extrabold mb-6 sm:leading-tight tracking-tight flex justify-center flex-wrap">
+          <h1 className="text-[#FF3E1D] text-3xl leading-16 md:text-[56px] font-extrabold mb-6 sm:leading-tight tracking-tight flex justify-center flex-wrap">
             {"Privacy Policy".split("").map((char, index) => (
               <span
                 key={index}
@@ -218,7 +218,7 @@ export default function PrivacyPolicy() {
             ))}
           </h1>
           <p
-            className="text-white/90 md:text-base text-sm font-semibold leading-relaxed mb-4 max-w-[650px] mx-auto animate-fade-in-up"
+            className="text-gray-600 md:text-base text-sm font-semibold leading-relaxed mb-4 max-w-[650px] mx-auto animate-fade-in-up"
             style={{
               animationDelay: "1500ms",
               opacity: 0,
@@ -229,7 +229,7 @@ export default function PrivacyPolicy() {
             privacy and ensuring your personal information is handled with care.
           </p>
           <p
-            className="text-white/80 text-sm font-semibold animate-fade-in-up"
+            className="text-gray-500 text-sm font-semibold animate-fade-in-up"
             style={{
               animationDelay: "1600ms",
               opacity: 0,

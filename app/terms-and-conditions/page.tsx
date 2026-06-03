@@ -255,9 +255,9 @@ export default function TermsAndConditions() {
 
   return (
     <div className="min-h-screen bg-[#F9FAFB]">
-      <div className="bg-linear-to-b from-[#FF3E1D] via-[#FF5A3D] to-[#EC7F6C]">
+      <div className="bg-[#FFF1EF]">
         <div className="text-center px-6 pt-20 sm:pb-32 pb-24 max-w-[800px] mx-auto">
-          <h1 className="text-white text-4xl leading-snug md:text-[56px] font-extrabold mb-6 sm:leading-tight tracking-tight flex justify-center flex-wrap">
+          <h1 className="text-[#FF3E1D] text-4xl leading-snug md:text-[56px] font-extrabold mb-6 sm:leading-tight tracking-tight flex justify-center flex-wrap">
             {title.split("").map((char, index) => (
               <span
                 key={index}
@@ -273,7 +273,7 @@ export default function TermsAndConditions() {
             ))}
           </h1>
           <p
-            className="text-white/90 md:text-lg text-sm font-medium leading-relaxed mb-4 max-w-[650px] mx-auto animate-fade-in-up"
+            className="text-gray-600 md:text-lg text-sm font-medium leading-relaxed mb-4 max-w-[650px] mx-auto animate-fade-in-up"
             style={{
               animationDelay: "1500ms",
               opacity: 0,
