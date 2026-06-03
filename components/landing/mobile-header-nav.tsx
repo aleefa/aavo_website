@@ -21,7 +21,7 @@ export function MobileHeaderNav({
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="mx-auto w-full max-w-[380px] md:hidden">
+    <div className="mx-auto w-full max-w-[380px] px-4 md:hidden">
       <div className="mx-auto w-[calc(100%-28px)] rounded-full border border-[#f3f3f3] bg-white p-2 shadow-[0_18px_42px_rgba(31,27,24,0.1)]">
         <div className="grid grid-cols-[44px_1fr_44px] items-center">
           <button
@@ -50,7 +50,7 @@ export function MobileHeaderNav({
             : "pointer-events-none mt-0 max-h-0 -translate-y-2 border-transparent opacity-0 shadow-none",
         )}
       >
-        <div className={cn("px-8 pb-6 pt-7 transition-all duration-300", isOpen ? "max-h-[420px]" : "max-h-0 p-0")}>
+        <div className={cn("px-6 pb-6 pt-7 transition-all duration-300", isOpen ? "max-h-[420px]" : "max-h-0 p-0")}>
           <div className="flex flex-col items-center gap-6 text-center">
             {items.map((item) => (
               <Link
