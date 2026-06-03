@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { inter, sora } from "./fonts";
 import "./globals.css";
-import { Navbar } from "@/components/shared/Navbar";
 import { NavbarWrapper } from "@/components/shared/navbar-wrapper";
 
 export const metadata: Metadata = {

@@ -191,7 +191,7 @@ const termsData = [
   {
     num: "8",
     title: "Governing Law",
-    desc: "These terms are governed by the Laws of India. Any disputes shall be subject to the exclusive jurisdiction of the courts in Bangalore, Karnataka.",
+    desc: "These Terms shall be governed by and interpreted in accordance with the laws of India. Any dispute, claim, or controversy arising out of or relating to these Terms shall be subject to the exclusive jurisdiction of the competent courts in Ahmedabad, Gujarat, India",
     // icon: (
     //   <svg
     //     width="18"
