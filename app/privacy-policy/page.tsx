@@ -145,7 +145,7 @@ export default function PrivacyPolicy() {
   const [mobileTabActive, setMobileTabActive] = useState("about");
 
   useEffect(() => {
-    const observers = {};
+    const observers: Record<string, IntersectionObserver> = {};
     NAV_ITEMS.forEach(({ id }) => {
       const el = document.getElementById(id);
       if (!el) return;
@@ -879,8 +879,8 @@ export default function PrivacyPolicy() {
     </div>
   );
 }
-function SectionHeader({ num, iconKey, title }) {
-  const icon = sectionIcons[iconKey];
+function SectionHeader({ num, iconKey, title }: { num: string; iconKey: string; title: string }) {
+  const icon = sectionIcons[iconKey as keyof typeof sectionIcons];
 
   return (
     <div className="mb-4">
@@ -911,7 +911,7 @@ function SectionHeader({ num, iconKey, title }) {
   );
 }
 
-function NumBadge({ n }) {
+function NumBadge({ n }: { n: string }) {
   return (
     <span className="bg-[#FFF0EE] text-[#FF3E1D] rounded-lg text-sm font-bold px-3 py-1.5">
       {n}
@@ -919,7 +919,7 @@ function NumBadge({ n }) {
   );
 }
 
-function InfoCard({ title, items, wide, variant = "default" }) {
+function InfoCard({ title, items, wide, variant = "default" }: { title: string; items: string[]; wide?: boolean; variant?: string }) {
   const bgColor =
     variant === "auto"
       ? "bg-[#FFF5F2] border border-[#FF3E1D0D]"
