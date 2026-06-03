@@ -244,7 +244,7 @@ export default function PrivacyPolicy() {
               animationFillMode: "forwards",
             }}
           >
-            Last Updated :- January 2026
+            Last Updated :- June 2026
           </p>
         </div>
       </div>
