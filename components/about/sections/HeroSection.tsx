@@ -9,7 +9,7 @@ import { Button } from "../ui/Button";
 // Hero animates on mount (no scroll trigger needed — it's above the fold)
 export const HeroSection: React.FC = () => {
   return (
-    <section className="relative w-full overflow-hidden bg-white py-16 md:py-24">
+    <section className="relative w-full overflow-hidden bg-white py-20 md:py-28">
       <div className="absolute top-10 -left-20 w-64 h-64 rounded-full bg-brand-primary/20 blur-[120px] pointer-events-none select-none" />
       <div className="absolute -right-20 top-1/3 w-80 h-80 rounded-full bg-brand-primary/15 blur-[140px] pointer-events-none select-none" />
 
