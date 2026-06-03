@@ -14,7 +14,7 @@ const termsData = [
           Aavoride is a driver listing and lead generation platform designed to
           connect service seekers with independent providers. Specifically:
         </p>
-        <ul className=" pl-5 space-y-2">
+        <ul className=" list-disc pl-5 space-y-2">
           <li>
             We provide a digital marketplace for listing driving services.
           </li>
@@ -319,7 +319,7 @@ export default function TermsAndConditions() {
               <div className="w-8 h-8 bg-[#FF3E1D] text-white rounded-full flex items-center justify-center text-[15px] font-black shrink-0">
                 {item.num}
               </div>
-              <div className="text-[#FF3E1D]">{item.icon}</div>
+              {/* <div className="text-[#FF3E1D]">{item.icon}</div> */}
               <h3 className="text-2xl md:text-[32px] font-bold text-gray-900 tracking-tight">
                 {item.title}
               </h3>
