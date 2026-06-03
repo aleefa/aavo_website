@@ -14,7 +14,7 @@ export const Footer: React.FC = () => {
   });
 
   return (
-    <footer ref={ref} className="relative w-full bg-footer-bg text-foreground overflow-hidden pt-15.5 pb-44 md:pb-32.5 border-t border-brand-primary/10">
+    <footer ref={ref} className="relative w-full bg-footer-bg text-foreground overflow-hidden pt-12 pb-8 border-t border-brand-primary/10">
       {/* Massive Background Watermark */}
       <div className="absolute left-1/2 -bottom-15 -translate-x-1/2 select-none pointer-events-none text-brand-primary/4 text-[150px] sm:text-[200px] md:text-[280px] font-black tracking-tight z-0 hidden md:block">
         AAVORide
@@ -181,9 +181,13 @@ export const Footer: React.FC = () => {
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.6 }}
       >
         <div className="flex items-center gap-6 order-1 md:order-3">
-          {["Privacy Policy", "Terms of Service", "Sitemap"].map((item) => (
-            <a key={item} href="#" className="text-sm text-muted-gray hover:text-brand-primary transition-colors font-medium">
-              {item}
+          {[
+            { label: "Privacy Policy", href: "/privacy-policy" },
+            { label: "Terms of Service", href: "/terms-and-conditions" },
+            { label: "Sitemap", href: "#" }
+          ].map((item) => (
+            <a key={item.label} href={item.href} className="text-sm text-muted-gray hover:text-brand-primary transition-colors font-medium">
+              {item.label}
             </a>
           ))}
         </div>

@@ -3,7 +3,11 @@ import { SectionContainer } from "./shared";
 import { StatusPill } from "./status-pill";
 
 const quickLinks = ["Home", "Our Services", "Become a Partner", "Blog", "FAQ"];
-const legalLinks = ["Privacy Policy", "Terms of Service", "Sitemap"];
+const legalLinks = [
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Terms of Service", href: "/terms-and-conditions" },
+  { label: "Sitemap", href: "#" }
+];
 
 const socialLinks = [
   { label: "Instagram", icon: <Camera className="h-3.5 w-3.5" strokeWidth={1.9} /> },
@@ -134,11 +138,11 @@ export function FooterSection() {
           <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-[15px] leading-7 lg:justify-end">
             {legalLinks.map((link) => (
               <a
-                key={link}
+                key={link.label}
                 className="transition-colors duration-300 hover:text-[var(--primary)] hover:font-semibold"
-                href="#"
+                href={link.href}
               >
-                {link}
+                {link.label}
               </a>
             ))}
           </div>
