@@ -144,7 +144,7 @@ export const Hero = () => {
               powered by AAVORIDE.
             </motion.p>
 
-            {/* CTA Button for Desktop */}
+            {/* CTA Button */}
             <motion.a
               variants={itemVariants}
               href="https://play.google.com/store/apps/details?id=com.aavoridepartner"
@@ -152,20 +152,7 @@ export const Hero = () => {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="h-14 px-9 bg-primary hover:bg-primary/95 text-white font-bold rounded-full transition-all duration-200 text-base items-center justify-center shadow-lg shadow-primary/15 cursor-pointer hidden lg:inline-flex"
-            >
-              Start Earning Today
-            </motion.a>
-
-            {/* CTA Button for Mobile */}
-            <motion.a
-              variants={itemVariants}
-              href="https://play.google.com/store/apps/details?id=com.aavoridepartner"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="h-12 px-9 bg-primary hover:bg-primary/95 text-white font-bold rounded-full transition-all duration-200 text-base inline-flex items-center justify-center shadow-lg shadow-primary/15 cursor-pointer lg:hidden w-fit"
+              className="h-14 px-9 bg-primary hover:bg-primary/95 text-white font-bold rounded-full transition-all duration-200 text-base inline-flex items-center justify-center shadow-lg shadow-primary/15 cursor-pointer relative z-30 w-fit"
             >
               Start Earning Today
             </motion.a>
