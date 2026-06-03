@@ -57,7 +57,7 @@ export const ServicesSection: React.FC = () => {
         {/* Header — split: heading from left, para from right */}
         <div className="flex flex-col gap-6 text-left max-w-5xl mb-12 md:mb-16">
           <motion.h2
-            className="text-[32px] md:text-5xl font-bold text-foreground leading-10 tracking-[0.32px]"
+            className="text-[32px] md:text-5xl font-bold text-foreground leading-10 md:leading-[3.25rem] tracking-[0.32px]"
             initial={{ opacity: 0, x: -40 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.65, ease: "easeOut", delay: 0.08 }}
