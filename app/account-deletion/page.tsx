@@ -15,10 +15,12 @@ const termsData = [
         </p>
         <ul className=" list-disc pl-5 space-y-2">
           <li>
-            Inside the Mobile App: Go to Profile → Settings → Delete Account
+            Inside the Mobile App: Go to <span className="font-semibold">
+    Profile → Settings → Delete Account
+  </span>
           </li>
           <li>
-           Email us at: https://aavoride.in
+           Email us at: <span className="font-semibold">aavoride@gmail.com</span>
           </li>
   
         </ul>
@@ -148,10 +150,10 @@ const termsData = [
           If you have any questions regarding account deletion or data privacy, please contact us: </p>
         <ul className=" list-disc pl-5 space-y-2">
           <li>
-         Email: aavoride@gmail.com
+         <span className="font-semibold">Email  </span>: aavoride@gmail.com
           </li>
           <li>
-          Website: https://aavoride.in
+          <span className="font-semibold">Website</span>: https://aavoride.in
           </li>
           
          </ul>
@@ -226,7 +228,7 @@ export default function AccountDeletion() {
       </div>
 
       <div
-        className="max-w-[896px] mx-auto px-5 pt-16 md:pb-40 pb-16 flex flex-col gap-6 relative z-10 scroll-reveal"
+        className="max-w-[896px] mx-auto px-5 pt-16 md:pb-20 pb-16 flex flex-col gap-6 relative z-10 scroll-reveal"
         style={{ animationDelay: "1800ms" }}
       >
         {termsData.map((item, index) => (
