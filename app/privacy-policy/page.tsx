@@ -190,10 +190,10 @@ export default function PrivacyPolicy() {
 
   return (
     <div className="min-h-screen bg-white">
-      <div className="bg-[#FFF1EF]">
+      <div className="bg-[#FF3E1D]">
         <div className="text-center px-6 pt-12 sm:pb-11 pb-8 max-w-[700px] mx-auto">
           <span
-            className="inline-block bg-[#FF3E1D] text-white text-[11px] font-bold tracking-[2px] px-4 py-1.5 rounded-full mb-6 leading-4 animate-fade-in-up"
+            className="inline-block bg-white text-[#FF3E1D] text-[11px] font-bold tracking-[2px] px-4 py-1.5 rounded-full mb-6 leading-4 animate-fade-in-up"
             style={{
               animationDelay: "600ms",
               opacity: 0,
@@ -202,7 +202,7 @@ export default function PrivacyPolicy() {
           >
             AAVORIDE LEGAL
           </span>
-          <h1 className="text-[#FF3E1D] text-3xl leading-16 md:text-[56px] font-extrabold mb-6 sm:leading-tight tracking-tight flex justify-center flex-wrap">
+          <h1 className="text-white text-3xl leading-16 md:text-[56px] font-extrabold mb-6 sm:leading-tight tracking-tight flex justify-center flex-wrap">
             {"Privacy Policy".split("").map((char, index) => (
               <span
                 key={index}
@@ -218,7 +218,7 @@ export default function PrivacyPolicy() {
             ))}
           </h1>
           <p
-            className="text-gray-600 md:text-base text-sm font-semibold leading-relaxed mb-4 max-w-[650px] mx-auto animate-fade-in-up"
+            className="text-white md:text-base text-sm font-semibold leading-relaxed mb-4 max-w-[650px] mx-auto animate-fade-in-up"
             style={{
               animationDelay: "1500ms",
               opacity: 0,
@@ -229,7 +229,7 @@ export default function PrivacyPolicy() {
             privacy and ensuring your personal information is handled with care.
           </p>
           <p
-            className="text-gray-500 text-sm font-semibold animate-fade-in-up"
+            className="text-white text-sm font-semibold animate-fade-in-up"
             style={{
               animationDelay: "1600ms",
               opacity: 0,
@@ -279,7 +279,7 @@ export default function PrivacyPolicy() {
               onClick={() => scrollTo(id)}
               className={`flex items-center gap-2.5 lg:w-full w-auto whitespace-nowrap text-left rounded-lg px-3 py-2.5 lg:mb-1 mb-0 text-[13px] transition-all cursor-pointer border-none shrink-0 ${
                 activeSection === id
-                  ? "bg-[#FFF0EE] text-gray-500 "
+                  ? "bg-[#FFF5F0] text-gray-500 "
                   : "bg-transparent text-gray-500 font-normal hover:bg-gray-50"
               }`}
             >
@@ -393,7 +393,7 @@ export default function PrivacyPolicy() {
             </div>
           </section>
           <section id="our-commitment" className="md:px-12 scroll-reveal">
-            <div className="bg-[#FFF5F3] border border-[#FFD5CC] rounded-2xl lg:p-12 md:p-6 max-md:pt-10 max-md:pb-14 px-4 ">
+            <div className="bg-[#FFF5F0] border border-[#FFD5CC] rounded-2xl lg:p-12 md:p-6 max-md:pt-10 max-md:pb-14 px-4 ">
               <div className="flex items-center gap-3 mb-10">
                 <div className="w-12 h-12 bg-[#FF3E1D] rounded-xl flex items-center justify-center shrink-0">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -778,7 +778,7 @@ export default function PrivacyPolicy() {
                   },
                 ].map((item) => (
                   <div key={item.label} className="flex gap-3 items-start">
-                    <span className="mt-1 flex-shrink-0 w-8 h-8 rounded-full bg-[#FFF0EE] flex items-center justify-center">
+                    <span className="mt-1 flex-shrink-0 w-8 h-8 rounded-full bg-[#FFF5F0] flex items-center justify-center">
                       {item.icon}
                     </span>
                     <div>
@@ -859,7 +859,7 @@ export default function PrivacyPolicy() {
                 },
               ].map((item) => (
                 <div key={item.title} className="flex gap-4 items-start">
-                  <span className="mt-0.5 flex-shrink-0 w-8 h-8 rounded-full bg-[#FFF0EE] flex items-center justify-center">
+                  <span className="mt-0.5 flex-shrink-0 w-8 h-8 rounded-full bg-[#FFF5F0] flex items-center justify-center">
                     {item.icon}
                   </span>
                   <p className="text-[13px] text-gray-600 leading-relaxed pt-1">
@@ -899,7 +899,7 @@ function SectionHeader({ num, iconKey, title }: { num: string; iconKey: string; 
         </div>
 
         <div className="flex items-center gap-3">
-          <span className="inline-flex items-center  justify-center  w-[29.27px] h-[20px] text-xs font-bold text-[#FF3E1D] bg-[#FFF0EE] rounded-full shrink-0">
+          <span className="inline-flex items-center  justify-center  w-[29.27px] h-[20px] text-xs font-bold text-[#FF3E1D] bg-[#FFF5F0] rounded-full shrink-0">
             {num}
           </span>
           <h2 className="text-[32px] md:text-3xl font-bold text-gray-900 md:leading-tight leading-8 tracking-tight">
@@ -913,7 +913,7 @@ function SectionHeader({ num, iconKey, title }: { num: string; iconKey: string; 
 
 function NumBadge({ n }: { n: string }) {
   return (
-    <span className="bg-[#FFF0EE] text-[#FF3E1D] rounded-lg text-sm font-bold px-3 py-1.5">
+    <span className="bg-[#FFF5F0] text-[#FF3E1D] rounded-lg text-sm font-bold px-3 py-1.5">
       {n}
     </span>
   );
