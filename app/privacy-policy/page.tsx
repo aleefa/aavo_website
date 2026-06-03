@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { FooterSection } from "@/components/landing/footer-section";
+import Link from "next/link";
 
 const NAV_ITEMS = [
   { id: "about", label: "About Aavoride", num: "01" },
@@ -525,7 +526,7 @@ export default function PrivacyPolicy() {
                     </svg>
                     Access Info
                   </button>
-                  <button className="flex items-center gap-2 max-sm:justify-center bg-white text-gray-700 rounded-full px-5 py-2.5 text-sm font-semibold border border-gray-200 cursor-pointer hover-secondary group">
+                  <Link href="/account-deletion" className="flex items-center gap-2 max-sm:justify-center bg-white text-gray-700 rounded-full px-5 py-2.5 text-sm font-semibold border border-gray-200 cursor-pointer hover-secondary group">
                     <svg
                       width="10"
                       height="11"
@@ -540,7 +541,7 @@ export default function PrivacyPolicy() {
                       />
                     </svg>
                     Delete Account
-                  </button>
+                  </Link>
                   <button className="flex items-center gap-2 max-sm:justify-center bg-white text-gray-700 rounded-full px-5 py-2.5 text-sm font-semibold border border-gray-200 cursor-pointer hover-secondary group">
                     <svg
                       width="11"
