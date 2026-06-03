@@ -8,7 +8,8 @@ export function NavbarWrapper() {
   const isLegalPage = pathname === "/privacy-policy" || pathname === "/terms-and-conditions";
 
   return (
-    <div className={`pt-4 sm:pt-5 md:pt-6 ${isLegalPage ? "bg-[#FF3E1D]" : ""}`}>
+    // <div className={`pt-4 sm:pt-5 md:pt-6 ${isLegalPage ? "bg-gradient-to-b from-[#FF3E1D] to-[#EC7F6C]" : ""}`}>
+      <div className={`pt-4 sm:pt-5 md:pt-6 ${isLegalPage ? "bg-[#FF3E1D]" : ""}`}>
       <Navbar />
     </div>
   );

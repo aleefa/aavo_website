@@ -190,7 +190,7 @@ export default function PrivacyPolicy() {
 
   return (
     <div className="min-h-screen bg-white">
-      <div className="bg-[#FF3E1D]">
+      <div className="bg-gradient-to-b from-[#FF3E1D] to-[#EC7F6C]">
         <div className="text-center px-6 pt-12 sm:pb-11 pb-8 max-w-[700px] mx-auto">
           <span
             className="inline-block bg-white text-[#FF3E1D] text-[11px] font-bold tracking-[2px] px-4 py-1.5 rounded-full mb-6 leading-4 animate-fade-in-up"
