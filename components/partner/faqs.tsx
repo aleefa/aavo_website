@@ -5,17 +5,17 @@ import { Eyebrow, SectionContainer, SectionHeading } from "../landing/shared";
 
 const faqs = [
   {
-    question: "What is AAVO Ride Partner?",
+    question: "What is AAVORide Partner?",
     answer:
-      "AAVO Ride Partner is an app for drivers and rental agencies to receive ride bookings and earn money by providing ride services to passengers.",
+      "AAVORide Partner is an app for drivers and rental agencies to receive ride bookings and earn money by providing ride services to passengers.",
   },
   {
     question: "How can I register as a driver?",
     answer:
-      "Download the AAVO Ride Partner app, complete the registration process, upload your documents, and wait for approval.",
+      "Download the AAVORide Partner app, complete the registration process, upload your documents, and wait for approval.",
   },
   {
-    question: "How can a rental agency join AAVO Ride?",
+    question: "How can a rental agency join AAVORide?",
     answer:
       "Rental agencies can register multiple vehicles and drivers through the Partner app by submitting business and vehicle documents.",
   },
@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     question: "How do I get paid for rides?",
-    answer: "Drivers receive 100% of the ride fare directly from the rider. AAVO Ride does not take any commission. Partners only need an active membership to access ride bookings.",
+    answer: "Drivers receive 100% of the ride fare directly from the rider. AAVORide does not take any commission. Partners only need an active membership to access ride bookings.",
   },
   {
     question: "Can I add multiple vehicles in one account?",
@@ -38,12 +38,12 @@ const faqs = [
   },
   {
     question: "Is there any commission on rides?",
-    answer: "No. AAVO Ride follows a 0% commission model. Drivers receive 100% of the ride fare and only need an active membership to access ride bookings.",
+    answer: "No. AAVORide follows a 0% commission model. Drivers receive 100% of the ride fare and only need an active membership to access ride bookings.",
   },
   {
-    question: "Why should I join AAVO Ride Partner?",
+    question: "Why should I join AAVORide Partner?",
     answer:
-      "AAVO Ride offers a 0% commission model, allowing drivers and rental agencies to keep 100% of their ride earnings with only a simple membership subscription.",
+      "AAVORide offers a 0% commission model, allowing drivers and rental agencies to keep 100% of their ride earnings with only a simple membership subscription.",
   },
 ];
 
