@@ -714,7 +714,7 @@ export default function PrivacyPolicy() {
                 {[
                   {
                     label: "COMPANY NAME",
-                    value: "Aavoride",
+                    value: "AAVORide",
                     icon: (
                       <svg
                         width="20"
@@ -732,7 +732,7 @@ export default function PrivacyPolicy() {
                   },
                   {
                     label: "PHONE",
-                    value: "+91-0000000000",
+                    value: "+91 97123 87840",
                     icon: (
                       <svg
                         width="18"
@@ -750,7 +750,7 @@ export default function PrivacyPolicy() {
                   },
                   {
                     label: "EMAIL",
-                    value: "support@aavoride.com",
+                    value: "aavoride@gmail.com",
                     icon: (
                       <svg
                         width="20"
@@ -768,7 +768,7 @@ export default function PrivacyPolicy() {
                   },
                   {
                     label: "ADDRESS",
-                    value: "Registered Office Address",
+                    value: "Ahmedabad, India",
                     icon: (
                       <svg
                         width="16"
