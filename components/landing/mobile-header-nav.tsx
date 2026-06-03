@@ -50,7 +50,7 @@ export function MobileHeaderNav({
             : "pointer-events-none mt-0 max-h-0 -translate-y-2 border-transparent opacity-0 shadow-none",
         )}
       >
-        <div className={cn("px-6 pb-6 pt-7 transition-all duration-300", isOpen ? "max-h-[420px]" : "max-h-0 p-0")}>
+        <div className={cn("px-8 pb-6 pt-7 transition-all duration-300", isOpen ? "max-h-[420px]" : "max-h-0 p-0")}>
           <div className="flex flex-col items-center gap-6 text-center">
             {items.map((item) => (
               <Link
