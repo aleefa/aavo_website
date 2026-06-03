@@ -7,43 +7,43 @@ const faqs = [
   {
     question: "What is AAVO Ride Partner?",
     answer:
-      "AAVO Ride Partner is a platform that connects drivers with riders who need transportation.",
+      "AAVO Ride Partner is an app for drivers and rental agencies to receive ride bookings and earn money by providing ride services to passengers.",
   },
   {
     question: "How can I register as a driver?",
     answer:
-      "You can register as a driver by filling out the form on our website.",
+      "Download the AAVO Ride Partner app, complete the registration process, upload your documents, and wait for approval.",
   },
   {
     question: "How can a rental agency join AAVO Ride?",
     answer:
-      "You can join AAVO Ride as a rental agency by filling out the form on our website.",
+      "Rental agencies can register multiple vehicles and drivers through the Partner app by submitting business and vehicle documents.",
   },
   {
     question: "What documents are required for driver registration?",
     answer:
-      "You will need to provide your driver's license, vehicle registration, and insurance information.",
+      "You need a valid driving license, vehicle RC, insurance, PUC certificate, and Aadhaar or other identity proof.",
   },
   {
     question: "How do I receive ride requests?",
-    answer: "You will receive ride requests through our mobile app.",
+    answer: "Once your account is approved and you go online in the Partner app, nearby ride requests will appear on your screen.",
   },
   {
     question: "How do I get paid for rides?",
-    answer: "You will be paid for rides through our mobile app.",
+    answer: "Drivers receive 100% of the ride fare directly from the rider. AAVO Ride does not take any commission. Partners only need an active membership to access ride bookings.",
   },
   {
     question: "Can I add multiple vehicles in one account?",
-    answer: "Yes, you can add multiple vehicles in one account.",
+    answer: "Yes, rental agencies can add and manage multiple vehicles and drivers under a single account.",
   },
   {
     question: "Is there any commission on rides?",
-    answer: "Yes, there is a commission on rides.",
+    answer: "No. AAVO Ride follows a 0% commission model. Drivers receive 100% of the ride fare and only need an active membership to access ride bookings.",
   },
   {
     question: "Why should I join AAVO Ride Partner?",
     answer:
-      "You should join AAVO Ride Partner because it is a great way to earn money and connect with riders.",
+      "AAVO Ride offers a 0% commission model, allowing drivers and rental agencies to keep 100% of their ride earnings with only a simple membership subscription.",
   },
 ];
 
