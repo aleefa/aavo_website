@@ -123,7 +123,7 @@ export const OurMission = () => {
               variants={cardVariants}
               className="group w-full bg-white md:max-w-xs rounded-[28px] p-6.5 flex items-center gap-5 border border-neutral-100 shadow-lg lg:-translate-x-12 transition-transform duration-300 hover:scale-[1.01]"
             >
-              <div className="w-14 h-14 bg-primary rounded-[20px] flex items-center justify-center shrink-0 shadow-lg shadow-primary/25 transition-colors duration-300 group-hover:bg-neutral-900">
+              <div className="w-14 h-14 bg-primary rounded-[20px] flex items-center justify-center shrink-0 shadow-lg shadow-primary/25 transition-colors duration-300 group-hover:bg-primary border-2 border-white group-hover:border-primary">
                 <svg
                   width="24"
                   height="24"

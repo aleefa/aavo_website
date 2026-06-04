@@ -107,8 +107,8 @@ export const StartJourney = () => {
               className="flex flex-col items-center text-center group"
             >
               {/* Circular Icon Container */}
-              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center shrink-0 shadow-lg shadow-primary/20 transition-all duration-300 group-hover:scale-105 group-hover:shadow-primary/35 group-hover:bg-neutral-900">
-                <div className="transition-colors duration-300">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center shrink-0 shadow-lg shadow-primary/20 transition-all duration-300 group-hover:scale-105 group-hover:shadow-primary/35 border-2 border-white group-hover:border-primary">
+                <div className="transition-colors duration-300 group-hover:text-white">
                   {step.icon}
                 </div>
               </div>
