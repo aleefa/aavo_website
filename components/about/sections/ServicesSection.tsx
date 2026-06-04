@@ -31,7 +31,7 @@ export const ServicesSection: React.FC = () => {
     },
     {
       title: "Popular Routes & Travel",
-      description: "Book affordable taxi services for popular travel routes including Delhi to Jaipur, Delhi to Dehradun, Mumbai to Pune, Ahmedabad to Udaipur, Chandigarh to Manali, Rishikesh trips, Agra tours, and many more destinations.",
+      description: "Looking for affordable and reliable taxi services? AAVORide connects passengers directly with drivers for intercity travel across Gujarat. Book rides for Ahmedabad to Vadodara, Ahmedabad to Gandhinagar, Ahmedabad to Udaipur, Ahmedabad to Mount Abu, Ahmedabad to Statue of Unity, Vadodara to Surat, and many more routes. Enjoy transparent pricing, verified drivers, and comfortable travel for business trips, airport transfers, family vacations, and weekend getaways.",
       image: "/assets/images/popular-routes.png",
       icon: (
         <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-brand-primary">
