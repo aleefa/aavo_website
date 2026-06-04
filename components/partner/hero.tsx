@@ -111,16 +111,16 @@ export const Hero = () => {
             {/* Heading for Mobile */}
             <motion.h1
               variants={itemVariants}
-              className="text-4xl font-extrabold lg:hidden mt-6 mb-4"
+              className="text-4xl font-extrabold lg:hidden mt-6 mb-4 tracking-tight"
             >
-              <span className="text-primary">Drive . Earn</span> <br /> Be Your
+              <span className="text-primary">Drive.Earn</span> <br /> Be Your
               Own Boss
             </motion.h1>
 
             {/* Subtitle */}
             <motion.h3
               variants={itemVariants}
-              className="text-xl lg:text-2xl font-bold text-neutral-800 mb-6 font-sans"
+              className="text-base lg:text-2xl font-bold text-neutral-800 mb-6 font-sans whitespace-nowrap lg:whitespace-normal"
             >
               Driver, Agency & Car Owner Earning App
             </motion.h3>
