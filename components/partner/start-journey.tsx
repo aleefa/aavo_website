@@ -98,13 +98,15 @@ export const StartJourney = () => {
         {/* Steps Grid */}
         <motion.div
           variants={containerVariants}
-          className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 lg:gap-12 mt-16 w-full max-w-5xl"
+          className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 lg:gap-12 mt-16 w-full max-w-5xl relative"
         >
+          {/* Connecting line for desktop only */}
+          <div className="hidden md:block absolute top-8 left-0 right-0 h-0.5 z-0 border-t-2 border-dashed border-primary/30" />
           {steps.map((step) => (
             <motion.div
               key={step.number}
               variants={stepVariants}
-              className="flex flex-col items-center text-center group"
+              className="flex flex-col items-center text-center group relative z-10"
             >
               {/* Circular Icon Container */}
               <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center shrink-0 shadow-lg shadow-primary/20 transition-all duration-300 group-hover:scale-105 group-hover:shadow-primary/35 border-2 border-white group-hover:border-primary">
