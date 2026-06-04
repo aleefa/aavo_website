@@ -29,7 +29,7 @@ const itemVariants: Variants = {
 
 export const Cta = () => {
   return (
-    <section className="w-full py-16 px-4 md:px-8 bg-background flex justify-center items-center -mt-8 md:-mt-16 ">
+    <section className="w-full py-16 md:px-8 bg-background flex justify-center items-center -mt-8 md:-mt-16 ">
       <motion.div
         variants={containerVariants}
         initial="hidden"
