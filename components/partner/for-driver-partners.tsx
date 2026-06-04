@@ -180,7 +180,7 @@ export const ForDriverPartners = () => {
               className="relative w-full flex justify-center lg:justify-end items-center"
             >
               <Image
-                src="/phone.png"
+                src="/phone2.png"
                 alt="AAVORide Partner Mobile App Showcase"
                 width={550}
                 height={800}
