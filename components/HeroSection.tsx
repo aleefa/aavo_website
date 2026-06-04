@@ -43,7 +43,7 @@ export function HeroSection() {
               className="h-auto w-full object-contain drop-shadow-[0_26px_42px_rgba(0,0,0,0.28)]"
               height={2656}
               priority
-              src="/mobile-uialo2.png"
+              src="/mobile-uialo.png"
               width={1312}
             />
           </div>

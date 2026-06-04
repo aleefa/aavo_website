@@ -44,13 +44,13 @@ export function AvatarStack() {
 
 const HERO_PHONE_ASSETS = {
   booking: {
-    src: "/images/phone/phone-1.png",
+    src: "/images/phone/phone-3.png",
     alt: "AAVORide booking app screen",
     width: 765,
     height: 1054,
   },
   brand: {
-    src: "/images/phone/phone-2.png",
+    src: "/images/phone/phone-4.png",
     alt: "AAVORide branding app screen",
     width: 674,
     height: 1033,
