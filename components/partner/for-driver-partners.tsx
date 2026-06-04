@@ -85,7 +85,8 @@ export const ForDriverPartners = () => {
             {/* Heading */}
             <motion.h2
               variants={itemVariants}
-              className="text-5xl lg:text-6xl font-bold text-neutral-900 leading-[1.15] tracking-tight mt-6 mb-6 font-sans"
+              // className="text-5xl lg:text-6xl font-bold text-neutral-900 leading-[1.15] tracking-tight mt-6 mb-6 font-sans"
+              className="text-4xl lg:text-6xl font-bold text-neutral-900 leading-[1.15] tracking-tight mt-6 mb-6 font-sans"
             > 
               Become an Intercity <br className="hidden sm:inline" />
               <span className="text-primary">Cab Driver Partner</span>
