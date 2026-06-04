@@ -187,7 +187,7 @@ export const ForDriverPartners = () => {
                 height={950}
                 priority
                 // className="relative z-10 w-full h-auto object-contain drop-shadow-2xl"
-                className="relative z-10 w-[120%] max-w-none h-auto object-contain drop-shadow-2xl"
+                className="relative z-10 w-[120%] max-w-none h-auto object-contain drop-shadow-2xl motion-phone-primary"
               />
             </motion.div>
           </div>
