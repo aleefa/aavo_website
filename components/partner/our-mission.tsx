@@ -123,18 +123,18 @@ export const OurMission = () => {
               variants={cardVariants}
               className="group w-full bg-white md:max-w-xs rounded-[28px] p-6.5 flex items-center gap-5 border border-neutral-100 shadow-lg lg:-translate-x-12 transition-transform duration-300 hover:scale-[1.01]"
             >
-              <div className="w-14 h-14 bg-primary rounded-[20px] flex items-center justify-center shrink-0 shadow-lg shadow-primary/25 transition-colors duration-300 group-hover:bg-primary border-2 border-white group-hover:border-primary">
+              <div className="w-14 h-14 bg-white border border-neutral-100 rounded-[20px] flex items-center justify-center shrink-0 shadow-sm transition-colors duration-300 group-hover:bg-primary group-hover:border-primary">
                 <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="transition-colors duration-300"
+                  className="w-6 h-6 text-primary transition-colors duration-300 group-hover:text-white"
                 >
                   <path
                     d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"
-                    fill="white"
+                    fill="currentColor"
                   />
                 </svg>
               </div>
