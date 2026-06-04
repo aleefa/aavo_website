@@ -13,7 +13,7 @@ const termsData = [
         <p className="mb-3">
           You can request deletion of your account using any of the following methods:
         </p>
-        <ul className=" list-disc pl-5 space-y-2">
+        <ul className=" list-disc pl-10 space-y-2">
           <li>
             Inside the Mobile App: Go to <span className="font-semibold">
     Profile → Settings → Delete Account
@@ -66,7 +66,7 @@ const termsData = [
         <p className="mb-3">
           Upon successful processing of your request, the following data will be permanently removed:
         </p>
-        <ul className=" list-disc pl-5 space-y-2">
+        <ul className=" list-disc pl-10 space-y-2">
           <li>
            Your full name and profile details.
           </li>
@@ -102,7 +102,7 @@ const termsData = [
         <>
         <p className="mb-3">
            Some limited data may be retained where required for: </p>
-        <ul className=" list-disc pl-5 space-y-2">
+        <ul className=" list-disc pl-10 space-y-2">
           <li>
           Legal and regulatory compliance.
           </li>
@@ -148,7 +148,7 @@ const termsData = [
         <>
         <p className="mb-3">
           If you have any questions regarding account deletion or data privacy, please contact us: </p>
-        <ul className=" list-disc pl-5 space-y-2">
+        <ul className=" list-disc pl-10 space-y-2">
           <li>
          <span className="font-semibold">Email  </span>: aavoride@gmail.com
           </li>
@@ -252,7 +252,7 @@ export default function AccountDeletion() {
                 {item.title}
               </h3>
             </div>
-            <div className="text-[#444748] text-base md:text-[15px] leading-relaxed pl-11">
+            <div className="text-[#444748] text-base md:text-[15px] leading-relaxed">
               {item.desc}
             </div>
           </div>

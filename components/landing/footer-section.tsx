@@ -6,7 +6,7 @@ const quickLinks = ["Home", "Our Services", "Become a Partner", "Blog", "FAQ"];
 const legalLinks = [
   { label: "Privacy Policy", href: "/privacy-policy" },
   { label: "Terms of Service", href: "/terms-and-conditions" },
-  { label: "Sitemap", href: "#" }
+  // { label: "Sitemap", href: "#" }
 ];
 
 const socialLinks = [

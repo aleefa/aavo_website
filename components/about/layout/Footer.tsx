@@ -184,7 +184,7 @@ export const Footer: React.FC = () => {
           {[
             { label: "Privacy Policy", href: "/privacy-policy" },
             { label: "Terms of Service", href: "/terms-and-conditions" },
-            { label: "Sitemap", href: "#" }
+            // { label: "Sitemap", href: "#" }
           ].map((item) => (
             <a key={item.label} href={item.href} className="text-sm text-muted-gray hover:text-brand-primary transition-colors font-medium">
               {item.label}

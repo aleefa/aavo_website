@@ -10,11 +10,11 @@ const termsData = [
     title: "Nature of Service",
     desc: (
       <>
-        <p className="mb-3">
+        <p >
           Aavoride is a driver listing and lead generation platform designed to
           connect service seekers with independent providers. Specifically:
         </p>
-        <ul className=" list-disc pl-5 space-y-2">
+        <ul className="list-disc pl-5 space-y-2">
           <li>
             We provide a digital marketplace for listing driving services.
           </li>
@@ -25,22 +25,7 @@ const termsData = [
         </ul>
       </>
     ),
-    // icon: (
-    //   <svg
-    //     width="18"
-    //     height="18"
-    //     viewBox="0 0 24 24"
-    //     fill="none"
-    //     stroke="currentColor"
-    //     strokeWidth="2.5"
-    //     strokeLinecap="round"
-    //     strokeLinejoin="round"
-    //   >
-    //     <circle cx="12" cy="12" r="10"></circle>
-    //     <polyline points="12 16 16 12 12 8"></polyline>
-    //     <line x1="8" y1="12" x2="16" y2="12"></line>
-    //   </svg>
-    // ),
+   
 //     icon: (
 //   <svg
 //     width="18"
@@ -324,7 +309,7 @@ export default function TermsAndConditions() {
                 {item.title}
               </h3>
             </div>
-            <div className="text-[#444748] text-base md:text-[15px] leading-relaxed pl-11">
+            <div className="text-[#444748] text-base md:text-[15px] leading-relaxed">
               {item.desc}
             </div>
           </div>
