@@ -25,22 +25,22 @@ const stats: StatItem[] = [
   {
     title: "1K+",
     subtitle: "Successful Rides",
-    icon: "/star.png",
+    icon: "/star1.png",
   },
   {
     title: "Verified",
     subtitle: "Platform Trust",
-    icon: "/tick.png",
+    icon: "/tick1.png",
   },
   {
     title: "Transparent",
     subtitle: "Full Earnings History",
-    icon: "/line.png",
+    icon: "/line1.png",
   },
   {
     title: "Direct",
     subtitle: "No Middlemen",
-    icon: "/profile.png",
+    icon: "/profile1.png",
   },
 ];
 
