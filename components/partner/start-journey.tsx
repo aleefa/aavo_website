@@ -69,7 +69,7 @@ const stepVariants: Variants = {
 
 export const StartJourney = () => {
   return (
-    <section className="w-full py-20 bg-white flex flex-col items-center relative">
+    <section className="w-full py-20 bg-white flex flex-col items-center relative -mt-8 md:-mt-16">
       <div className="absolute top-0 left-[-272px] size-[570px] bg-primary rounded-full blur-[100px] pointer-events-none opacity-20" />
       <motion.div
         variants={containerVariants}

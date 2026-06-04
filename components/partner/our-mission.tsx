@@ -40,7 +40,7 @@ const cardVariants: Variants = {
 
 export const OurMission = () => {
   return (
-    <section className="relative w-full py-20 lg:py-28 overflow-hidden">
+    <section className="relative w-full py-20 lg:py-28 overflow-hidden -mt-8 md:-mt-16">
       {/* Decorative background glow */}
       <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[350px] h-[350px] bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
 

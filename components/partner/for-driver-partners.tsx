@@ -63,7 +63,7 @@ const phoneVariants: Variants = {
 
 export const ForDriverPartners = () => {
   return (
-    <section className="w-full overflow-hidden flex justify-center items-center py-0.5 lg:py-0.5">
+      <section className="w-full overflow-hidden flex justify-center items-center py-0 -mt-8 md:-mt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           {/* Left Column: Driver Partner Value Proposition */}
@@ -85,8 +85,9 @@ export const ForDriverPartners = () => {
             {/* Heading */}
             <motion.h2
               variants={itemVariants}
-              className="text-4xl lg:text-5xl font-bold text-neutral-900 leading-[1.15] tracking-tight mt-6 mb-6 font-sans"
+              className="text-5xl lg:text-6xl font-bold text-neutral-900 leading-[1.15] tracking-tight mt-6 mb-6 font-sans"
             >
+              
               Become an Intercity <br className="hidden sm:inline" />
               <span className="text-primary">Cab Driver Partner</span>
             </motion.h2>
