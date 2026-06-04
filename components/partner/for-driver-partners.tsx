@@ -17,17 +17,17 @@ const keyPoints: KeyPoint[] = [
   {
     title: "High Earnings",
     description: "Earn up to 30% more per KM.",
-    icon: <Wallet className="w-6 h-6 text-primary" />,
+    icon: <Wallet className="w-6 h-6" />,
   },
   {
     title: "Intercity Trips",
     description: "Stable long-distance routes.",
-    icon: <MapPin className="w-6 h-6 text-primary" />,
+    icon: <MapPin className="w-6 h-6" />,
   },
   {
     title: "Safe & Secure",
     description: "24/7 road assistance & support.",
-    icon: <Shield className="w-6 h-6 text-primary" />,
+    icon: <Shield className="w-6 h-6" />,
   },
 ];
 
@@ -110,9 +110,13 @@ export const ForDriverPartners = () => {
                 <motion.div
                   key={index}
                   variants={itemVariants}
-                  className="flex flex-col max-w-[200px] w-full sm:max-w-full"
+                  className="group flex flex-col max-w-[200px] w-full sm:max-w-full"
                 >
-                  <div>{point.icon}</div>
+                  <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary transition-colors duration-300 shrink-0 mt-1 group-hover:bg-primary">
+                    <div className="transition-colors duration-300 group-hover:text-white">
+                      {point.icon}
+                    </div>
+                  </div>
                   <h3 className="text-base font-bold text-neutral-900 mt-2 leading-tight">
                     {point.title}
                   </h3>

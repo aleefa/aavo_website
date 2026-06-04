@@ -133,11 +133,11 @@ export const AavoRidePartners = () => {
               <motion.div
                 key={index}
                 variants={cardVariants}
-                className="bg-white rounded-[32px] p-8 border border-neutral-200/50 shadow-lg transition-all duration-300 hover:scale-[1.01] flex flex-col items-start text-left shadow-neutral-200"
+                className="group bg-white rounded-[32px] p-8 border border-neutral-200/50 shadow-lg transition-all duration-300 hover:scale-[1.01] flex flex-col items-start text-left shadow-neutral-200"
               >
                 {/* Icon Container */}
-                <div className="w-12 h-12 rounded-[16px] bg-primary/10 flex items-center justify-center mb-6">
-                  <Icon className="w-6 h-6 text-primary" />
+                <div className="w-12 h-12 rounded-[16px] bg-primary/10 flex items-center justify-center mb-6 transition-colors duration-300 group-hover:bg-primary group-hover:text-white">
+                  <Icon className="w-6 h-6 text-primary transition-colors duration-300 group-hover:text-white" />
                 </div>
 
                 {/* Card Title */}

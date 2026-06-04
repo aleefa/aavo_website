@@ -4,7 +4,6 @@ import React from "react";
 import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
 import {
-  LucideIcon,
   Star,
   BadgeCheck,
   BarChart3,
@@ -14,33 +13,34 @@ import {
   Users,
 } from "lucide-react";
 import partnerImage from "@/public/partner.png";
+import { circle } from "framer-motion/client";
 
 interface StatItem {
   title: string;
   subtitle: string;
-  icon: LucideIcon;
+  icon: React.ComponentType<any> | string;
 }
 
 const stats: StatItem[] = [
   {
     title: "1K+",
     subtitle: "Successful Rides",
-    icon: Star,
+    icon: "/star.png",
   },
   {
     title: "Verified",
     subtitle: "Platform Trust",
-    icon: BadgeCheck,
+    icon: "/tick.png",
   },
   {
     title: "Transparent",
     subtitle: "Full Earnings History",
-    icon: BarChart3,
+    icon: "/line.png",
   },
   {
     title: "Direct",
     subtitle: "No Middlemen",
-    icon: UserMinus,
+    icon: "/profile.png",
   },
 ];
 
@@ -338,7 +338,17 @@ export const Hero = () => {
                   key={index}
                   className="flex items-center w-full max-w-[188px] gap-4.5 text-left"
                 >
-                  <Icon className="w-8 h-8 text-primary shrink-0" />
+                  {typeof Icon === 'string' ? (
+                    <Image
+                      src={Icon}
+                      alt={stat.title}
+                      width={32}
+                      height={32}
+                      className="w-8 h-8 shrink-0"
+                    />
+                  ) : (
+                    <Icon className="w-8 h-8 text-primary shrink-0" />
+                  )}
                   <div className="flex flex-col leading-none">
                     <span className="font-bold text-neutral-900 text-lg leading-tight">
                       {stat.title}

@@ -97,8 +97,10 @@ export const MissionSection: React.FC = () => {
                 animate={inView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.5, ease: "easeOut", delay: 0.38 + index * 0.13 }}
               >
-                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-brand-primary/10 text-brand-primary transition-colors duration-300 shrink-0 mt-1 group-hover:bg-brand-primary group-hover:text-white">
-                  {item.icon}
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-brand-primary/10 text-brand-primary transition-colors duration-300 shrink-0 mt-1 group-hover:bg-brand-primary">
+                  <div className="transition-colors duration-300 group-hover:text-white">
+                    {item.icon}
+                  </div>
                 </div>
                 <div className="flex flex-col gap-1">
                   <h3 className="text-lg md:text-xl font-bold text-foreground">{item.title}</h3>
