@@ -799,7 +799,7 @@ function SectionHeader({ num, iconKey, title }: { num: string; iconKey: string; 
         </div>
 
         <div className="flex items-center gap-3">
-          <span className="inline-flex items-center  justify-center  w-[29.27px] h-[20px] text-xs font-bold text-[#FF3E1D] bg-[#FFF5F0] rounded-full shrink-0">
+          <span className="w-8 h-8 bg-[#FF3E1D] text-white rounded-full flex items-center justify-center text-[15px] font-black shrink-0">
             {num}
           </span>
           <h2 className="text-[32px] md:text-3xl font-bold text-gray-900 md:leading-tight leading-8 tracking-tight">
@@ -813,7 +813,7 @@ function SectionHeader({ num, iconKey, title }: { num: string; iconKey: string; 
 
 function NumBadge({ n }: { n: string }) {
   return (
-    <span className="bg-[#FFF5F0] text-[#FF3E1D] rounded-lg text-sm font-bold px-3 py-1.5">
+    <span className="w-8 h-8 bg-[#FF3E1D] text-white rounded-full flex items-center justify-center text-[15px] font-black shrink-0">
       {n}
     </span>
   );
