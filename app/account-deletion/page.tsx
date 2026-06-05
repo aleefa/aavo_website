@@ -198,8 +198,8 @@ export default function AccountDeletion() {
   return (
     <div className="min-h-screen bg-[#F9FAFB]">
       <div className="bg-gradient-to-b from-[#FF3E1D] to-[#EC7F6C]">
-        <div className="text-center px-6 pt-20 sm:pb-32 pb-24 max-w-[800px] mx-auto">
-          <h1 className="text-white text-4xl leading-snug md:text-[56px] font-extrabold mb-6 sm:leading-tight tracking-tight flex justify-center flex-wrap">
+        <div className="text-center px-6 pt-12 sm:pb-11 pb-8 max-w-[700px] mx-auto">
+          <h1 className="text-white text-3xl leading-16 md:text-[56px] font-extrabold mb-6 sm:leading-tight tracking-tight flex justify-center flex-wrap">
             {title.split("|").map((part, partIndex) => (
               <span key={partIndex} className="flex justify-center flex-wrap">
                 {part.split("").map((char, charIndex) => (
@@ -220,7 +220,7 @@ export default function AccountDeletion() {
             ))}
           </h1>
           <p
-            className="text-white md:text-lg text-sm font-medium leading-relaxed mb-4 max-w-[650px] mx-auto animate-fade-in-up"
+            className="text-white md:text-base text-sm font-semibold leading-relaxed mb-4 max-w-[650px] mx-auto animate-fade-in-up"
             style={{
               animationDelay: "1500ms",
               opacity: 0,

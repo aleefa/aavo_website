@@ -260,7 +260,7 @@ export default function TermsAndConditions() {
   return (
     <div className="min-h-screen bg-[#F9FAFB]">
       <div className="bg-gradient-to-b from-[#FF3E1D] to-[#EC7F6C]">
-        <div className="text-center px-6 pt-20 sm:pb-32 pb-24 max-w-[800px] mx-auto">
+        <div className="text-center px-6 pt-12 sm:pb-11 pb-8 max-w-[700px] mx-auto">
           <h1 className="text-white text-4xl leading-snug md:text-[56px] font-extrabold mb-6 sm:leading-tight tracking-tight flex justify-center flex-wrap">
             {title.split("").map((char, index) => (
               <span
