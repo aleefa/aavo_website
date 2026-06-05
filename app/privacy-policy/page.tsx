@@ -343,7 +343,7 @@ export default function PrivacyPolicy() {
               title="How We Use Your Information"
             />
             <div>
-              <div className="grid  md:max-w-[460px] grid-cols-2 gap-3 mb-2">
+              <div className="grid md:max-w-[800px] grid-cols-2 gap-3 mb-2">
                 {[
                   "To provide and manage ride-hailing services.",
                   "To verify identity and ensure safety standards.",
@@ -800,10 +800,10 @@ function InfoCard({ title, items, wide, variant = "default" }: { title: string; 
 
   return (
     <div className={`${bgColor} rounded-2xl p-5 shadow-sm`}>
-      <p className="md:text-[13px] text-base font-bold text-[#FF3E1D] mb-3">
+      <p className="text-lg font-bold text-[#FF3E1D] mb-3">
         • <span className="text-[#111827]">{title}</span>
       </p>
-      <ul className="text-[13px] text-gray-600 leading-relaxed space-y-1.5">
+      <ul className="text-[#444748] text-base md:text-[15px] leading-relaxed space-y-1.5">
         {items.map((item, i) => (
           <li key={i}>{item}</li>
         ))}
