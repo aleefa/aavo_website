@@ -10,11 +10,11 @@ const termsData = [
     title: "Nature of Service",
     desc: (
       <>
-        <p >
+        <p className="mb-3">
           Aavoride is a driver listing and lead generation platform designed to
           connect service seekers with independent providers. Specifically:
         </p>
-        <ul className="list-disc pl-5 space-y-2">
+        <ul className="list-disc pl-5 space-y-2 ">
           <li>
             We provide a digital marketplace for listing driving services.
           </li>

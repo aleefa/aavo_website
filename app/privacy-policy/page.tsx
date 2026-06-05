@@ -484,7 +484,7 @@ export default function PrivacyPolicy() {
             id="security"
             className="scroll-mt-6 lg:p-8 md:p-6 scroll-reveal"
           >
-            <div className="">
+            <div>
               <SectionHeader
                 num="07"
                 iconKey="user-rights"
@@ -548,8 +548,13 @@ export default function PrivacyPolicy() {
                 </div>
               </div>
             </div>
+          </section>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:gap-8 gap-5 mb-6">
+          <section
+            id="location-data"
+            className="scroll-mt-6 lg:p-8 md:p-6 scroll-reveal"
+          >
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 {
                   // emoji: (
@@ -629,16 +634,21 @@ export default function PrivacyPolicy() {
                 },
               ].map((item) => (
                 <div key={item.title} className="p-8">
-                  <h4 className="flex items-center gap-2 text-2xl font-bold text-gray-900 leading-9 tracking-tight mb-2">
-                    <NumBadge n={item.num} />  {item.title}
-                  </h4>
+                  <h3 className="flex items-center gap-2.5 text-2xl font-bold text-gray-900 leading-9 tracking-tight mb-3">
+                    <NumBadge n={item.num} /> {item.title}
+                  </h3>
                   <p className="text-[#444748] text-base md:text-[15px] leading-relaxed">
                     {item.desc}
                   </p>
                 </div>
               ))}
             </div>
+          </section>
 
+          <section
+            id="policy-updates"
+            className="scroll-mt-6 lg:p-8 md:p-6 scroll-reveal"
+          >
             <div className="border border-[#FFD5CC] rounded-2xl lg:p-12 p-6 flex gap-4 items-start">
               {/* <div className="w-11 h-11 bg-[#FF3E1D] rounded-xl max-sm:hidden flex items-center justify-center text-xl shrink-0">
                 <svg
