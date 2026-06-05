@@ -353,7 +353,7 @@ export default function PrivacyPolicy() {
                 ].map((item, i) => (
                   <div
                     key={i}
-                    className="flex gap-3 items-start border border-[#E5E7EB] rounded-xl p-4"
+                    className={`flex gap-3 items-start border border-[#E5E7EB] rounded-xl p-4 ${i === 4 ? "col-span-2" : ""}`}
                   >
                     <span className="text-[#FF3E1D] mt-0.5 shrink-0 max-md:hidden">
                       <svg
