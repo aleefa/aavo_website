@@ -8,10 +8,16 @@ const NAV_ITEMS = [
   { id: "about", label: "About Aavoride", num: "01" },
   { id: "info-collect", label: "Information We Collect", num: "02" },
   { id: "how-we-use", label: "How We Use", num: "03" },
-  { id: "info-sharing", label: "Info Sharing", num: "04" },
-  { id: "data-values", label: "Data Values", num: "05" },
-  { id: "security", label: "Security & Rights", num: "06" },
-  { id: "contact", label: "Contact Support", num: "14" },
+  { id: "our-commitment", label: "Our Commitment", num: "04" },
+  { id: "data-security", label: "Data Security", num: "05" },
+  { id: "data-retention", label: "Data Retention", num: "06" },
+  { id: "security", label: "User Rights", num: "07" },
+  { id: "location-data", label: "Location Data", num: "08" },
+  { id: "cookies-tracking", label: "Cookies & Tracking", num: "09" },
+  { id: "children-privacy", label: "Children's Privacy", num: "10" },
+  { id: "third-party-links", label: "Third-Party Links", num: "11" },
+  { id: "policy-updates", label: "Policy Updates", num: "12" },
+  { id: "info-sharing", label: "Info Sharing", num: "13" },
 ];
 
 // const sectionIcons = {
@@ -401,6 +407,11 @@ export default function PrivacyPolicy() {
             </div>
           </section>
           <section id="our-commitment" className="md:px-12 scroll-reveal">
+            <SectionHeader
+              num="04"
+              iconKey="our-commitment"
+              title="Our Commitment: What We Do NOT Do"
+            />
             <div className="bg-[#FFF5F0] border border-[#FFD5CC] rounded-2xl lg:p-12 md:p-6 max-md:pt-10 max-md:pb-14 px-4 ">
               <div className="flex items-center gap-3 mb-10">
                 <div className="w-12 h-12 bg-[#FF3E1D] rounded-xl flex items-center justify-center shrink-0">
@@ -481,7 +492,7 @@ export default function PrivacyPolicy() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="p-8">
                 <h3 className="flex items-center gap-2.5 text-lg font-bold mb-3">
-                  <NumBadge n="6" /> Data Security
+                  <NumBadge n="05" /> Data Security
                 </h3>
                 <p className="text-sm text-gray-500 leading-relaxed">
                   We use industry-standard encryption and secure servers to
@@ -490,7 +501,7 @@ export default function PrivacyPolicy() {
               </div>
               <div className="p-8">
                 <h3 className="flex items-center gap-2.5 text-lg font-bold mb-3">
-                  <NumBadge n="7" /> Data Retention
+                  <NumBadge n="06" /> Data Retention
                 </h3>
                 <p className="text-sm text-gray-500 leading-relaxed">
                   We retain data as long as your account is active or as needed
@@ -506,7 +517,7 @@ export default function PrivacyPolicy() {
           >
             <div className="">
               <SectionHeader
-                num="08"
+                num="07"
                 iconKey="user-rights"
                 title="User Rights"
               />
@@ -587,6 +598,7 @@ export default function PrivacyPolicy() {
                     </svg>
                   ),
                   title: "Location Data",
+                  num: "08",
                   desc: "Real-time location data is collected from your device to enable pickups and route tracking. You can disable this in device settings, but service functionality will be limited.",
                 },
                 {
@@ -605,6 +617,7 @@ export default function PrivacyPolicy() {
                     </svg>
                   ),
                   title: "Cookies & Tracking",
+                  num: "09",
                   desc: "We use cookies to remember your preferences and analyze traffic. You can manage cookie settings through your browser.",
                 },
                 {
@@ -623,6 +636,7 @@ export default function PrivacyPolicy() {
                     </svg>
                   ),
                   title: "Children's Privacy",
+                  num: "10",
                   desc: "Our services are not intended for children under 18. We do not knowingly collect data from minors.",
                 },
                 {
@@ -641,12 +655,13 @@ export default function PrivacyPolicy() {
                     </svg>
                   ),
                   title: "Third-Party Links",
+                  num: "11",
                   desc: "Our platform may contain links to external sites. We are not responsible for the privacy practices of those third parties.",
                 },
               ].map((item) => (
                 <div key={item.title} className="p-8">
                   <h4 className="flex items-center gap-2 text-sm font-bold mb-2 text-black">
-                    <span>{item.emoji}</span> {item.title}
+                    <NumBadge n={item.num} /> <span>{item.emoji}</span> {item.title}
                   </h4>
                   <p className="text-[13px] text-gray-500 leading-relaxed">
                     {item.desc}
@@ -671,8 +686,8 @@ export default function PrivacyPolicy() {
                 </svg>
               </div>
               <div>
-                <h3 className="md:text-lg text-2xl font-bold mb-2">
-                  Policy Updates
+                <h3 className="flex items-center gap-2.5 md:text-lg text-2xl font-bold mb-2">
+                  <NumBadge n="12" /> Policy Updates
                 </h3>
                 <p className="text-sm text-gray-500 leading-relaxed">
                   We may update this policy periodically. We will notify you of
@@ -684,128 +699,11 @@ export default function PrivacyPolicy() {
           </section>
 
           <section
-            id="contact"
-            className="scroll-mt-6  lg:px-24  md:px-12 scroll-reveal"
-          >
-            <div className="md:border border-[#FF3E1D4D] rounded-2xl lg:p-12 p-6">
-              <div className="flex gap-4 items-start mb-6">
-                <div className="w-11 h-11 bg-[#FF3E1D] rounded-xl flex items-center justify-center text-xl shrink-0">
-                  <svg
-                    width="20"
-                    height="18"
-                    viewBox="0 0 20 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M9 18V16H17V8.9C17 6.95 16.3208 5.29583 14.9625 3.9375C13.6042 2.57917 11.95 1.9 10 1.9C8.05 1.9 6.39583 2.57917 5.0375 3.9375C3.67917 5.29583 3 6.95 3 8.9V15H2C1.45 15 0.979167 14.8042 0.5875 14.4125C0.195833 14.0208 0 13.55 0 13V11C0 10.65 0.0875 10.3208 0.2625 10.0125C0.4375 9.70417 0.683333 9.45833 1 9.275L1.075 7.95C1.20833 6.81667 1.5375 5.76667 2.0625 4.8C2.5875 3.83333 3.24583 2.99167 4.0375 2.275C4.82917 1.55833 5.7375 1 6.7625 0.6C7.7875 0.2 8.86667 0 10 0C11.1333 0 12.2083 0.2 13.225 0.6C14.2417 1 15.15 1.55417 15.95 2.2625C16.75 2.97083 17.4083 3.80833 17.925 4.775C18.4417 5.74167 18.775 6.79167 18.925 7.925L19 9.225C19.3167 9.375 19.5625 9.6 19.7375 9.9C19.9125 10.2 20 10.5167 20 10.85V13.15C20 13.4833 19.9125 13.8 19.7375 14.1C19.5625 14.4 19.3167 14.625 19 14.775V16C19 16.55 18.8042 17.0208 18.4125 17.4125C18.0208 17.8042 17.55 18 17 18H9ZM7 11C6.71667 11 6.47917 10.9042 6.2875 10.7125C6.09583 10.5208 6 10.2833 6 10C6 9.71667 6.09583 9.47917 6.2875 9.2875C6.47917 9.09583 6.71667 9 7 9C7.28333 9 7.52083 9.09583 7.7125 9.2875C7.90417 9.47917 8 9.71667 8 10C8 10.2833 7.90417 10.5208 7.7125 10.7125C7.52083 10.9042 7.28333 11 7 11ZM13 11C12.7167 11 12.4792 10.9042 12.2875 10.7125C12.0958 10.5208 12 10.2833 12 10C12 9.71667 12.0958 9.47917 12.2875 9.2875C12.4792 9.09583 12.7167 9 13 9C13.2833 9 13.5208 9.09583 13.7125 9.2875C13.9042 9.47917 14 9.71667 14 10C14 10.2833 13.9042 10.5208 13.7125 10.7125C13.5208 10.9042 13.2833 11 13 11ZM4.025 9.45C3.90833 7.68333 4.44167 6.16667 5.625 4.9C6.80833 3.63333 8.28333 3 10.05 3C11.5333 3 12.8375 3.47083 13.9625 4.4125C15.0875 5.35417 15.7667 6.55833 16 8.025C14.4833 8.00833 13.0875 7.6 11.8125 6.8C10.5375 6 9.55833 4.91667 8.875 3.55C8.60833 4.88333 8.04583 6.07083 7.1875 7.1125C6.32917 8.15417 5.275 8.93333 4.025 9.45Z"
-                      fill="white"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold mb-1">Contact Us</h3>
-                  <p className="text-[13px] text-gray-400">
-                    We&apos;re here to help with your privacy concerns
-                  </p>
-                </div>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {[
-                  {
-                    label: "COMPANY NAME",
-                    value: "AAVORide",
-                    icon: (
-                      <svg
-                        width="20"
-                        height="18"
-                        viewBox="0 0 20 18"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 18V0H10V4H20V18H0ZM2 16H8V14H2V16ZM2 12H8V10H2V12ZM2 8H8V6H2V8ZM2 4H8V2H2V4ZM10 16H18V6H10V16ZM12 10V8H16V10H12ZM12 14V12H16V14H12Z"
-                          fill="#FF3E1D"
-                        />
-                      </svg>
-                    ),
-                  },
-                  {
-                    label: "PHONE",
-                    value: "+91 97123 87840",
-                    icon: (
-                      <svg
-                        width="18"
-                        height="18"
-                        viewBox="0 0 18 18"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M16.95 18C14.8667 18 12.8083 17.5458 10.775 16.6375C8.74167 15.7292 6.89167 14.4417 5.225 12.775C3.55833 11.1083 2.27083 9.25833 1.3625 7.225C0.454167 5.19167 0 3.13333 0 1.05C0 0.75 0.1 0.5 0.3 0.3C0.5 0.1 0.75 0 1.05 0H5.1C5.33333 0 5.54167 0.0791667 5.725 0.2375C5.90833 0.395833 6.01667 0.583333 6.05 0.8L6.7 4.3C6.73333 4.56667 6.725 4.79167 6.675 4.975C6.625 5.15833 6.53333 5.31667 6.4 5.45L3.975 7.9C4.30833 8.51667 4.70417 9.1125 5.1625 9.6875C5.62083 10.2625 6.125 10.8167 6.675 11.35C7.19167 11.8667 7.73333 12.3458 8.3 12.7875C8.86667 13.2292 9.46667 13.6333 10.1 14L12.45 11.65C12.6 11.5 12.7958 11.3875 13.0375 11.3125C13.2792 11.2375 13.5167 11.2167 13.75 11.25L17.2 11.95C17.4333 12.0167 17.625 12.1375 17.775 12.3125C17.925 12.4875 18 12.6833 18 12.9V16.95C18 17.25 17.9 17.5 17.7 17.7C17.5 17.9 17.25 18 16.95 18ZM3.025 6L4.675 4.35L4.25 2H2.025C2.10833 2.68333 2.225 3.35833 2.375 4.025C2.525 4.69167 2.74167 5.35 3.025 6ZM11.975 14.95C12.625 15.2333 13.2875 15.4583 13.9625 15.625C14.6375 15.7917 15.3167 15.9 16 15.95V13.75L13.65 13.275L11.975 14.95Z"
-                          fill="#FF3E1D"
-                        />
-                      </svg>
-                    ),
-                  },
-                  {
-                    label: "EMAIL",
-                    value: "aavoride@gmail.com",
-                    icon: (
-                      <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M10 20C8.61667 20 7.31667 19.7375 6.1 19.2125C4.88333 18.6875 3.825 17.975 2.925 17.075C2.025 16.175 1.3125 15.1167 0.7875 13.9C0.2625 12.6833 0 11.3833 0 10C0 8.61667 0.2625 7.31667 0.7875 6.1C1.3125 4.88333 2.025 3.825 2.925 2.925C3.825 2.025 4.88333 1.3125 6.1 0.7875C7.31667 0.2625 8.61667 0 10 0C11.3833 0 12.6833 0.2625 13.9 0.7875C15.1167 1.3125 16.175 2.025 17.075 2.925C17.975 3.825 18.6875 4.88333 19.2125 6.1C19.7375 7.31667 20 8.61667 20 10V11.45C20 12.4333 19.6625 13.2708 18.9875 13.9625C18.3125 14.6542 17.4833 15 16.5 15C15.9167 15 15.3667 14.875 14.85 14.625C14.3333 14.375 13.9 14.0167 13.55 13.55C13.0667 14.0333 12.5208 14.3958 11.9125 14.6375C11.3042 14.8792 10.6667 15 10 15C8.61667 15 7.4375 14.5125 6.4625 13.5375C5.4875 12.5625 5 11.3833 5 10C5 8.61667 5.4875 7.4375 6.4625 6.4625C7.4375 5.4875 8.61667 5 10 5C11.3833 5 12.5625 5.4875 13.5375 6.4625C14.5125 7.4375 15 8.61667 15 10V11.45C15 11.8833 15.1417 12.25 15.425 12.55C15.7083 12.85 16.0667 13 16.5 13C16.9333 13 17.2917 12.85 17.575 12.55C17.8583 12.25 18 11.8833 18 11.45V10C18 7.76667 17.225 5.875 15.675 4.325C14.125 2.775 12.2333 2 10 2C7.76667 2 5.875 2.775 4.325 4.325C2.775 5.875 2 7.76667 2 10C2 12.2333 2.775 14.125 4.325 15.675C5.875 17.225 7.76667 18 10 18H15V20H10ZM10 13C10.8333 13 11.5417 12.7083 12.125 12.125C12.7083 11.5417 13 10.8333 13 10C13 9.16667 12.7083 8.45833 12.125 7.875C11.5417 7.29167 10.8333 7 10 7C9.16667 7 8.45833 7.29167 7.875 7.875C7.29167 8.45833 7 9.16667 7 10C7 10.8333 7.29167 11.5417 7.875 12.125C8.45833 12.7083 9.16667 13 10 13Z"
-                          fill="#FF3E1D"
-                        />
-                      </svg>
-                    ),
-                  },
-                  {
-                    label: "ADDRESS",
-                    value: "Ahmedabad, India",
-                    icon: (
-                      <svg
-                        width="16"
-                        height="20"
-                        viewBox="0 0 16 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M8 10C8.55 10 9.02083 9.80417 9.4125 9.4125C9.80417 9.02083 10 8.55 10 8C10 7.45 9.80417 6.97917 9.4125 6.5875C9.02083 6.19583 8.55 6 8 6C7.45 6 6.97917 6.19583 6.5875 6.5875C6.19583 6.97917 6 7.45 6 8C6 8.55 6.19583 9.02083 6.5875 9.4125C6.97917 9.80417 7.45 10 8 10ZM8 17.35C10.0333 15.4833 11.5417 13.7875 12.525 12.2625C13.5083 10.7375 14 9.38333 14 8.2C14 6.38333 13.4208 4.89583 12.2625 3.7375C11.1042 2.57917 9.68333 2 8 2C6.31667 2 4.89583 2.57917 3.7375 3.7375C2.57917 4.89583 2 6.38333 2 8.2C2 9.38333 2.49167 10.7375 3.475 12.2625C4.45833 13.7875 5.96667 15.4833 8 17.35ZM8 20C5.31667 17.7167 3.3125 15.5958 1.9875 13.6375C0.6625 11.6792 0 9.86667 0 8.2C0 5.7 0.804167 3.70833 2.4125 2.225C4.02083 0.741667 5.88333 0 8 0C10.1167 0 11.9792 0.741667 13.5875 2.225C15.1958 3.70833 16 5.7 16 8.2C16 9.86667 15.3375 11.6792 14.0125 13.6375C12.6875 15.5958 10.6833 17.7167 8 20Z"
-                          fill="#FF3E1D"
-                        />
-                      </svg>
-                    ),
-                  },
-                ].map((item) => (
-                  <div key={item.label} className="flex gap-3 items-start">
-                    <span className="mt-1 flex-shrink-0 w-8 h-8 rounded-full bg-[#FFF5F0] flex items-center justify-center">
-                      {item.icon}
-                    </span>
-                    <div>
-                      <p className="text-[10px] font-bold tracking-widest text-gray-400 mb-1">
-                        {item.label}
-                      </p>
-                      <p className="text-[14px] font-bold">{item.value}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
-          <section
             id="info-sharing"
             className="scroll-mt-6 lg:px-24  md:px-12 md:pt-12 scroll-reveal"
           >
             <SectionHeader
-              num="04"
+              num="13"
               iconKey="info-sharing"
               title="Information Sharing"
             />
