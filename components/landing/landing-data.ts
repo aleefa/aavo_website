@@ -8,7 +8,7 @@ import type {
 
 export const navItems: NavItem[] = [
   { label: "Home", href: "/" },
-  { label: "Services", href: "#services" },
+  { label: "Services", href: "/#services" },
   { label: "About Us", href: "/about" },
 ];
 
