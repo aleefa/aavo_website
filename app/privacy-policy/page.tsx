@@ -312,7 +312,7 @@ export default function PrivacyPolicy() {
           >
             <SectionHeader num="01" iconKey="about" title="About Aavoride" />
             <div>
-              <p className="lg:text-lg text-sm leading-6 text-gray-500 lg:leading-7">
+              <p className="text-[#444748] text-base md:text-[15px] leading-relaxed">
                 Aavoride provides a modern transportation platform connecting
                 users with reliable drivers. This policy describes how we
                 collect, use, and protect your information across our mobile app
@@ -396,7 +396,7 @@ export default function PrivacyPolicy() {
                         />
                       </svg>
                     </span>
-                    <span className="text-[13px] text-[#111827] leading-relaxed">
+                    <span className="text-[#444748] text-base md:text-[15px] leading-relaxed">
                       {item}
                     </span>
                   </div>
@@ -427,7 +427,7 @@ export default function PrivacyPolicy() {
                   </svg>
                 </div>
                 <NumBadge n="04" />
-                <h3 className="text-lg md:text-xl font-bold m-0">
+                <h3 className="text-2xl font-bold text-gray-900 leading-9 tracking-tight m-0">
                   Our Commitment: What We Do NOT Do
                 </h3>
               </div>
@@ -450,7 +450,7 @@ export default function PrivacyPolicy() {
                   <p className="font-bold md:text-sm text-lg mb-2">
                     No Selling Data
                   </p>
-                  <p className="md:text-[13px] text-base text-gray-500 leading-relaxed">
+                  <p className="text-[#444748] text-base md:text-[15px] leading-relaxed">
                     We do not sell your personal data to third parties for their
                     marketing purposes.
                   </p>
@@ -472,7 +472,7 @@ export default function PrivacyPolicy() {
                     </svg>
                   </div>
                   <p className="font-bold text-sm mb-2">Private Contacts</p>
-                  <p className="text-[13px] text-gray-500 leading-relaxed">
+                  <p className="text-[#444748] text-base md:text-[15px] leading-relaxed">
                     We do not share your private contact information with other
                     users except as necessary for the service.
                   </p>
@@ -487,19 +487,19 @@ export default function PrivacyPolicy() {
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="p-8">
-                <h3 className="flex items-center gap-2.5 text-lg font-bold mb-3">
+                <h3 className="flex items-center gap-2.5 text-2xl font-bold text-gray-900 leading-9 tracking-tight mb-3">
                   <NumBadge n="05" /> Data Security
                 </h3>
-                <p className="text-sm text-gray-500 leading-relaxed">
+                <p className="text-[#444748] text-base md:text-[15px] leading-relaxed">
                   We use industry-standard encryption and secure servers to
                   protect your data from unauthorized access or disclosure.
                 </p>
               </div>
               <div className="p-8">
-                <h3 className="flex items-center gap-2.5 text-lg font-bold mb-3">
+                <h3 className="flex items-center gap-2.5 text-2xl font-bold text-gray-900 leading-9 tracking-tight mb-3">
                   <NumBadge n="06" /> Data Retention
                 </h3>
-                <p className="text-sm text-gray-500 leading-relaxed">
+                <p className="text-[#444748] text-base md:text-[15px] leading-relaxed">
                   We retain data as long as your account is active or as needed
                   to provide services and comply with legal obligations.
                 </p>
@@ -518,7 +518,7 @@ export default function PrivacyPolicy() {
                 title="User Rights"
               />
               <div>
-                <p className="text-sm text-gray-500 leading-relaxed mb-5">
+                <p className="text-[#444748] text-base md:text-[15px] leading-relaxed mb-5">
                   You have the right to access, correct, or delete your personal
                   information. You may also object to processing or request data
                   portability through your account settings or by contacting us.
@@ -656,10 +656,10 @@ export default function PrivacyPolicy() {
                 },
               ].map((item) => (
                 <div key={item.title} className="p-8">
-                  <h4 className="flex items-center gap-2 text-sm font-bold mb-2 text-black">
+                  <h4 className="flex items-center gap-2 text-2xl font-bold text-gray-900 leading-9 tracking-tight mb-2">
                     <NumBadge n={item.num} />  {item.title}
                   </h4>
-                  <p className="text-[13px] text-gray-500 leading-relaxed">
+                  <p className="text-[#444748] text-base md:text-[15px] leading-relaxed">
                     {item.desc}
                   </p>
                 </div>
@@ -667,7 +667,7 @@ export default function PrivacyPolicy() {
             </div>
 
             <div className="border border-[#FFD5CC] rounded-2xl lg:p-12 p-6 flex gap-4 items-start">
-              <div className="w-11 h-11 bg-[#FF3E1D] rounded-xl max-sm:hidden flex items-center justify-center text-xl shrink-0">
+              {/* <div className="w-11 h-11 bg-[#FF3E1D] rounded-xl max-sm:hidden flex items-center justify-center text-xl shrink-0">
                 <svg
                   width="18"
                   height="18"
@@ -680,12 +680,12 @@ export default function PrivacyPolicy() {
                     fill="white"
                   />
                 </svg>
-              </div>
+              </div> */}
               <div>
-                <h3 className="flex items-center gap-2.5 md:text-lg text-2xl font-bold mb-2">
+                <h3 className="flex items-center gap-2.5 text-2xl font-bold text-gray-900 leading-9 tracking-tight mb-2">
                   <NumBadge n="12" /> Policy Updates
                 </h3>
-                <p className="text-sm text-gray-500 leading-relaxed">
+                <p className="text-[#444748] text-base md:text-[15px] leading-relaxed">
                   We may update this policy periodically. We will notify you of
                   any significant changes via the app or email. Continued use of
                   the service constitutes acceptance of the revised policy.
@@ -762,7 +762,7 @@ export default function PrivacyPolicy() {
               ].map((item) => (
                 <div key={item.title} className="flex gap-3 items-start">
                   <span className="mt-1.5 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-orange-500"></span>
-                  <p className="text-[13px] text-gray-600 leading-relaxed">
+                  <p className="text-[#444748] text-base md:text-[15px] leading-relaxed">
                     <span className="font-bold text-gray-800">
                       {item.title}
                     </span>{" "}
@@ -802,7 +802,7 @@ function SectionHeader({ num, iconKey, title }: { num: string; iconKey: string; 
           <span className="w-8 h-8 bg-[#FF3E1D] text-white rounded-full flex items-center justify-center text-[15px] font-black shrink-0">
             {num}
           </span>
-          <h2 className="text-[32px] md:text-3xl font-bold text-gray-900 md:leading-tight leading-8 tracking-tight">
+          <h2 className="text-2xl font-bold text-gray-900 leading-9 tracking-tight">
             {title}
           </h2>
         </div>
