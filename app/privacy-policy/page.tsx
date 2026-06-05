@@ -407,11 +407,6 @@ export default function PrivacyPolicy() {
             </div>
           </section>
           <section id="our-commitment" className="md:px-12 scroll-reveal">
-            <SectionHeader
-              num="04"
-              iconKey="our-commitment"
-              title="Our Commitment: What We Do NOT Do"
-            />
             <div className="bg-[#FFF5F0] border border-[#FFD5CC] rounded-2xl lg:p-12 md:p-6 max-md:pt-10 max-md:pb-14 px-4 ">
               <div className="flex items-center gap-3 mb-10">
                 <div className="w-12 h-12 bg-[#FF3E1D] rounded-xl flex items-center justify-center shrink-0">
@@ -431,6 +426,7 @@ export default function PrivacyPolicy() {
                     />
                   </svg>
                 </div>
+                <NumBadge n="04" />
                 <h3 className="text-lg md:text-xl font-bold m-0">
                   Our Commitment: What We Do NOT Do
                 </h3>
