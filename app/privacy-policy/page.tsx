@@ -255,33 +255,6 @@ export default function PrivacyPolicy() {
         </div>
       </div>
 
-      <div className="md:hidden sticky border-b border-gray-300 pb-2 top-0 z-10 bg-white overflow-x-auto flex scrollbar-hide">
-        {NAV_ITEMS.map(({ id, label }) => (
-          <button
-            key={id}
-            onClick={() => scrollTo(id)}
-            style={{
-              background: "none",
-              border: "none",
-              borderBottom:
-                mobileTabActive === id
-                  ? "2px solid #FF3E1D"
-                  : "2px solid transparent",
-              color: mobileTabActive === id ? "#5F5E5E" : "#9ca3af",
-              fontWeight: mobileTabActive === id ? "600" : "500",
-              fontSize: "12px",
-              whiteSpace: "nowrap",
-              flexShrink: 0,
-              padding: "12px 16px",
-              cursor: "pointer",
-              transition: "all 0.2s",
-            }}
-          >
-            {label}
-          </button>
-        ))}
-      </div>
-
       <div className="max-w-280 mx-auto px-5 pt-17.75 pb-12 md:pb-28 flex flex-col lg:flex-row lg:gap-13 gap-8 items-start">
         <aside className="hidden md:flex lg:flex-col flex-row overflow-x-auto scrollbar-hide lg:overflow-x-visible w-full lg:w-55 shrink-0 lg:sticky lg:top-6 gap-2.5 pb-4 lg:pb-0 border-b border-gray-100 lg:border-none mb-6 lg:mb-0">
           <p className="text-sm font-bold tracking-[1px] text-[#1A1C1D] mb-4 hidden lg:block">
