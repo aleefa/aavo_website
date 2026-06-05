@@ -460,7 +460,7 @@ export default function PrivacyPolicy() {
             className="scroll-mt-6 lg:p-8 md:p-6 scroll-reveal"
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="p-8">
+              <div className="scroll-mt-6 lg:px-2 lg:py-8 md:px-1 md:py-6 scroll-reveal">
                 <h3 className="flex items-center gap-2.5 text-2xl font-bold text-gray-900 leading-9 tracking-tight mb-3">
                   <NumBadge n="05" /> Data Security
                 </h3>
@@ -469,7 +469,7 @@ export default function PrivacyPolicy() {
                   protect your data from unauthorized access or disclosure.
                 </p>
               </div>
-              <div className="p-8">
+              <div className="scroll-mt-6 lg:px-2 lg:py-8 md:px-1 md:py-6 scroll-reveal">
                 <h3 className="flex items-center gap-2.5 text-2xl font-bold text-gray-900 leading-9 tracking-tight mb-3">
                   <NumBadge n="06" /> Data Retention
                 </h3>
@@ -523,7 +523,7 @@ export default function PrivacyPolicy() {
 
           <section
             id="location-data"
-            className="scroll-mt-6 lg:p-8 md:p-6 scroll-reveal"
+            className="scroll-mt-6 lg:px-2 lg:py-8 md:px-1 md:py-6 scroll-reveal"
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
@@ -552,7 +552,7 @@ export default function PrivacyPolicy() {
                   desc: "Our platform may contain links to external sites. We are not responsible for the privacy practices of those third parties.",
                 },
               ].map((item) => (
-                <div key={item.title} className="p-8">
+                <div key={item.title} className="md:p-8 py-2">
                   <h3 className="flex items-center gap-2.5 text-2xl font-bold text-gray-900 leading-9 tracking-tight mb-3">
                     <NumBadge n={item.num} /> {item.title}
                   </h3>
