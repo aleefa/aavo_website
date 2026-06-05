@@ -382,7 +382,7 @@ export default function PrivacyPolicy() {
           <section id="our-commitment" className="lg:p-16 md:p-8 scroll-reveal">
             <div className="bg-[#FFF5F0] border border-[#FFD5CC] rounded-2xl lg:p-12 md:p-6 max-md:pt-10 max-md:pb-14 px-4 ">
               <div className="flex items-center gap-3 mb-10">
-                <div className="w-12 h-12 bg-[#FF3E1D] rounded-xl flex items-center justify-center shrink-0">
+                {/* <div className="w-12 h-12 bg-[#FF3E1D] rounded-xl flex items-center justify-center shrink-0">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <path
                       d="M10 2L3 5V10C3 13.5 6.5 16.5 10 18C13.5 16.5 17 13.5 17 10V5L10 2Z"
@@ -398,7 +398,7 @@ export default function PrivacyPolicy() {
                       strokeLinejoin="round"
                     />
                   </svg>
-                </div>
+                </div> */}
                 <NumBadge n="04" />
                 <h3 className="text-2xl font-bold text-gray-900 leading-9 tracking-tight m-0">
                   Our Commitment: What We Do NOT Do
@@ -549,7 +549,7 @@ export default function PrivacyPolicy() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:gap-8 gap-5 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:gap-8 gap-5 mb-6">
               {[
                 {
                   // emoji: (
