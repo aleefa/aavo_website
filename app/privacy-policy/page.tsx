@@ -568,7 +568,7 @@ export default function PrivacyPolicy() {
             id="policy-updates"
             className="scroll-mt-6 lg:p-8 md:p-6 scroll-reveal"
           >
-            <div className="border border-[#FFD5CC] rounded-2xl lg:p-12 p-6 flex gap-4 items-start">
+            {/* <div className="border border-[#FFD5CC] rounded-2xl lg:p-12 p-6 flex gap-4 items-start"> */}
              
               <div>
                 <h3 className="flex items-center gap-2.5 text-2xl font-bold text-gray-900 leading-9 tracking-tight mb-2">
@@ -580,7 +580,7 @@ export default function PrivacyPolicy() {
                   the service constitutes acceptance of the revised policy.
                 </p>
               </div>
-            </div>
+            {/* </div> */}
           </section>
 
           <section
