@@ -281,7 +281,7 @@ export default function PrivacyPolicy() {
         <main className="flex-1 flex flex-col min-w-0 lg:gap-12 md:gap-8  gap-[72px]">
           <section
             id="about"
-            className="scroll-mt-6 lg:p-12 md:p-6 scroll-reveal"
+            className="scroll-mt-6 lg:p-16 md:p-8 scroll-reveal"
           >
             <SectionHeader num="01" iconKey="about" title="About Aavoride" />
             <div>
@@ -296,7 +296,7 @@ export default function PrivacyPolicy() {
 
           <section
             id="info-collect"
-            className="scroll-mt-6 lg:p-12 md:p-6 scroll-reveal"
+            className="scroll-mt-6 lg:p-16 md:p-8 scroll-reveal"
           >
             <SectionHeader
               num="02"
@@ -335,7 +335,7 @@ export default function PrivacyPolicy() {
           {/* Fix 1: how-we-use section - all 5 items same card style */}
           <section
             id="how-we-use"
-            className="scroll-mt-6 lg:px-12 md:px-8 md:pt-12 scroll-reveal"
+            className="scroll-mt-6 lg:p-16 md:p-8 scroll-reveal"
           >
             <SectionHeader
               num="03"
@@ -379,7 +379,7 @@ export default function PrivacyPolicy() {
               {/* Fix 3: Our Commitment with SVG icons */}
             </div>
           </section>
-          <section id="our-commitment" className="md:px-12 scroll-reveal">
+          <section id="our-commitment" className="lg:p-16 md:p-8 scroll-reveal">
             <div className="bg-[#FFF5F0] border border-[#FFD5CC] rounded-2xl lg:p-12 md:p-6 max-md:pt-10 max-md:pb-14 px-4 ">
               <div className="flex items-center gap-3 mb-10">
                 <div className="w-12 h-12 bg-[#FF3E1D] rounded-xl flex items-center justify-center shrink-0">
@@ -456,7 +456,7 @@ export default function PrivacyPolicy() {
 
           <section
             id="data-values"
-            className="scroll-mt-6 md:px-8 scroll-reveal"
+            className="scroll-mt-6 lg:p-16 md:p-8 scroll-reveal"
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="p-8">
@@ -482,7 +482,7 @@ export default function PrivacyPolicy() {
 
           <section
             id="security"
-            className="scroll-mt-6 md:px-8 scroll-reveal"
+            className="scroll-mt-6 lg:p-16 md:p-8 scroll-reveal"
           >
             <div className="">
               <SectionHeader
@@ -549,7 +549,7 @@ export default function PrivacyPolicy() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:gap-8 gap-5 mb-8 pt-12 ">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:gap-8 gap-5 mb-8">
               {[
                 {
                   // emoji: (
@@ -669,7 +669,7 @@ export default function PrivacyPolicy() {
 
           <section
             id="info-sharing"
-            className="scroll-mt-6 lg:px-24  md:px-12 md:pt-12 scroll-reveal"
+            className="scroll-mt-6 lg:p-16 md:p-8 scroll-reveal"
           >
             <SectionHeader
               num="13"
