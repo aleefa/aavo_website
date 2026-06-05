@@ -182,7 +182,7 @@ export const Hero = () => {
                 priority
                 className="relative md:hidden z-10 w-full h-auto object-contain"
               />
-              <div className="top-4 left-0 absolute z-10 hidden md:block">
+              <div className="top-4 left-0 absolute z-10 md:block hidden">
                 <Image
                   src="/car-icon.png"
                   height={80}
@@ -197,7 +197,7 @@ export const Hero = () => {
                   alt="arrow"
                 />
               </div>
-              <div className="top-0 right-6 absolute z-10 hidden md:block">
+              <div className="top-0 right-6 absolute z-10 md:block hidden">
                 <Image
                   src="/location-icon.png"
                   height={80}
@@ -217,6 +217,8 @@ export const Hero = () => {
               <motion.div
                 initial={{ opacity: 0, scale: 0.9, y: 10 }}
                 animate={{ opacity: 1, scale: 1, y: [0, -8, 0] }}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
                 transition={{
                   y: {
                     repeat: Infinity,
@@ -227,7 +229,7 @@ export const Hero = () => {
                   opacity: { duration: 0.5, delay: 0.4 },
                   scale: { duration: 0.5, delay: 0.4 },
                 }}
-                className="hidden sm:flex absolute top-[10%] left-1/2 z-20 bg-white/70 backdrop-blur-lg shadow-lg border border-white/30 rounded-full p-4 items-center gap-3 hover:scale-105 transition-all duration-300"
+                className="flex absolute top-[10%] left-1/2 -translate-x-1/2 sm:translate-x-0 sm:left-1/2 z-20 bg-white/70 backdrop-blur-lg shadow-lg border border-white/30 rounded-full p-3 sm:p-4 items-center gap-2 sm:gap-3 transition-all duration-300"
               >
                 <div className="bg-green-50 text-green-600 p-2.5 rounded-full shrink-0">
                   <Wallet className="w-5 h-5" />
@@ -246,6 +248,8 @@ export const Hero = () => {
               <motion.div
                 initial={{ opacity: 0, scale: 0.9, y: 10 }}
                 animate={{ opacity: 1, scale: 1, y: [0, -10, 0] }}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
                 transition={{
                   y: {
                     repeat: Infinity,
@@ -256,7 +260,7 @@ export const Hero = () => {
                   opacity: { duration: 0.5, delay: 0.6 },
                   scale: { duration: 0.5, delay: 0.6 },
                 }}
-                className="hidden sm:flex absolute bottom-[10%] left-[2%] z-20 bg-white/70 backdrop-blur-lg shadow-lg border border-white/30 rounded-full p-4 items-center gap-3 hover:scale-105 transition-all duration-300"
+                className="flex absolute bottom-[10%] left-[2%] sm:left-[2%] z-20 bg-white/70 backdrop-blur-lg shadow-lg border border-white/30 rounded-full p-3 sm:p-4 items-center gap-2 sm:gap-3 transition-all duration-300"
               >
                 <div className="bg-blue-50 text-blue-600 p-2.5 rounded-full shrink-0">
                   <Headphones className="w-5 h-5" />
@@ -275,6 +279,8 @@ export const Hero = () => {
               <motion.div
                 initial={{ opacity: 0, scale: 0.9, y: 10 }}
                 animate={{ opacity: 1, scale: 1, y: [0, -12, 0] }}
+                // whileHover={{ scale: 1.1 }}
+                // whileTap={{ scale: 0.95 }}
                 transition={{
                   y: {
                     repeat: Infinity,
@@ -285,7 +291,7 @@ export const Hero = () => {
                   opacity: { duration: 0.5, delay: 0.8 },
                   scale: { duration: 0.5, delay: 0.8 },
                 }}
-                className="hidden sm:flex absolute bottom-[16%] right-[-2%] z-20 bg-white/70 backdrop-blur-lg shadow-lg border border-white/30 rounded-full p-4 items-center gap-3 hover:scale-105 transition-all duration-300"
+                className="flex absolute bottom-[16%] right-[-2%] sm:right-[-2%] z-20 bg-white/70 backdrop-blur-lg shadow-lg border border-white/30 rounded-full p-3 sm:p-4 items-center gap-2 sm:gap-3 transition-all duration-300"
               >
                 <div className="bg-primary/10 text-primary p-2.5 rounded-full shrink-0">
                   <Users className="w-5 h-5" />
