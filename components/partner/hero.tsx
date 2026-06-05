@@ -291,13 +291,13 @@ export const Hero = () => {
                   opacity: { duration: 0.5, delay: 0.8 },
                   scale: { duration: 0.5, delay: 0.8 },
                 }}
-                className="flex absolute bottom-[20%] right-[4%] z-30 bg-white/70 backdrop-blur-lg shadow-lg border border-white/30 rounded-full p-2 md:p-4 items-center gap-1.5 md:gap-3 transition-all duration-300 lg:bottom-[16%] lg:right-[8%]"
+                className="flex absolute bottom-[20%] right-[4%] z-30 bg-white/70 backdrop-blur-lg shadow-lg border border-white/30 rounded-full p-2 md:p-4 items-center gap-1.5 md:gap-3 transition-all duration-300 lg:bottom-[16%] lg:right-[-2%]"
               >
                 <div className="bg-primary/10 text-primary p-1.5 md:p-2.5 rounded-full shrink-0">
-                  <Users className="w-3.5 h-3.5 md:w-4 md:h-4" />
+                  <Users className="w-3.5 h-3.5 md:w-5 md:h-5" />
                 </div>
                 <div className="flex flex-col text-left">
-                  <span className="text-[8px] md:text-[6px] font-medium text-neutral-400 uppercase tracking-widest leading-none">
+                  <span className="text-[8px] md:text-[10px] font-medium text-neutral-400 uppercase tracking-widest leading-none">
                     Active Community
                   </span>
                   <span className="text-[10px] md:text-sm font-bold text-neutral-900 mt-0.5 md:mt-1.5 leading-none">
