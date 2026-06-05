@@ -444,7 +444,8 @@ export default function PrivacyPolicy() {
                       />{" "}
                     </svg>
                   </div>
-                  <p className="font-bold text-base mb-2">Private Contacts</p>
+                
+                  <p className="font-bold md:text-base text-lg mb-2">Private Contacts</p>
                   <p className="text-[#444748] text-base md:text-[15px] leading-relaxed">
                     We do not share your private contact information with other
                     users except as necessary for the service.
