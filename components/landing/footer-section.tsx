@@ -1,8 +1,9 @@
+"use client";
+
 import { BriefcaseBusiness, Camera, Mail, MapPin, Play, Send, Users } from "lucide-react";
+import { usePathname } from "next/navigation";
 import { SectionContainer } from "./shared";
 import { StatusPill } from "./status-pill";
-
-const quickLinks = ["Home", "Our Services", "Become a Partner", "Blog", "FAQ"];
 const legalLinks = [
   { label: "Privacy Policy", href: "/privacy-policy" },
   { label: "Terms of Service", href: "/terms-and-conditions" },
@@ -18,6 +19,24 @@ const socialLinks = [
 ];
 
 export function FooterSection() {
+  const pathname = usePathname();
+
+  const quickLinks = [
+    { label: "Home", href: "/" },
+    { label: "Our Services", href: "/#services" },
+    { label: "Become a Partner", href: "/about/partner" },
+    { label: "Blog", href: "#" },
+    {
+      label: "FAQ",
+      href:
+        pathname === "/"
+          ? "#faq"
+          : pathname === "/about/partner"
+          ? "/about/partner#faq"
+          : "/#faq",
+    },
+  ];
+
   return (
     <footer className="relative z-10 overflow-hidden border-t border-[rgba(255,62,29,0.12)] bg-[#FFF1EF] pt-10 md:pt-12">
       <div
@@ -65,9 +84,9 @@ export function FooterSection() {
             <div className="mt-5 flex flex-col gap-3">
               {quickLinks.map((link) => (
                 <a
-                  key={link}
+                  key={link.label}
                   className="group inline-flex items-center gap-1.5 text-[15px] text-[#5d5754] transition-colors duration-300 hover:text-[var(--primary)]"
-                  href="#"
+                  href={link.href}
                 >
                   <span
                     aria-hidden
@@ -76,7 +95,7 @@ export function FooterSection() {
                     –
                   </span>
                   <span className="transition-[font-weight,color] duration-300 group-hover:font-semibold">
-                    {link}
+                    {link.label}
                   </span>
                 </a>
               ))}

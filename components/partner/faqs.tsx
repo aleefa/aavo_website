@@ -49,7 +49,7 @@ const faqs = [
 
 export function Faqs() {
   return (
-    <section className="relative overflow-hidden py-20 md:py-24 -mt-8 md:-mt-16">
+    <section id="faq" className="relative overflow-hidden py-20 md:py-24 -mt-8 md:-mt-16">
       <AmbientGlow
         className="hidden lg:block lg:left-[-252px] lg:top-1/2 lg:-translate-y-1/2"
         style={{ width: "570px", height: "570px" }}

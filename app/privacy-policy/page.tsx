@@ -457,8 +457,7 @@ export default function PrivacyPolicy() {
 
           <section
             id="data-values"
-            className="            scroll-mt-6 lg:px-3 lg:py-8 md:px-2 md:py-6 scroll-reveal
-"
+            className="scroll-mt-6 lg:p-8 md:p-6 scroll-reveal"
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="p-8">
@@ -524,7 +523,7 @@ export default function PrivacyPolicy() {
 
           <section
             id="location-data"
-            className="scroll-mt-6 lg:px-3 lg:py-8 md:px-2 md:py-6 scroll-reveal"
+            className="scroll-mt-6 lg:p-8 md:p-6 scroll-reveal"
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
