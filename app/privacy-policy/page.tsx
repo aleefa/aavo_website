@@ -509,7 +509,7 @@ export default function PrivacyPolicy() {
 
           <section
             id="security"
-            className="scroll-mt-6 lg:lg:px-24  md:px-12 scroll-reveal"
+            className="scroll-mt-6 md:px-8 scroll-reveal"
           >
             <div className="">
               <SectionHeader
@@ -524,7 +524,7 @@ export default function PrivacyPolicy() {
                   portability through your account settings or by contacting us.
                 </p>
                 <div className="flex flex-wrap gap-3 mb-8 max-sm:justify-center max-sm:flex-col">
-                  <button className="flex items-center gap-2 max-sm:justify-center bg-gray-900 text-white rounded-full px-5 py-2.5 text-sm font-semibold border-none cursor-pointer hover-premium group">
+                  {/* <button className="flex items-center gap-2 max-sm:justify-center bg-gray-900 text-white rounded-full px-5 py-2.5 text-sm font-semibold border-none cursor-pointer hover-premium group">
                     <svg
                       width="13"
                       height="13"
@@ -539,8 +539,8 @@ export default function PrivacyPolicy() {
                       />
                     </svg>
                     Access Info
-                  </button>
-                  <button onClick={handleDeleteAccountClick} className="flex items-center gap-2 max-sm:justify-center bg-white text-gray-700 rounded-full px-5 py-2.5 text-sm font-semibold border border-gray-200 cursor-pointer hover-secondary group">
+                  </button> */}
+                  <button onClick={handleDeleteAccountClick} className="flex items-center gap-2 max-sm:justify-center bg-gray-900 text-white rounded-full px-5 py-2.5 text-sm font-semibold border border-gray-200 cursor-pointer hover-secondary group">
                     <svg
                       width="10"
                       height="11"
@@ -551,12 +551,12 @@ export default function PrivacyPolicy() {
                     >
                       <path
                         d="M1.75 10.5C1.42917 10.5 1.15451 10.3858 0.926042 10.1573C0.697569 9.92882 0.583333 9.65417 0.583333 9.33333V1.75H0V0.583333H2.91667V0H6.41667V0.583333H9.33333V1.75H8.75V9.33333C8.75 9.65417 8.63576 9.92882 8.40729 10.1573C8.17882 10.3858 7.90417 10.5 7.58333 10.5H1.75ZM7.58333 1.75H1.75V9.33333H7.58333V1.75ZM2.91667 8.16667H4.08333V2.91667H2.91667V8.16667ZM5.25 8.16667H6.41667V2.91667H5.25V8.16667ZM1.75 1.75V9.33333V1.75Z"
-                        fill="#111827"
+                        fill="currentColor"
                       />
                     </svg>
                     Delete Account
                   </button>
-                  <button className="flex items-center gap-2 max-sm:justify-center bg-white text-gray-700 rounded-full px-5 py-2.5 text-sm font-semibold border border-gray-200 cursor-pointer hover-secondary group">
+                  {/* <button className="flex items-center gap-2 max-sm:justify-center bg-white text-gray-700 rounded-full px-5 py-2.5 text-sm font-semibold border border-gray-200 cursor-pointer hover-secondary group">
                     <svg
                       width="11"
                       height="11"
@@ -571,7 +571,7 @@ export default function PrivacyPolicy() {
                       />
                     </svg>
                     Opt-out
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
