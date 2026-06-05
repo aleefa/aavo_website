@@ -80,8 +80,8 @@ export const Hero = () => {
       <div className="absolute top-0 right-0 w-[450px] h-[450px] bg-primary/5 rounded-full blur-[120px] pointer-events-none -z-10" />
 
       {/* Main Content Grid */}
-      <div className="max-w-7xl mx-auto px-4 w-full pt-16">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+      <div className="max-w-7xl mx-auto px-4 w-full pt-12 md:pt-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8 items-center">
           {/* Left Column: Hero Content */}
           <motion.div
             variants={containerVariants}
@@ -92,7 +92,7 @@ export const Hero = () => {
             {/* Badge */}
             <motion.span
               variants={itemVariants}
-              className="inline-flex items-center gap-2 bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest rounded-full px-4 py-2 leading-none w-fit"
+              className="inline-flex items-center gap-2 bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest rounded-full px-3 py-1.5 md:px-4 md:py-2 leading-none w-fit"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-primary" />
               Trusted Mobility Partner Platform
@@ -111,7 +111,7 @@ export const Hero = () => {
             {/* Heading for Mobile */}
             <motion.h1
               variants={itemVariants}
-              className="text-4xl font-extrabold lg:hidden mt-6 mb-4 tracking-tight"
+              className="text-3xl md:text-4xl font-extrabold lg:hidden mt-4 md:mt-6 mb-3 md:mb-4 tracking-tight"
             >
               <span className="text-primary">Drive.Earn</span> <br /> Be Your
               Own Boss
@@ -120,7 +120,7 @@ export const Hero = () => {
             {/* Subtitle */}
             <motion.h3
               variants={itemVariants}
-              className="text-base lg:text-2xl font-bold text-neutral-800 mb-6 font-sans whitespace-nowrap lg:whitespace-normal"
+              className="text-sm md:text-base lg:text-2xl font-bold text-neutral-800 mb-4 md:mb-6 font-sans whitespace-nowrap lg:whitespace-normal"
             >
               Driver, Agency & Car Owner Earning App
             </motion.h3>
@@ -137,7 +137,7 @@ export const Hero = () => {
             {/* Paragraph Description for Mobile */}
             <motion.p
               variants={itemVariants}
-              className="text-neutral-500 text-base md:text-lg leading-relaxed max-w-xl mb-8 lg:hidden"
+              className="text-neutral-500 text-sm md:text-base leading-relaxed max-w-xl mb-6 md:mb-8 lg:hidden"
             >
               One platform for Drivers, Agencies & Car Owners earn more with
               flexible work, fleet management, and passive income opportunities
@@ -152,7 +152,7 @@ export const Hero = () => {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="h-14 px-9 bg-primary hover:bg-primary/95 text-white font-bold rounded-full transition-all duration-200 text-base inline-flex items-center justify-center shadow-lg shadow-primary/15 cursor-pointer relative z-30 w-fit"
+              className="h-12 md:h-14 px-6 md:px-9 bg-primary hover:bg-primary/95 text-white font-bold rounded-full transition-all duration-200 text-sm md:text-base inline-flex items-center justify-center shadow-lg shadow-primary/15 cursor-pointer relative z-30 w-fit"
             >
               Start Earning Today
             </motion.a>
@@ -164,7 +164,7 @@ export const Hero = () => {
               variants={imageVariants}
               initial="hidden"
               animate="visible"
-              className="relative w-full flex justify-center lg:justify-end items-center"
+              className="relative w-full flex justify-center lg:justify-end items-center min-h-[350px] md:min-h-0"
             >
               <Image
                 src="/hero.png"
@@ -180,7 +180,7 @@ export const Hero = () => {
                 width={720}
                 height={600}
                 priority
-                className="relative md:hidden z-10 w-full h-auto object-contain"
+                className="relative md:hidden z-10 w-full max-w-[400px] h-auto object-contain"
               />
               <div className="top-4 left-0 absolute z-10 md:block hidden">
                 <Image
@@ -229,7 +229,7 @@ export const Hero = () => {
                   opacity: { duration: 0.5, delay: 0.4 },
                   scale: { duration: 0.5, delay: 0.4 },
                 }}
-                className="flex absolute top-[10%] left-1/2 -translate-x-1/2 sm:translate-x-0 sm:left-1/2 z-20 bg-white/70 backdrop-blur-lg shadow-lg border border-white/30 rounded-full p-3 sm:p-4 items-center gap-2 sm:gap-3 transition-all duration-300"
+                className="hidden lg:flex absolute top-[10%] left-1/2 -translate-x-1/2 z-30 bg-white/70 backdrop-blur-lg shadow-lg border border-white/30 rounded-full p-4 items-center gap-3 transition-all duration-300"
               >
                 <div className="bg-green-50 text-green-600 p-2.5 rounded-full shrink-0">
                   <Wallet className="w-5 h-5" />
@@ -260,7 +260,7 @@ export const Hero = () => {
                   opacity: { duration: 0.5, delay: 0.6 },
                   scale: { duration: 0.5, delay: 0.6 },
                 }}
-                className="flex absolute bottom-[10%] left-[2%] sm:left-[2%] z-20 bg-white/70 backdrop-blur-lg shadow-lg border border-white/30 rounded-full p-3 sm:p-4 items-center gap-2 sm:gap-3 transition-all duration-300"
+                className="hidden lg:flex absolute bottom-[10%] left-[2%] z-30 bg-white/70 backdrop-blur-lg shadow-lg border border-white/30 rounded-full p-4 items-center gap-3 transition-all duration-300"
               >
                 <div className="bg-blue-50 text-blue-600 p-2.5 rounded-full shrink-0">
                   <Headphones className="w-5 h-5" />
@@ -291,7 +291,7 @@ export const Hero = () => {
                   opacity: { duration: 0.5, delay: 0.8 },
                   scale: { duration: 0.5, delay: 0.8 },
                 }}
-                className="flex absolute bottom-[16%] right-[-2%] sm:right-[-2%] z-20 bg-white/70 backdrop-blur-lg shadow-lg border border-white/30 rounded-full p-3 sm:p-4 items-center gap-2 sm:gap-3 transition-all duration-300"
+                className="hidden lg:flex absolute bottom-[16%] right-[-2%] z-30 bg-white/70 backdrop-blur-lg shadow-lg border border-white/30 rounded-full p-4 items-center gap-3 transition-all duration-300"
               >
                 <div className="bg-primary/10 text-primary p-2.5 rounded-full shrink-0">
                   <Users className="w-5 h-5" />
@@ -316,14 +316,14 @@ export const Hero = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.7, ease: "easeOut" as const }}
-        className="lg:-mt-28 isolate z-10"
+        className="lg:-mt-28 isolate z-10 mt-8 md:mt-12"
       >
         <Image
           src={partnerImage}
           alt="Partner Image"
           width={500}
           height={500}
-          className="mx-auto"
+          className="mx-auto max-w-[300px] md:max-w-none"
         />
       </motion.div>
 
@@ -333,7 +333,7 @@ export const Hero = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="w-full bg-[#FFF5F3] md:py-8 py-12 min-h-38 border-t border-b border-primary/5 flex items-center justify-center"
+        className="w-full bg-[#FFF5F3] md:py-8 py-10 min-h-38 border-t border-b border-primary/5 flex items-center justify-center"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
