@@ -199,7 +199,7 @@ export default function AccountDeletion() {
     <div className="min-h-screen bg-[#F9FAFB]">
       <div className="bg-gradient-to-b from-[#FF3E1D] to-[#EC7F6C]">
         <div className="text-center px-6 pt-12 sm:pb-11 pb-8 max-w-[700px] mx-auto">
-          <h1 className="text-white text-3xl leading-16 md:text-[56px] font-extrabold mb-6 sm:leading-tight tracking-tight flex justify-center flex-wrap">
+          <h1 className="text-white text-3xl leading-10 md:text-[56px] font-extrabold mb-6 sm:leading-tight tracking-tight flex justify-center flex-wrap">
             {title.split("|").map((part, partIndex) => (
               <span key={partIndex} className="flex justify-center flex-wrap">
                 <span className="hidden md:flex">
@@ -220,7 +220,7 @@ export default function AccountDeletion() {
                 <span className="md:hidden animate-fade-in-up" style={{ animationDelay: "800ms", opacity: 0, animationFillMode: "forwards" }}>
                   {part}
                 </span>
-                {partIndex < title.split("|").length - 1 && <br />}
+                {partIndex < title.split("|").length - 1 && <br className="md:hidden" />}
               </span>
             ))}
           </h1>
