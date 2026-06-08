@@ -57,10 +57,10 @@ export const HeroSection: React.FC = () => {
 Our platform connects travellers with verified drivers and travel agencies through a single request, allowing them to receive multiple quotations, compare options, and choose the service that best fits their needs and budget.
 Whether it's an outstation trip, airport transfer, car rental, tempo traveller, or corporate travel requirement, AAVORide makes finding the right transportation partner easier than ever.
 We are committed to creating a trusted mobility marketplace that benefits both travellers and transport service providers through technology, transparency, and convenience.
- 
+ text-sm md:text-lg text-muted-gray leading-7 font-normal
         </motion.p> */}
         <motion.p
-  className="mt-6 text-base text-muted-gray leading-7 tracking-normal font-normal"
+  className="mt-6 text-sm md:text-lg text-muted-gray leading-7 tracking-normal font-normal"
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.6, ease: "easeOut", delay: 0.42 }}

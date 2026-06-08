@@ -51,7 +51,7 @@ export const MissionSection: React.FC = () => {
   ];
 
   return (
-    <section ref={ref} className="relative w-full pt-16 md:pt-0 pb-0 md:pb-4 bg-white overflow-hidden">
+    <section ref={ref} className="relative w-full pt-24 md:pt-24 pb-16 md:pb-24 bg-white overflow-hidden">
       {/* Shapeless light orange background glow */}
       <AmbientGlow
         className="hidden md:block md:right-[-252px] md:top-1/2 md:-translate-y-1/2"
