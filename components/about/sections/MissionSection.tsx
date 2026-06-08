@@ -73,7 +73,9 @@ export const MissionSection: React.FC = () => {
   animate={inView ? { opacity: 1, x: 0, rotate: 0 } : {}}
   transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
 >
-  <div className="relative w-full max-w-md sm:max-w-lg md:max-w-xl">
+  {/* <div className="relative w-full max-w-md sm:max-w-lg md:max-w-xl"> */}
+  {/* <div className="relative w-full max-w-xl sm:max-w-2xl md:max-w-full"> */}
+  <div className="relative w-full motion-phone-primary">
     <Image
       src="/assets/images/mission-combined1.png"
       alt="AAVORide App"
