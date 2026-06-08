@@ -52,7 +52,7 @@ export function HeroSection() {
             </p>
 
             {/* <div className="mt-8 flex flex-wrap items-center justify-center gap-4 sm:gap-6 md:gap-8"> */}
-            <div className="mt-8 grid grid-cols-3 items-center justify-items-center gap-4 sm:gap-6 md:flex md:flex-wrap md:justify-center md:gap-8">
+            {/* <div className="mt-8 grid grid-cols-3 items-center justify-items-center gap-4 sm:gap-6 md:flex md:flex-wrap md:justify-center md:gap-8">
               <div className="flex flex-col items-center gap-2">
                 <Image src="/home1.png" alt="Multiple Quotes" width={48} height={48} className="h-10 w-10 sm:h-12 sm:w-12" />
                 <p className="text-center text-[11px] font-medium leading-tight text-[#38312d] sm:text-[12px]">
@@ -83,7 +83,43 @@ export function HeroSection() {
                   Direct<br />Communication
                 </p>
               </div>
-            </div>
+            </div> */}
+            <div className="mt-8 flex flex-col items-center gap-4 md:flex-row md:flex-wrap md:justify-center md:gap-8">
+  <div className="flex justify-center gap-4 md:contents">
+    <div className="flex flex-col items-center gap-2">
+      <Image src="/home1.png" alt="Multiple Quotes" width={48} height={48} className="h-10 w-10 sm:h-12 sm:w-12" />
+      <p className="text-center text-[11px] font-medium leading-tight text-[#38312d] sm:text-[12px]">
+        Multiple Quotes<br />Best Prices
+      </p>
+    </div>
+    <div className="flex flex-col items-center gap-2">
+      <Image src="/home2.png" alt="Verified Drivers" width={48} height={48} className="h-10 w-10 sm:h-12 sm:w-12" />
+      <p className="text-center text-[11px] font-medium leading-tight text-[#38312d] sm:text-[12px]">
+        Verified Drivers<br />& Agencies
+      </p>
+    </div>
+    <div className="flex flex-col items-center gap-2">
+      <Image src="/home3.png" alt="Free Cancellation" width={48} height={48} className="h-10 w-10 sm:h-12 sm:w-12" />
+      <p className="text-center text-[11px] font-medium leading-tight text-[#38312d] sm:text-[12px]">
+        Free<br />Cancellation
+      </p>
+    </div>
+  </div>
+  <div className="flex justify-center gap-4 md:contents">
+    <div className="flex flex-col items-center gap-2">
+      <Image src="/home4.png" alt="Zero Commission" width={48} height={48} className="h-10 w-10 sm:h-12 sm:w-12" />
+      <p className="text-center text-[11px] font-medium leading-tight text-[#38312d] sm:text-[12px]">
+        Zero<br />Commission
+      </p>
+    </div>
+    <div className="flex flex-col items-center gap-2">
+      <Image src="/home6.png" alt="Direct Communication" width={48} height={48} className="h-10 w-10 sm:h-12 sm:w-12" />
+      <p className="text-center text-[11px] font-medium leading-tight text-[#38312d] sm:text-[12px]">
+        Direct<br />Communication
+      </p>
+    </div>
+  </div>
+</div>
 
             <div className="mt-9 flex flex-col items-stretch gap-3 sm:mt-10 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
               <Link href="https://play.google.com/store/apps/details?id=com.aavoridepartner" target="_blank" rel="noopener noreferrer">
