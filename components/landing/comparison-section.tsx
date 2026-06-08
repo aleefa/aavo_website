@@ -153,10 +153,9 @@ export function ComparisonSection() {
         </div> */}
 
         <SectionHeading
-            className="mt-8"
+            className="mt-8 max-w-none"
             centered={true}
-  titleClassName="text-center whitespace-nowrap"
-
+            titleClassName="text-center whitespace-nowrap"
             description="Get quotations from multiple drivers and travel agencies with a single request and choose the best deal."
             title={
               <>
