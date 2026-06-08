@@ -202,19 +202,24 @@ export default function AccountDeletion() {
           <h1 className="text-white text-3xl leading-16 md:text-[56px] font-extrabold mb-6 sm:leading-tight tracking-tight flex justify-center flex-wrap">
             {title.split("|").map((part, partIndex) => (
               <span key={partIndex} className="flex justify-center flex-wrap">
-                {part.split("").map((char, charIndex) => (
-                  <span
-                    key={`${partIndex}-${charIndex}`}
-                    className="inline-block animate-fade-in-up"
-                    style={{
-                      animationDelay: `${(partIndex * part.length + charIndex) * 40 + 800}ms`,
-                      opacity: 0,
-                      animationFillMode: "forwards",
-                    }}
-                  >
-                    {char === " " ? "\u00A0" : char}
-                  </span>
-                ))}
+                <span className="hidden md:flex">
+                  {part.split("").map((char, charIndex) => (
+                    <span
+                      key={`${partIndex}-${charIndex}`}
+                      className="inline-block animate-fade-in-up"
+                      style={{
+                        animationDelay: `${(partIndex * part.length + charIndex) * 40 + 800}ms`,
+                        opacity: 0,
+                        animationFillMode: "forwards",
+                      }}
+                    >
+                      {char === " " ? "\u00A0" : char}
+                    </span>
+                  ))}
+                </span>
+                <span className="md:hidden animate-fade-in-up" style={{ animationDelay: "800ms", opacity: 0, animationFillMode: "forwards" }}>
+                  {part}
+                </span>
                 {partIndex < title.split("|").length - 1 && <br />}
               </span>
             ))}

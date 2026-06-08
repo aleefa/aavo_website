@@ -49,7 +49,7 @@ export const ServicesSection: React.FC = () => {
   ];
 
   return (
-    <section ref={ref} id="services" className="relative w-full py-16 md:py-24 bg-white overflow-hidden">
+    <section ref={ref} id="services" className="relative w-full py-8 md:py-12 bg-white overflow-hidden">
       <div className="md:w-142.5 w-78 h-78 md:h-142.5 bg-brand-primary md:bg-brand-primary/20 z-0 blur-[163px] absolute -left-70 md:left-auto md:-right-20 top-40 md:top-auto md:-bottom-20" />
 
       <div className="max-w-7xl relative z-10 mx-auto px-4 md:px-12">
