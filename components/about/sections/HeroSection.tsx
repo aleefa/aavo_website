@@ -53,7 +53,11 @@ export const HeroSection: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.42 }}
         >
-          Your Journey, Reimagined. At AAVO, we believe that every journey is more than just moving from one place to another, it's an experience that should be seamless, comfortable, and memorable. Whether you're traveling across the city or planning a long-distance trip, AAVO is designed to redefine how you move. We are your trusted partner for multi-vehicle travel and logistics, bringing together technology, convenience, and reliability into one powerful platform. With AAVO, finding the right ride for every need is no longer a challenge—it's effortless.
+          At AAVORide, we believe booking transportation should be simple, transparent, and hassle-free. Travelers often spend valuable time contacting multiple drivers and travel agencies to compare prices and find the right ride. We built AAVORide to solve that problem.
+Our platform connects travellers with verified drivers and travel agencies through a single request, allowing them to receive multiple quotations, compare options, and choose the service that best fits their needs and budget.
+Whether it's an outstation trip, airport transfer, car rental, tempo traveller, or corporate travel requirement, AAVORide makes finding the right transportation partner easier than ever.
+We are committed to creating a trusted mobility marketplace that benefits both travellers and transport service providers through technology, transparency, and convenience.
+ 
         </motion.p>
 
         {/* CTA — scale up */}
