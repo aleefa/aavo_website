@@ -100,7 +100,8 @@ export const MissionSection: React.FC = () => {
 </div> */}
 {/* Round orange glow background */}
 {/* <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] rounded-full bg-rose-300/50 blur-3xl z-[1]" />    Phone image - smaller, centered with animation */}
-<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-orange-100 blur-3xl z-[1]" />
+{/* <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-orange-100 blur-3xl z-[1]" /> */}
+<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full blur-3xl z-[1]" style={{ background: "rgba(255, 62, 29, 0.3)" }} />
 <div className="relative z-[2] flex justify-center pt-16 pb-20">
   <div className="motion-cheapest-rates-phone relative aspect-[1312/2656] w-full max-w-[190px]">
     <Image
