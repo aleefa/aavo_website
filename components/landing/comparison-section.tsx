@@ -1,15 +1,9 @@
 import type { ComparisonIconName, ComparisonItem } from "./landing-types";
 import { aavoRideItems, traditionalCabItems } from "./landing-data";
+import Image from "next/image";
 import {
   BadgeCheck,
-  CircleCheck,
-  BadgeIndianRupee,
-  ClipboardClock,
-  CarFront,
   Clock3,
-  Headset,
-  PhoneIncoming,
-  Shield,
 } from "lucide-react";
 import {
   ShieldIcon,
@@ -25,27 +19,26 @@ function ComparisonFeatureIcon({
   icon: ComparisonIconName;
   positive: boolean;
 }) {
-  const wrapperClass = positive
-  ?"bg-[rgba(255,62,29,0.08)] text-[var(--primary)]"
-    // ? "bg-[var(--primary)] text-white"
+  const iconMap: Record<string, string> = {
+    shield: "/comparison.png",
+    rupee: "/comparison1.png",
+    headset: "/comparison2.png",
+    sparkle: "/comparison3.png",
+    link: "/comparison4.png",
+    calendar: "/comparison5.png",
+    car: "/comparison6.png",
+  };
+
+  const iconSrc = iconMap[icon] || "/comparison1.png";
+
+  // comparison.png already has its own background, so don't add wrapper background
+  const hasOwnBackground = icon === "shield";
+  const wrapperClass = positive && !hasOwnBackground
+    ? "bg-[rgba(255,62,29,0.08)] text-[var(--primary)]"
     : "bg-transparent text-[var(--primary)]";
 
-  const iconNode =
-    icon === "shield" ? (
-      <CircleCheck className="h-[30px] w-[30px]" strokeWidth={2.1} />
-    ) : icon === "rupee" ? (
-      <BadgeIndianRupee className="h-[30px] w-[30px]" strokeWidth={2.1} />
-    ) : icon === "headset" ? (
-      <Headset className="h-[30px] w-[30px]" strokeWidth={2.1} />
-    ) : icon === "sparkle" ? (
-      <Shield className="h-[30px] w-[30px]" strokeWidth={2.1} />
-    ) : icon === "link" ? (
-      <PhoneIncoming className="h-[30px] w-[30px]" strokeWidth={2.1} />
-    ) : icon === "car" ? (
-      <CarFront className="h-[30px] w-[30px]" strokeWidth={2.1} />
-    ) : (
-      <ClipboardClock className="h-[30px] w-[30px]" strokeWidth={2.1} />
-    );
+  // comparison.png is visually smaller, so increase its display size
+  const imageSize = hasOwnBackground ? 40 : 30;
 
   return (
     <div
@@ -54,7 +47,11 @@ function ComparisonFeatureIcon({
         wrapperClass,
       )}
     >
-      {positive ? iconNode : <XCircleIcon className="h-7 w-7" />}
+      {positive ? (
+        <Image src={iconSrc} alt={icon} width={imageSize} height={imageSize} className={`h-[${imageSize}px] w-[${imageSize}px]`} />
+      ) : (
+        <XCircleIcon className="h-7 w-7" />
+      )}
     </div>
   );
 }

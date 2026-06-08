@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   DownloadIcon,
   PartnerIcon,
@@ -6,7 +7,7 @@ import {
 import { BadgeCheck } from "lucide-react";
 import { AnimatedStatValue } from "./animated-stat-value";
 import { AvatarStack } from "./illustrations";
-import { heroHighlights, heroStats } from "./landing-data";
+import {  heroStats } from "./landing-data";
 import { Reveal } from "./motion";
 import { HeroPhoneStage } from "./hero-phone-stage";
 import { Eyebrow, OutlineButton, PrimaryButton, SectionContainer } from "./shared";
@@ -25,10 +26,13 @@ export function HeroSection() {
             </Eyebrow>
 
             <h1 className="mt-7 text-[clamp(2.35rem,9vw,4.25rem)] font-extrabold leading-[0.96] tracking-[-0.06em] text-[#201d1b]">
-              Book Trusted
-              <span className="mt-1 block text-[var(--primary)]">Outstation Cabs</span>
+              One Request.
+              <span className="mt-1 block text-[var(--primary)]">Multiple Quotes.</span>
+              <span className="mt-7 text-[clamp(2.35rem,9vw,4.25rem)] font-extrabold leading-[0.96] tracking-[-0.06em] text-[#201d1b]">
+               Better Choice.
+              </span>
             </h1>
-
+{/* 
             <ul className="mt-5 flex flex-wrap items-center gap-x-2 gap-y-1.5 text-[11px] font-medium text-black sm:gap-x-3 sm:text-[13px]">
               {heroHighlights.map((item, index) => (
                 <li key={item} className="flex items-center gap-2 sm:gap-3">
@@ -41,14 +45,44 @@ export function HeroSection() {
                   <span className="whitespace-nowrap">{item}</span>
                 </li>
               ))}
-            </ul>
+            </ul> */}
 
             <p className="mt-7 max-w-[540px] text-[16px] leading-[1.9] text-[var(--muted-foreground)] sm:text-[17px] sm:leading-[2]">
-              <span className="font-semibold text-[var(--primary)]">AAVORide </span> is a smart
-              and affordable taxi &amp; car rental app for outstation trips across India. Book
-              cabs, rentals, airport transfers, tempo travellers, and more with verified
-              drivers and transparent pricing.
+              <span className="font-semibold text-[var(--primary)]">AAVORide </span> is a smart mobility marketplace where travelers receive competitive quotations from verified drivers and travel agencies through a single request. Compare offers, choose the best option, and travel with confidence.
             </p>
+
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-4 sm:gap-6 md:gap-8">
+              <div className="flex flex-col items-center gap-2">
+                <Image src="/home1.png" alt="Multiple Quotes" width={48} height={48} className="h-10 w-10 sm:h-12 sm:w-12" />
+                <p className="text-center text-[11px] font-medium leading-tight text-[#38312d] sm:text-[12px]">
+                  Multiple Quotes<br />Best Prices
+                </p>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <Image src="/home2.png" alt="Verified Drivers" width={48} height={48} className="h-10 w-10 sm:h-12 sm:w-12" />
+                <p className="text-center text-[11px] font-medium leading-tight text-[#38312d] sm:text-[12px]">
+                  Verified Drivers<br />& Agencies
+                </p>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <Image src="/home3.png" alt="Free Cancellation" width={48} height={48} className="h-10 w-10 sm:h-12 sm:w-12" />
+                <p className="text-center text-[11px] font-medium leading-tight text-[#38312d] sm:text-[12px]">
+                  Free<br />Cancellation
+                </p>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <Image src="/home4.png" alt="Zero Commission" width={48} height={48} className="h-10 w-10 sm:h-12 sm:w-12" />
+                <p className="text-center text-[11px] font-medium leading-tight text-[#38312d] sm:text-[12px]">
+                  Zero<br />Commission
+                </p>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <Image src="/home6.png" alt="Direct Communication" width={48} height={48} className="h-10 w-10 sm:h-12 sm:w-12" />
+                <p className="text-center text-[11px] font-medium leading-tight text-[#38312d] sm:text-[12px]">
+                  Direct<br />Communication
+                </p>
+              </div>
+            </div>
 
             <div className="mt-9 flex flex-col items-stretch gap-3 sm:mt-10 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
               <Link href="https://play.google.com/store/apps/details?id=com.aavoridepartner" target="_blank" rel="noopener noreferrer">

@@ -20,87 +20,87 @@ export const heroHighlights = [
 ];
 
 export const heroStats: StatItem[] = [
-  { value: "1k+", label: "Active Travelers" },
-  { value: "500+", label: "Verified Drivers" },
-  { value: "5+", label: "Cities Covered" },
+  { value: "10k+", label: "Active Travelers" },
+  { value: "5k+", label: "Verified Drivers" },
+  { value: "100+", label: "Cities Covered" },
   { value: "4.9", label: "User Rating" },
 ];
 
 export const traditionalCabItems: ComparisonItem[] = [
   {
-    title: "Unverified Drivers",
-    description: "Lack of proper safety checks and standards.",
+    title: "Call multiple drivers",
+    description: "Calling Drivers Takes Time And Effort Every Time.",
     icon: "shield",
   },
   {
-    title: "Hidden Charges",
-    description: "Unexpected pricing added at the end of trips.",
+    title: "Visit multiple agencies",
+    description: "Need To Contact Multiple Agencies For Better Options.",
     icon: "rupee",
   },
   {
-    title: "Poor Customer Support",
-    description: "Delayed responses during emergencies.",
+    title: "Compare prices manually",
+    description: "Comparing Prices Manually Creates Unnecessary Hassle.",
     icon: "headset",
   },
   {
-    title: "Unsafe Vehicles",
-    description: "Unclean and poorly maintained cabs.",
+    title: "Time consuming process",
+    description: "Booking Process Is Slow And Often Frustrating.",
     icon: "sparkle",
   },
   {
-    title: "Third-Party Dependency",
+    title: "No easy quote comparison",
     description:
-      "Extra agents or intermediaries often create delays, higher ride cost.",
+      "No Simple Way To Compare Quotes Instantly.",
     icon: "link",
   },
   {
-    title: "Complicated Booking Experience",
-    description: "Long booking steps make ride scheduling frustrating for users.",
+    title: " Limited choices",
+    description: "Limited Vehicle Choices Reduce Booking Flexibility.",
     icon: "calendar",
   },
   {
     title: "Traditional Booking Hassles",
     description:
-      "Users struggle with last-minute ride availability and delayed confirmations.",
+      "Long wait times and booking processes frustrate customers.",
     icon: "car",
   },
 ];
 
 export const aavoRideItems: ComparisonItem[] = [
   {
-    title: "Verified Drivers",
-    description: "Background-verified professional drivers only.",
+    title: "One Request, Multiple Quotes",
+    description: "Submit One Request And Receive Multiple Competitive Quotes.",
     icon: "shield",
   },
   {
-    title: "Fixed & Transparent",
-    description: "No hidden fees - pay exactly what you see.",
+    title: "Compare Driver & Agency Prices",
+    description: "Easily Compare Driver And Agency Prices In One Place.",
     icon: "rupee",
   },
   {
-    title: "24/7 Customer Support",
-    description: "Round-the-clock assistance for every ride.",
+    title: "Choose the Best Offer",
+    description: "Select The Most Suitable Offer For Your Needs..",
     icon: "headset",
   },
   {
-    title: "Safe & Sanitized Cars",
-    description: "Clean, hygienic, and regularly maintained vehicles.",
+    title: "Direct Communication",
+    description: "Connect Directly With Drivers And Agencies Instantly.",
     icon: "sparkle",
   },
   {
-    title: "No Middlemen",
-    description: "Connect directly with drivers without any intermediaries.",
+    title: "Free Cancellation",
+    description: "Enjoy Flexible Bookings With Free Cancellation Options.",
     icon: "link",
   },
   {
-    title: "Easy Booking Process",
-    description: "Book your ride in just a few simple steps.",
+    title: "Book in Minutes",
+    description: "Complete Your Booking Quickly In Just A Few Minutes.",
     icon: "calendar",
   },
   {
     title: "Pre-Book with AAVORide",
     description:
-      "With AAVORide, users can schedule rides in advance and connect directly with drivers.",
+      "Reserve your ride in advance for a seamless travel experience.",
     icon: "car",
   },
 ];

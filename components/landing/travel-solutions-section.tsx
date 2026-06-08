@@ -105,7 +105,9 @@ export function TravelSolutionsSection() {
             <>
               From airport rides to outstation adventures{" "}
               <span className="block md:inline">experience smarter, safer, and more comfortable</span>
-              <span className="block md:inline"> travel with AAVORide.</span>
+              <span className="block md:inline"> travel with</span>
+              <span className="block text-center md:inline md:text-left text-[var(--primary)]"> AAVORide</span>
+
             </>
           }
           title="Travel Solutions for Every Journey"
