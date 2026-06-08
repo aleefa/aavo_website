@@ -128,17 +128,43 @@ export function ComparisonSection() {
           </Eyebrow>
         </div>
 
-        <SectionHeading
-          className="mt-8"
-          description="Safe, transparent, and hassle-free rides designed for modern travelers."
+        {/* <SectionHeading
+          className="mt-8 text-center"
+         
+          centered={true}
+          description="Get quotations from multiple drivers and travel agencies with a single request and choose the best deal."
           title={
             <>
-              Why Travellers Prefer{" "}
-              <span className="block text-center md:inline md:text-left text-[var(--primary)]">AAVORide</span>
+              Why Pay More When You Can{" "}
+              <span className="text-[var(--primary)]">Compare?</span>
             </>
           }
           titleClassName="md:whitespace-nowrap"
-        />
+        /> */}
+
+         {/* <div className="mx-auto mt-8 max-w-[760px] text-center">
+          <h2 className="text-[clamp(2rem,7vw,3.375rem)] font-extrabold leading-[1.3] md:leading-[1.08] tracking-[-0.04em] text-[#201d1b]">
+            Why Pay More When You Can{" "}
+            <span className="text-[var(--primary)]">Compare?</span>
+          </h2>
+          <p className="mt-5 text-[15px] leading-7 text-[var(--muted-foreground)] md:text-[18px] md:leading-8">
+            Get quotations from multiple drivers and travel agencies with a single request and choose the best deal.
+          </p>
+        </div> */}
+
+        <SectionHeading
+            className="mt-8"
+            centered={true}
+  titleClassName="text-center whitespace-nowrap"
+
+            description="Get quotations from multiple drivers and travel agencies with a single request and choose the best deal."
+            title={
+              <>
+                Why Pay More When You Can{" "}
+                <span className="text-[var(--primary)]">Compare?</span>
+              </>
+            }
+          />
 
         <div className="landing-section-body mt-14 grid gap-5 lg:grid-cols-2">
           <ComparisonPanel items={traditionalCabItems} title="Traditional Cabs" />

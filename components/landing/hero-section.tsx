@@ -51,7 +51,8 @@ export function HeroSection() {
               <span className="font-semibold text-[var(--primary)]">AAVORide </span> is a smart mobility marketplace where travelers receive competitive quotations from verified drivers and travel agencies through a single request. Compare offers, choose the best option, and travel with confidence.
             </p>
 
-            <div className="mt-8 flex flex-wrap items-center justify-center gap-4 sm:gap-6 md:gap-8">
+            {/* <div className="mt-8 flex flex-wrap items-center justify-center gap-4 sm:gap-6 md:gap-8"> */}
+            <div className="mt-8 grid grid-cols-3 items-center justify-items-center gap-4 sm:gap-6 md:flex md:flex-wrap md:justify-center md:gap-8">
               <div className="flex flex-col items-center gap-2">
                 <Image src="/home1.png" alt="Multiple Quotes" width={48} height={48} className="h-10 w-10 sm:h-12 sm:w-12" />
                 <p className="text-center text-[11px] font-medium leading-tight text-[#38312d] sm:text-[12px]">

@@ -125,7 +125,7 @@ export function SectionHeading({
   return (
     <div
       className={cn(
-        centered ? "mx-auto text-center" : "text-left",
+        centered ? "mx-auto w-full text-center" : "text-left",
         "max-w-[760px]",
         className,
       )}
@@ -142,7 +142,10 @@ export function SectionHeading({
         )}
       </h2>
       {description ? (
-        <p className="mt-5 text-[15px] leading-7 text-[var(--muted-foreground)] md:text-[18px] md:leading-8">
+        <p className={cn(
+          "mt-5 text-[15px] leading-7 text-[var(--muted-foreground)] md:text-[18px] md:leading-8",
+          centered && "text-center"
+        )}>
           {description}
         </p>
       ) : null}

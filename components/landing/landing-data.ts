@@ -20,9 +20,9 @@ export const heroHighlights = [
 ];
 
 export const heroStats: StatItem[] = [
-  { value: "10k+", label: "Active Travelers" },
-  { value: "5k+", label: "Verified Drivers" },
-  { value: "100+", label: "Cities Covered" },
+  { value: "1k+", label: "Active Travelers" },
+  { value: "500+", label: "Verified Drivers" },
+  { value: "5+", label: "Cities Covered" },
   { value: "4.9", label: "User Rating" },
 ];
 
