@@ -85,7 +85,7 @@ export function HeroSection() {
               </div>
             </div> */}
             <div className="mt-8 flex flex-col items-center gap-4 md:flex-row md:flex-wrap md:justify-center md:gap-8">
-  <div className="flex justify-center gap-4 md:contents">
+  <div className="flex justify-center gap-8 md:contents">
     <div className="flex flex-col items-center gap-2">
       <Image src="/home1.png" alt="Multiple Quotes" width={48} height={48} className="h-10 w-10 sm:h-12 sm:w-12" />
       <p className="text-center text-[11px] font-medium leading-tight text-[#38312d] sm:text-[12px]">
