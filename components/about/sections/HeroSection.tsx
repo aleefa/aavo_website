@@ -47,7 +47,7 @@ export const HeroSection: React.FC = () => {
         </div>
 
         {/* Description — fade up */}
-        <motion.p
+        {/* <motion.p
           className="mt-6 text-base text-muted-gray leading-7 tracking-normal font-normal"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -58,7 +58,31 @@ Our platform connects travellers with verified drivers and travel agencies throu
 Whether it's an outstation trip, airport transfer, car rental, tempo traveller, or corporate travel requirement, AAVORide makes finding the right transportation partner easier than ever.
 We are committed to creating a trusted mobility marketplace that benefits both travellers and transport service providers through technology, transparency, and convenience.
  
-        </motion.p>
+        </motion.p> */}
+        <motion.p
+  className="mt-6 text-base text-muted-gray leading-7 tracking-normal font-normal"
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, ease: "easeOut", delay: 0.42 }}
+>
+  At AAVORide, we believe booking transportation should be simple, transparent, and hassle-free. Travelers often spend{" "}
+  <br />
+  valuable time contacting multiple drivers and travel agencies to compare prices and find the right ride. We built{" "}
+  <br />
+  <span className="block text-center">AAVORide to solve that problem.</span>
+  <br />
+  Our platform connects travellers with verified drivers and travel agencies through a single request, allowing them to{" "}
+  <br />
+  <span className="block text-center">receive multiple quotations, compare options, and choose the service that best fits their needs and budget.</span>
+  <br />
+  Whether it's an outstation trip, airport transfer, car rental, tempo traveller, or corporate travel requirement,{" "}
+  <br />
+  <span className="block text-center">AAVORide makes finding the right transportation partner easier than ever.</span>
+  <br />
+  We are committed to creating a trusted mobility marketplace that benefits both travellers and transport service{" "}
+  <br />
+  <span className="block text-center">providers through technology, transparency, and convenience.</span>
+</motion.p>
 
         {/* CTA — scale up */}
         <motion.div

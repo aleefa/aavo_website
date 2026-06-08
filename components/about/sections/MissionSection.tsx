@@ -4,6 +4,7 @@ import React, { useRef } from "react";
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 import { title } from "process";
+import { AmbientGlow } from "../../landing/ambient-glow";
 
 export const MissionSection: React.FC = () => {
   const ref = useRef(null);
@@ -51,7 +52,17 @@ export const MissionSection: React.FC = () => {
 
   return (
     <section ref={ref} className="relative w-full pt-16 md:pt-0 pb-0 md:pb-4 bg-white overflow-hidden">
-      <div className="md:w-142.5 w-78 h-78 md:h-142.5 bg-brand-primary md:bg-brand-primary/20 blur-[163px] absolute top-30 md:-top-10 -left-70 md:left-auto md:-right-30" />
+      {/* Shapeless light orange background glow */}
+      <AmbientGlow
+        className="hidden md:block md:right-[-252px] md:top-1/2 md:-translate-y-1/2"
+        style={{ width: "570px", height: "570px" }}
+        tone="orange"
+      />
+      <AmbientGlow
+        className="md:hidden left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+        style={{ width: "400px", height: "400px" }}
+        tone="orange"
+      />
 
       <div className="max-w-7xl relative z-10 mx-auto px-4 md:px-12 flex flex-col md:flex-row items-center gap-12 md:gap-16">
 
@@ -62,7 +73,8 @@ export const MissionSection: React.FC = () => {
   animate={inView ? { opacity: 1, x: 0, rotate: 0 } : {}}
   transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
 >
-  <div className="relative w-full max-w-sm sm:max-w-md md:max-w-full min-h-[520px] sm:min-h-[600px] overflow-hidden rounded-2xl">
+  {/* <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md min-h-[320px] sm:min-h-[384px] overflow-hidden rounded-2xl"> */}
+<div className="relative w-full max-w-md sm:max-w-lg md:max-w-xl min-h-[320px] sm:min-h-[384px] overflow-hidden rounded-2xl">
 
     {/* Background image */}
     <Image
@@ -74,30 +86,35 @@ export const MissionSection: React.FC = () => {
     />
 
     {/* Circular orange glow behind phone */}
-    <div className="absolute z-[1] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] h-[340px] rounded-full bg-orange-300/40 blur-3xl" />
+   
+{/* <div className="absolute inset-0 z-[1]" style={{ background: "rgba(255, 62, 29, 0.25)" }} /> */}
 
-    {/* Phone image - smaller, centered */}
+
+
+    {/* Phone image - smaller, centered with animation */}
 <div className="relative z-[2] flex justify-center pt-16 pb-20">
-  <Image
-    src="/assets/images/mission-phone.png"
-    alt="AAVORide App Phone"
-    width={190}
-    height={380}
-    className="object-contain drop-shadow-2xl"
-    priority
-  />
+  <div className="motion-cheapest-rates-phone relative aspect-[1312/2656] w-full max-w-[190px]">
+    <Image
+      src="/assets/images/mission-phone.png"
+      alt="AAVORide App Phone"
+      fill
+      className="object-contain drop-shadow-lg"
+      priority
+    />
+  </div>
 </div>
 
-    {/* Car image - on very top */}
+    {/* Car image - on very top with animation */}
     <div className="absolute bottom-6 right-0 z-[10] w-[280px]">
-  <Image
-    src="/assets/images/mission-car.png"
-    alt="Mission Car"
-    width={280}
-    height={140}
-    className="object-contain"
-    priority
-  />
+  <div className="motion-cheapest-rates-car relative aspect-[1536/1024] w-full">
+    <Image
+      src="/assets/images/mission-car.png"
+      alt="Mission Car"
+      fill
+      className="object-contain"
+      priority
+    />
+  </div>
 </div>
 
   </div>
