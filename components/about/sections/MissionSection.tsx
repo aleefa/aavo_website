@@ -73,50 +73,16 @@ export const MissionSection: React.FC = () => {
   animate={inView ? { opacity: 1, x: 0, rotate: 0 } : {}}
   transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
 >
-  {/* <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md min-h-[320px] sm:min-h-[384px] overflow-hidden rounded-2xl"> */}
-<div className="relative w-full max-w-md sm:max-w-lg md:max-w-xl min-h-[320px] sm:min-h-[384px] overflow-hidden rounded-2xl">
-
-    {/* Background image */}
+  <div className="relative w-full max-w-md sm:max-w-lg md:max-w-xl">
     <Image
-      src="/assets/images/mission-bg.png"
-      alt="Mission Background"
-      fill
-      className="object-cover"
-      priority
-    />
-
-    {/* Circular orange glow behind phone */}
-   
-{/* <div className="absolute inset-0 z-[1]" style={{ background: "rgba(255, 62, 29, 0.25)" }} /> */}
-
-
-
-    {/* Phone image - smaller, centered with animation */}
-<div className="relative z-[2] flex justify-center pt-16 pb-20">
-  <div className="motion-cheapest-rates-phone relative aspect-[1312/2656] w-full max-w-[190px]">
-    <Image
-      src="/assets/images/mission-phone.png"
-      alt="AAVORide App Phone"
-      fill
-      className="object-contain drop-shadow-lg"
-      priority
-    />
-  </div>
-</div>
-
-    {/* Car image - on very top with animation */}
-    <div className="absolute bottom-6 right-0 z-[10] w-[280px]">
-  <div className="motion-cheapest-rates-car relative aspect-[1536/1024] w-full">
-    <Image
-      src="/assets/images/mission-car.png"
-      alt="Mission Car"
-      fill
+      src="/assets/images/mission-combined1.png"
+      alt="AAVORide App"
+      width={600}
+      height={700}
+      style={{ width: "100%", height: "auto" }}
       className="object-contain"
       priority
     />
-  </div>
-</div>
-
   </div>
 </motion.div>
 
