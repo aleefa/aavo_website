@@ -54,8 +54,8 @@ export const VisionSection: React.FC = () => {
                 </svg>
               </div>
               <div className="flex flex-col">
-                <h4 className="text-base font-semibold text-foreground">Smarter Travel Decisions</h4>
-                <p className="text-sm text-muted-gray leading-relaxed">Enable travellers to receive multiple quotations and make informed booking decisions with complete transparency.</p>
+                <h4 className="text-lg md:text-xl font-bold text-foreground">Smarter Travel Decisions</h4>
+                <p className="text-sm md:text-base text-muted-gray leading-relaxed">Enable travellers to receive multiple quotations and make informed booking decisions with complete transparency.</p>
               </div>
             </div>
 
@@ -72,8 +72,8 @@ export const VisionSection: React.FC = () => {
                 </svg>
               </div>
               <div className="flex flex-col">
-                <h4 className="text-base font-semibold text-foreground">Connecting Travelers & Service Providers</h4>
-                <p className="text-sm text-muted-gray leading-relaxed">Build a platform that seamlessly connects customers with verified drivers and travel agencies across India.</p>
+                <h4 className="text-lg md:text-xl font-bold  text-foreground">Connecting Travelers & Service Providers</h4>
+                <p className="text-sm md:text-base text-muted-gray leading-relaxed">Build a platform that seamlessly connects customers with verified drivers and travel agencies across India.</p>
               </div>
             </div>
 
@@ -85,8 +85,8 @@ export const VisionSection: React.FC = () => {
                 </svg>
               </div>
               <div className="flex flex-col">
-                <h4 className="text-base font-semibold text-foreground">Accessible Mobility for Everyone</h4>
-                <p className="text-sm text-muted-gray leading-relaxed">Make reliable transportation easy to access, regardless of city, destination, or travel requirement.</p>
+                <h4 className="text-lg md:text-xl font-bold  text-foreground">Accessible Mobility for Everyone</h4>
+                <p className="text-sm md:text-base text-muted-gray leading-relaxed">Make reliable transportation easy to access, regardless of city, destination, or travel requirement.</p>
               </div>
             </div>
 
@@ -98,8 +98,8 @@ export const VisionSection: React.FC = () => {
                 </svg>
               </div>
               <div className="flex flex-col">
-                <h4 className="text-base font-semibold text-foreground">Empowering Local Transport Businesses</h4>
-                <p className="text-sm text-muted-gray leading-relaxed">Support independent drivers and travel agencies with digital tools that help them reach more customers and grow sustainably.</p>
+                <h4 className="text-lg md:text-xl font-bold text-foreground">Empowering Local Transport Businesses</h4>
+                <p className="text-sm md:text-base text-muted-gray leading-relaxed">Support independent drivers and travel agencies with digital tools that help them reach more customers and grow sustainably.</p>
               </div>
             </div>
           </motion.div>

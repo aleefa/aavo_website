@@ -57,22 +57,51 @@ export const MissionSection: React.FC = () => {
 
         {/* Left: Mockup — slide in from left with slight tilt */}
         <motion.div
-          className="w-full md:w-1/2 order-2 md:order-1 flex justify-center"
-          initial={{ opacity: 0, x: -60, rotate: -4 }}
-          animate={inView ? { opacity: 1, x: 0, rotate: 0 } : {}}
-          transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
-        >
-          <div className="relative max-w-sm sm:max-w-md md:max-w-full border-0 overflow-hidden">
-            <Image
-              src="/assets/images/phone-taxi-mockup.png"
-              alt="AAVORide App Mockup with Cab"
-              width={540}
-              height={580}
-              className="object-contain hover:scale-102 transition-transform duration-300 -ml-2"
-              priority
-            />
-          </div>
-        </motion.div>
+  className="w-full md:w-1/2 order-2 md:order-1 flex justify-center"
+  initial={{ opacity: 0, x: -60, rotate: -4 }}
+  animate={inView ? { opacity: 1, x: 0, rotate: 0 } : {}}
+  transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
+>
+  <div className="relative w-full max-w-sm sm:max-w-md md:max-w-full min-h-[520px] sm:min-h-[600px] overflow-hidden rounded-2xl">
+
+    {/* Background image */}
+    <Image
+      src="/assets/images/mission-bg.png"
+      alt="Mission Background"
+      fill
+      className="object-cover"
+      priority
+    />
+
+    {/* Circular orange glow behind phone */}
+    <div className="absolute z-[1] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] h-[340px] rounded-full bg-orange-300/40 blur-3xl" />
+
+    {/* Phone image - smaller, centered */}
+<div className="relative z-[2] flex justify-center pt-16 pb-20">
+  <Image
+    src="/assets/images/mission-phone.png"
+    alt="AAVORide App Phone"
+    width={190}
+    height={380}
+    className="object-contain drop-shadow-2xl"
+    priority
+  />
+</div>
+
+    {/* Car image - on very top */}
+    <div className="absolute bottom-6 right-0 z-[10] w-[280px]">
+  <Image
+    src="/assets/images/mission-car.png"
+    alt="Mission Car"
+    width={280}
+    height={140}
+    className="object-contain"
+    priority
+  />
+</div>
+
+  </div>
+</motion.div>
 
         {/* Right: Text content */}
         <div className="w-full md:w-1/2 order-1 md:order-2 flex flex-col gap-6 text-left">
