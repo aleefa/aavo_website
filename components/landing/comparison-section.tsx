@@ -21,12 +21,12 @@ function ComparisonFeatureIcon({
 }) {
   const iconMap: Record<string, string> = {
     shield: "/comparison.png",
-    rupee: "/comparison1.png",
-    headset: "/comparison2.png",
-    sparkle: "/comparison3.png",
-    link: "/comparison4.png",
-    calendar: "/comparison5.png",
-    car: "/comparison6.png",
+    rupee: "/comparison11.png",
+    headset: "/comparison12.png",
+    sparkle: "/comparison13.png",
+    link: "/comparison14.png",
+    calendar: "/comparison15.png",
+    car: "/comparison16.png",
   };
 
   const iconSrc = iconMap[icon] || "/comparison1.png";
