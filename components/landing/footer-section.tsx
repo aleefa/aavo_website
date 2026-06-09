@@ -25,7 +25,7 @@ export function FooterSection() {
     { label: "Home", href: "/" },
     { label: "Our Services", href: "/#services" },
     { label: "Become a Partner", href: "/about/partner" },
-    { label: "Blog", href: "#" },
+    { label: "Blog", href: "/blog" },
     {
       label: "FAQ",
       href:
