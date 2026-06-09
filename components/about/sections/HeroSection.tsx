@@ -60,18 +60,18 @@ We are committed to creating a trusted mobility marketplace that benefits both t
  text-sm md:text-lg text-muted-gray leading-7 font-normal
         </motion.p> */}
        <motion.p
-  className="mt-6 text-sm md:text-lg text-muted-gray leading-7 tracking-normal font-normal max-w-3xl text-center"
+  className="mt-6 text-sm md:text-lg text-muted-gray leading-6 md:leading-7 tracking-normal font-normal max-w-3xl md:max-w-none text-center pl-0"
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.6, ease: "easeOut", delay: 0.42 }}
 >
-  At AAVORide, we believe booking transportation should be simple, transparent, and hassle-free. Travelers often spend valuable time contacting multiple drivers and travel agencies to compare prices and find the right ride. We built AAVORide to solve that problem.
-  <br /><br />
-  Our platform connects travellers with verified drivers and travel agencies through a single request, allowing them to receive multiple quotations, compare options, and choose the service that best fits their needs and budget.
-  <br /><br />
-  Whether it's an outstation trip, airport transfer, car rental, tempo traveller, or corporate travel requirement, AAVORide makes finding the right transportation partner easier than ever.
-  <br /><br />
-  We are committed to creating a trusted mobility marketplace that benefits both travellers and transport service providers through technology, transparency, and convenience.
+  At AAVORide, we believe booking transportation should be simple, transparent, and hassle-free. We built AAVORide to solve the problem of travelers spending valuable time contacting multiple drivers to compare prices.
+  <br />
+  Our platform connects travellers with verified drivers through a single request, allowing them to receive multiple quotations and choose the service that best fits their needs.
+  <br />
+  Whether it's an outstation trip, airport transfer, car rental, tempo traveller, or corporate travel, AAVORide makes finding the right transportation partner easier than ever.
+  <br />
+  We are committed to creating a trusted mobility marketplace that benefits both travellers and transport service providers through technology and transparency.
 </motion.p>
         {/* CTA — scale up */}
         <motion.div
