@@ -45,24 +45,24 @@ export default function BlogListingPage() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6 }}
-        className="relative overflow-hidden w-full h-[450px] md:h-[600px] flex items-center bg-slate-950"
+        className="relative w-full h-[500px] md:h-[650px] bg-slate-950"
       >
-        <div className="absolute inset-0 z-0 overflow-hidden">
+        <div className="absolute inset-0">
           <Image
             src="/aavoride_blog_hero.png"
             alt="Majestic Mountains and Hot Air Balloons"
             fill
             sizes="100vw"
             priority
-            className="object-cover object-center opacity-90 scale-100 select-none"
+            className="object-cover object-top opacity-90 select-none"
           />
           {/* Subtle overlays to enhance text readability while maintaining bright sunset colors */}
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-black/20" />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-950/40 via-transparent to-transparent" />
         </div>
 
-        {/* Content Container - aligned with the grid of the main content */}
-        <div className="relative z-10 mx-auto max-w-7xl w-full px-6 md:px-8 pt-24 md:pt-32">
+        {/* Content Container - positioned absolutely over the image */}
+        <div className="absolute inset-0 z-10 mx-auto max-w-7xl w-full px-6 md:px-8 flex items-center pt-20">
           <div className="max-w-full space-y-4">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight text-white leading-tight font-sans lg:whitespace-nowrap">
               <span className="text-[#FF4D30]">Stories</span> That Inform and Inspire.

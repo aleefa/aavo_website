@@ -82,7 +82,7 @@ export const MOCK_FEATURED_STORIES: Blog[] = [
     author: {
       name: 'Priya Sharma',
       role: 'Travel Writer',
-      avatar: '/images/author1.png',
+      avatar: '',
     },
     sections: [
       {
