@@ -10,7 +10,7 @@ export interface Blog {
   featured?: boolean;
   author: {
     name: string;
-   
+    role: string;
     avatar: string;
   };
   sections: Array<{
@@ -81,7 +81,7 @@ export const MOCK_FEATURED_STORIES: Blog[] = [
     publishDate: 'Jan 20, 2026',
     author: {
       name: 'Priya Sharma',
-     
+      role: 'Travel Writer',
       avatar: '/images/author1.png',
     },
     sections: [
@@ -120,7 +120,7 @@ export const MOCK_FEATURED_STORIES: Blog[] = [
     publishDate: 'Jan 18, 2026',
     author: {
       name: 'Rahul Mehta',
-     
+      role: 'Luxury Travel Expert',
       avatar: '/images/author-rahul.jpg',
     },
     sections: [
@@ -159,7 +159,7 @@ export const MOCK_FEATURED_STORIES: Blog[] = [
     publishDate: 'Jan 15, 2026',
     author: {
       name: 'Ankit Patel',
-      
+      role: 'Adventure Guide',
       avatar: '/images/author-ankit.jpg',
     },
     sections: [
@@ -201,7 +201,7 @@ export const MOCK_BLOGS: Blog[] = [
     publishDate: 'Jan 15, 2026',
     author: {
       name: 'Vikram Malhotra',
-      
+      role: 'Cultural Historian',
       avatar: '/images/author1.png',
     },
     sections: [
@@ -254,7 +254,7 @@ export const MOCK_BLOGS: Blog[] = [
     publishDate: 'Jan 10, 2026',
     author: {
       name: 'Sanjay Gupta',
-      
+      role: 'Pilgrimage Specialist',
       avatar: '/images/author1.png',
     },
     sections: [
@@ -293,7 +293,7 @@ export const MOCK_BLOGS: Blog[] = [
     publishDate: 'Jan 5, 2026',
     author: {
       name: 'Ankit Patel',
-      
+      role: 'Adventure Guide',
       avatar: '/images/author1.png',
     },
     sections: [
@@ -322,7 +322,7 @@ export const MOCK_BLOGS: Blog[] = [
     publishDate: 'Dec 28, 2025',
     author: {
       name: 'Sneha Nair',
-     
+      role: 'South India Expert',
       avatar: '/images/author-sneha.jpg',
     },
     sections: [
@@ -351,7 +351,7 @@ export const MOCK_BLOGS: Blog[] = [
     publishDate: 'Dec 20, 2025',
     author: {
       name: 'Vikram Singh',
-     
+      role: 'Road Trip Enthusiast',
       avatar: '/images/author-vikram.jpg',
     },
     sections: [
