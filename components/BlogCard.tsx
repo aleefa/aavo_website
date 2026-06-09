@@ -76,7 +76,13 @@ export default function BlogCard({ blog, index }: BlogCardProps) {
             <span>{blog.readTime}</span>
           </div>
           <div className="flex items-center space-x-1.5">
-            <User className="h-3.5 w-3.5 text-slate-400" />
+            <Image
+              src={blog.author.avatar}
+              alt={blog.author.name}
+              width={20}
+              height={20}
+              className="rounded-full object-cover"
+            />
             <span>By {blog.author.name}</span>
           </div>
         </div>

@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Search, Loader2, AlertCircle } from 'lucide-react';
 import { useInfiniteBlogs } from '@/hooks/useBlogs';
-import { CATEGORIES, MOCK_DESTINATIONS, MOCK_BLOGS } from '@/lib/mockData';
+import { CATEGORIES, MOCK_DESTINATIONS, MOCK_BLOGS, MOCK_FEATURED_STORIES } from '@/lib/mockData';
 import BlogCard from '@/components/BlogCard';
 import BlogRow from '@/components/BlogRow';
 import DestinationCard from '@/components/DestinationCard';
@@ -38,9 +38,6 @@ export default function BlogListingPage() {
 
   // Flatten the pages of blogs
   const allRecentBlogs = data?.pages.flatMap((page) => page.blogs) || [];
-
-  // Filter static featured posts from mock data
-  const featuredBlogs = MOCK_BLOGS.filter((blog) => blog.featured);
 
   return (
     <div className="w-full flex flex-col min-h-screen">
@@ -123,7 +120,7 @@ export default function BlogListingPage() {
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-            {featuredBlogs.map((blog, idx) => (
+            {MOCK_FEATURED_STORIES.map((blog, idx) => (
               <BlogCard key={blog.id} blog={blog} index={idx} />
             ))}
           </div>

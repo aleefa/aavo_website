@@ -10,7 +10,7 @@ export interface Blog {
   featured?: boolean;
   author: {
     name: string;
-    role: string;
+   
     avatar: string;
   };
   sections: Array<{
@@ -47,7 +47,7 @@ export const MOCK_DESTINATIONS: Destination[] = [
     id: '1',
     title: 'Varanasi',
     category: 'Spiritual',
-    image: '/images/varanasi.jpg',
+    image: '/images/',
   },
   {
     id: '2',
@@ -69,21 +69,140 @@ export const MOCK_DESTINATIONS: Destination[] = [
   },
 ];
 
+export const MOCK_FEATURED_STORIES: Blog[] = [
+  {
+    id: 'featured-1',
+    slug: 'ultimate-guide-char-dham-yatra',
+    title: 'The Sacred Path: A Soulful Guide to Amritsar',
+    excerpt: '',
+    coverImage: '/images/featured-guide1.jpg',
+    tag: 'Pilgrimage',
+    readTime: '15 min read',
+    publishDate: 'Jan 20, 2026',
+    author: {
+      name: 'Priya Sharma',
+     
+      avatar: '/images/author1.png',
+    },
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'The Char Dham Yatra is one of the most sacred pilgrimages in Hinduism, covering four holy sites in Uttarakhand: Yamunotri, Gangotri, Kedarnath, and Badrinath.',
+      },
+      {
+        type: 'heading',
+        content: 'Best Time to Visit',
+      },
+      {
+        type: 'paragraph',
+        content: 'The pilgrimage season typically runs from May to October, with the best weather conditions in June and September. Avoid the monsoon months of July and August if possible.',
+      },
+    ],
+    mustVisitSpots: [
+      {
+        name: 'Kedarnath Temple',
+        description: 'One of the twelve Jyotirlingas, dedicated to Lord Shiva.',
+      },
+      {
+        name: 'Badrinath Temple',
+        description: 'Dedicated to Lord Vishnu, part of the Char Dham.',
+      },
+    ],
+  },
+  {
+    id: 'featured-2',
+    slug: 'luxury-heritage-hotels-rajasthan',
+    title: 'The Future of Road Travel in India',
+    excerpt: '',
+    coverImage: '/images/featured-guide3.jpg',
+    tag: 'Luxury',
+    readTime: '12 min read',
+    publishDate: 'Jan 18, 2026',
+    author: {
+      name: 'Rahul Mehta',
+     
+      avatar: '/images/author-rahul.jpg',
+    },
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'Rajasthan\'s heritage hotels offer a unique opportunity to live like royalty. These properties were once the homes of maharajas and have been transformed into luxury accommodations.',
+      },
+      {
+        type: 'heading',
+        content: 'Taj Lake Palace, Udaipur',
+      },
+      {
+        type: 'paragraph',
+        content: 'Floating on Lake Pichola, this white marble palace is one of the most romantic hotels in the world. It offers stunning views and impeccable service.',
+      },
+    ],
+    mustVisitSpots: [
+      {
+        name: 'Taj Lake Palace',
+        description: 'A stunning white marble palace on Lake Pichola.',
+      },
+      {
+        name: 'Rambagh Palace',
+        description: 'Former residence of the Maharaja of Jaipur.',
+      },
+    ],
+  },
+  {
+    id: 'featured-3',
+    slug: 'hidden-gems-himalayas',
+    title: 'Hidden Gems of the Himalayas: Off the Beaten Path',
+    excerpt: 'Discover lesser-known destinations in the Himalayas that offer pristine beauty and authentic experiences away from the crowds.',
+    coverImage: '/images/featured-guide2.jpg',
+    tag: 'Adventure',
+    readTime: '10 min read',
+    publishDate: 'Jan 15, 2026',
+    author: {
+      name: 'Ankit Patel',
+      
+      avatar: '/images/author-ankit.jpg',
+    },
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'While popular destinations like Manali and Shimla attract millions of visitors, the Himalayas hide countless treasures waiting to be explored by intrepid travelers.',
+      },
+      {
+        type: 'heading',
+        content: 'Spiti Valley',
+      },
+      {
+        type: 'paragraph',
+        content: 'Often called "Little Tibet," Spiti Valley offers dramatic landscapes, ancient monasteries, and a chance to experience authentic Himalayan culture.',
+      },
+    ],
+    mustVisitSpots: [
+      {
+        name: 'Key Monastery',
+        description: 'The largest monastery in Spiti Valley.',
+      },
+      {
+        name: 'Chandratal Lake',
+        description: 'A stunning high-altitude lake.',
+      },
+    ],
+  },
+];
+
 export const MOCK_BLOGS: Blog[] = [
   {
     id: '1',
     slug: 'spiritual-journey-varanasi',
-    title: 'A Spiritual Journey Through Varanasi: The City of Lights',
-    excerpt: 'Discover the ancient ghats, spiritual ceremonies, and timeless traditions that make Varanasi one of the most sacred cities in India.',
+    title: 'The Golden Triangle: Redefining the Classic Indian Circuit',
+    excerpt: '',
     coverImage: '/images/varanasi-blog.jpg',
-    tag: 'Spiritual',
+    tag: 'Culture',
     readTime: '8 min read',
     publishDate: 'Jan 15, 2026',
-    featured: true,
     author: {
-      name: 'Priya Sharma',
-      role: 'Travel Writer',
-      avatar: '/images/author-priya.jpg',
+      name: 'Vikram Malhotra',
+      
+      avatar: '/images/author1.png',
     },
     sections: [
       {
@@ -127,17 +246,16 @@ export const MOCK_BLOGS: Blog[] = [
   {
     id: '2',
     slug: 'luxury-road-trip-rajasthan',
-    title: 'Luxury Road Trip Through Rajasthan: Palaces and Forts',
-    excerpt: 'Experience the royal heritage of Rajasthan on a luxurious road trip through its magnificent palaces, forts, and colorful cities.',
+    title: 'Planning Your First Char Dham Yatra: A Complete Guide',
+    excerpt: 'The spiritual journey of a lifetime requires meticulous planning. From routes to luxury stays, here is everythin…',
     coverImage: '/images/rajasthan-blog.jpg',
     tag: 'Luxury',
     readTime: '10 min read',
     publishDate: 'Jan 10, 2026',
-    featured: true,
     author: {
-      name: 'Rahul Mehta',
-      role: 'Travel Expert',
-      avatar: '/images/author-rahul.jpg',
+      name: 'Sanjay Gupta',
+      
+      avatar: '/images/author1.png',
     },
     sections: [
       {
@@ -167,17 +285,16 @@ export const MOCK_BLOGS: Blog[] = [
   {
     id: '3',
     slug: 'adventure-rishikesh',
-    title: 'Adventure Awaits: Rishikesh - The Yoga Capital of the World',
-    excerpt: 'From white water rafting to meditation retreats, discover why Rishikesh is the perfect destination for adventure seekers and spiritual seekers alike.',
-    coverImage: '/images/rishikesh-blog.jpg',
+    title: 'Planning Your First Char Dham Yatra: A Complete Guide',
+    excerpt: 'The spiritual journey of a lifetime requires meticulous planning. From routes to luxury stays, here is everythin…',
+    coverImage: '/images/rajasthan-blog.jpg',
     tag: 'Adventure',
     readTime: '7 min read',
     publishDate: 'Jan 5, 2026',
-    featured: true,
     author: {
       name: 'Ankit Patel',
-      role: 'Adventure Guide',
-      avatar: '/images/author-ankit.jpg',
+      
+      avatar: '/images/author1.png',
     },
     sections: [
       {
@@ -205,7 +322,7 @@ export const MOCK_BLOGS: Blog[] = [
     publishDate: 'Dec 28, 2025',
     author: {
       name: 'Sneha Nair',
-      role: 'Cultural Historian',
+     
       avatar: '/images/author-sneha.jpg',
     },
     sections: [
@@ -234,7 +351,7 @@ export const MOCK_BLOGS: Blog[] = [
     publishDate: 'Dec 20, 2025',
     author: {
       name: 'Vikram Singh',
-      role: 'Adventure Photographer',
+     
       avatar: '/images/author-vikram.jpg',
     },
     sections: [

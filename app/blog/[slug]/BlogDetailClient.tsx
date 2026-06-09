@@ -234,7 +234,6 @@ export default function BlogDetailClient({
             />
             <div className="flex flex-col">
               <span className="text-sm font-bold text-slate-800">Written by {blog.author.name}</span>
-              <span className="text-xs text-slate-400 font-semibold">{blog.author.role}</span>
             </div>
           </div>
 
