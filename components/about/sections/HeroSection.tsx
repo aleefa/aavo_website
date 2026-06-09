@@ -99,8 +99,8 @@ We are committed to creating a trusted mobility marketplace that benefits both t
               label: "RIDER RATING",
               value: "4.9/5",
               icon: (
-                <svg viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-6 h-5.75 text-brand-primary">
-                  <path d="M3.8251,19l1.625,-7.025l-5.45,-4.725l7.2,-0.625l2.8,-6.625l2.8,6.625l7.2,0.625l-5.45,4.725l1.625,7.025l-6.175,-3.725z" fill="currentColor"/>
+                <svg viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-6 h-5.75">
+                  <path d="M3.8251,19l1.625,-7.025l-5.45,-4.725l7.2,-0.625l2.8,-6.625l2.8,6.625l7.2,0.625l-5.45,4.725l1.625,7.025l-6.175,-3.725z" fill="currentColor" stroke="currentColor" strokeWidth="0.5"/>
                 </svg>
               ),
             },
@@ -108,21 +108,23 @@ We are committed to creating a trusted mobility marketplace that benefits both t
               label: "VERIFIED FLEET",
               value: "100%",
               icon: (
-                <svg viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-4.5 h-[22.5px] text-brand-primary">
-                  <path d="M6.95,13.55l5.65,-5.65l-1.425,-1.425l-4.225,4.225l-2.1,-2.1l-1.425,1.425zM8,20c-2.317,-0.583 -4.229,-1.912 -5.738,-3.987c-1.508,-2.075 -2.262,-4.38 -2.262,-6.913v-6.1l8,-3l8,3v6.1c0,2.533 -0.754,4.838 -2.263,6.913c-1.508,2.075 -3.42,3.404 -5.737,3.987zM8,17.9c1.733,-0.55 3.167,-1.65 4.3,-3.3c1.133,-1.65 1.7,-3.483 1.7,-5.5v-4.725l-6,-2.25l-6,2.25v4.725c0,2.017 0.567,3.85 1.7,5.5c1.133,1.65 2.567,2.75 4.3,3.3z" fill="currentColor"/>
+                <svg viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-4.5 h-[22.5px]">
+                  <path d="M6.95,13.55l5.65,-5.65l-1.425,-1.425l-4.225,4.225l-2.1,-2.1l-1.425,1.425zM8,20c-2.317,-0.583 -4.229,-1.912 -5.738,-3.987c-1.508,-2.075 -2.262,-4.38 -2.262,-6.913v-6.1l8,-3l8,3v6.1c0,2.533 -0.754,4.838 -2.263,6.913c-1.508,2.075 -3.42,3.404 -5.737,3.987zM8,17.9c1.733,-0.55 3.167,-1.65 4.3,-3.3c1.133,-1.65 1.7,-3.483 1.7,-5.5v-4.725l-6,-2.25l-6,2.25v4.725c0,2.017 0.567,3.85 1.7,5.5c1.133,1.65 2.567,2.75 4.3,3.3z" fill="currentColor" stroke="currentColor" strokeWidth="0.5"/>
                 </svg>
               ),
             },
           ].map((item, i) => (
             <motion.div
               key={item.label}
-              className="flex items-center gap-5 text-left"
-              initial={{ opacity: 0, y: 28 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.55, ease: "easeOut", delay: 0.7 + i * 0.14 }}
+              className="group flex gap-5 items-start"
+              initial={{ opacity: 0, x: 40 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, ease: "easeOut", delay: 0.7 + i * 0.13 }}
             >
-              <div className="flex items-center justify-center w-12 h-12 rounded-full border border-border-light bg-white shadow-[0_4px_24px_rgba(0,0,0,0.02)]">
-                {item.icon}
+              <div className="flex items-center justify-center w-12 h-12 rounded-full border border-transparent bg-brand-primary/10 text-brand-primary transition-colors duration-300 shrink-0 mt-1 group-hover:border-brand-primary group-hover:bg-brand-primary">
+                <div className="transition-colors duration-300 group-hover:text-white">
+                  {item.icon}
+                </div>
               </div>
               <div className="flex flex-col">
                 <span className="text-2xl font-semibold text-foreground leading-none">{item.value}</span>
