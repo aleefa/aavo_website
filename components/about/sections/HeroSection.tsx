@@ -116,7 +116,7 @@ We are committed to creating a trusted mobility marketplace that benefits both t
           ].map((item, i) => (
             <motion.div
               key={item.label}
-              className="group flex gap-5 items-start"
+              className="group flex gap-5 items-start sm:items-center w-full sm:w-auto"
               initial={{ opacity: 0, x: 40 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, ease: "easeOut", delay: 0.7 + i * 0.13 }}
