@@ -88,6 +88,41 @@ export const MissionSection: React.FC = () => {
       className="hover:scale-[1.01] transition-transform duration-300"
       priority
     />
+
+<div className="absolute top-8 -left-[70px] md:-left-[95px] z-10 scale-40 md:scale-100">
+  <Image
+    src="/car-icon.png"
+    height={80}
+    width={100}
+    alt="car-icon"
+    className="w-6 mb-1 ml-4 h-auto"
+  />
+  <Image
+    src="/car-line.png"
+    height={80}
+    width={100}
+    alt="arrow"
+
+  />
+</div>
+
+{/* Right side */}
+<div className="absolute top-12 -right-[75px] md:-right-[95px] z-10 scale-40 md:scale-100">
+  <Image
+    src="/location-icon.png"
+    height={80}
+    width={100}
+    alt="location-icon"
+    className="h-auto w-4 ml-20 mb-1"
+  />
+  <Image
+    src="/location-line.png"
+    height={80}
+    width={100}
+    alt="arrow"
+
+  />
+</div>
   </motion.div>
 </div>
 

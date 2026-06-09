@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useRef } from "react";
@@ -60,9 +59,9 @@ export const VisionSection: React.FC = () => {
 
   return (
     <section className="relative w-full pt-16 md:pt-20 pb-12 md:pb-16 bg-white overflow-hidden">
-      <div className="md:w-142.5 w-78 h-78 md:h-142.5 bg-brand-primary md:bg-brand-primary/20 blur-[163px] absolute top-30 md:top-0 -right-70 md:right-auto md:-left-30" />
+      <div className="md:w-142.5 w-78 h-78 md:h-142.5 bg-brand-primary md:bg-brand-primary/20 blur-[163px] absolute top-30 md:top-0 -right-70 md:right-auto md:-left-30 z-0" />
 
-      <div className="max-w-7xl mx-auto px-4 md:px-12 flex flex-col md:flex-row items-center gap-12 md:gap-16">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-12 flex flex-col md:flex-row items-center gap-12 md:gap-16">
 
         {/* Left: Text */}
         <div className="w-full md:w-1/2 flex flex-col gap-6 text-left">
@@ -98,8 +97,10 @@ export const VisionSection: React.FC = () => {
               animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 40 }}
               transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
             >
-              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-brand-primary/10 text-brand-primary transition-colors duration-300 shrink-0 mt-1 group-hover:bg-brand-primary group-hover:text-white">
-                {visionItems[0].icon}
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-brand-primary/10 text-brand-primary transition-colors duration-300 shrink-0 mt-1 group-hover:bg-brand-primary">
+                <div className="transition-colors duration-300 group-hover:text-white">
+                  {visionItems[0].icon}
+                </div>
               </div>
               <div className="flex flex-col gap-1">
                 <h4 className="text-lg md:text-xl font-bold text-foreground">{visionItems[0].title}</h4>
@@ -113,8 +114,10 @@ export const VisionSection: React.FC = () => {
               animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 40 }}
               transition={{ duration: 0.5, ease: "easeOut", delay: 0.22 }}
             >
-              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-brand-primary/10 text-brand-primary transition-colors duration-300 shrink-0 mt-1 group-hover:bg-brand-primary group-hover:text-white">
-                {visionItems[1].icon}
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-brand-primary/10 text-brand-primary transition-colors duration-300 shrink-0 mt-1 group-hover:bg-brand-primary">
+                <div className="transition-colors duration-300 group-hover:text-white">
+                  {visionItems[1].icon}
+                </div>
               </div>
               <div className="flex flex-col gap-1">
                 <h4 className="text-lg md:text-xl font-bold text-foreground">{visionItems[1].title}</h4>
@@ -128,8 +131,10 @@ export const VisionSection: React.FC = () => {
               animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 40 }}
               transition={{ duration: 0.5, ease: "easeOut", delay: 0.34 }}
             >
-              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-brand-primary/10 text-brand-primary transition-colors duration-300 shrink-0 mt-1 group-hover:bg-brand-primary group-hover:text-white">
-                {visionItems[2].icon}
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-brand-primary/10 text-brand-primary transition-colors duration-300 shrink-0 mt-1 group-hover:bg-brand-primary">
+                <div className="transition-colors duration-300 group-hover:text-white">
+                  {visionItems[2].icon}
+                </div>
               </div>
               <div className="flex flex-col gap-1">
                 <h4 className="text-lg md:text-xl font-bold text-foreground">{visionItems[2].title}</h4>
@@ -143,8 +148,10 @@ export const VisionSection: React.FC = () => {
               animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 40 }}
               transition={{ duration: 0.5, ease: "easeOut", delay: 0.46 }}
             >
-              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-brand-primary/10 text-brand-primary transition-colors duration-300 shrink-0 mt-1 group-hover:bg-brand-primary group-hover:text-white">
-                {visionItems[3].icon}
+              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-brand-primary/10 text-brand-primary transition-colors duration-300 shrink-0 mt-1 group-hover:bg-brand-primary">
+                <div className="transition-colors duration-300 group-hover:text-white">
+                  {visionItems[3].icon}
+                </div>
               </div>
               <div className="flex flex-col gap-1">
                 <h4 className="text-lg md:text-xl font-bold text-foreground">{visionItems[3].title}</h4>
@@ -162,7 +169,7 @@ export const VisionSection: React.FC = () => {
           animate={{ opacity: 1, x: 0, scale: 1 }}
           transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1], delay: 0.3 }}
         >
-          <div className="relative w-full max-w-125 bg-transparent">
+          <div className="relative w-full max-w-[650px] bg-transparent">
             <Image
               src="/assets/images/india-map-connection1.png"
               alt="Digital map of India showing network connections"
