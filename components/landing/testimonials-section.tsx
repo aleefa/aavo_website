@@ -112,7 +112,7 @@ export function TestimonialsSection() {
   } as CSSProperties;
 
   return (
-    <section className="relative overflow-hidden pb-6 pt-18 md:pb-6 md:pt-20">
+    <section className="relative overflow-hidden pb-0 pt-18 md:pb-0 md:pt-20">
       <AmbientGlow
         className="right-[-252px] top-1/2 -translate-y-1/2"
         style={{ width: "570px", height: "570px" }}
