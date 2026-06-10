@@ -201,10 +201,18 @@ export default function BlogDetailClient({
                 </p>
               </div>
             </div>
+                <Link
+                href="https://play.google.com/store/apps/details?id=com.aavoride"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto"
+              >
             <button className="rounded-full bg-[#FF4D30] hover:bg-[#e03d20] px-6 py-3.5 text-xs font-bold text-white shadow-md hover:shadow-lg transition-all w-full sm:w-auto shrink-0 select-none font-semibold">
               Get AAVORide App
             </button>
+            </Link>
           </motion.div>
+
 
           {/* Must Visit Spots (Figma section) */}
           {blog.mustVisitSpots && blog.mustVisitSpots.length > 0 && (
