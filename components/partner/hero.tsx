@@ -141,7 +141,7 @@ export const Hero = () => {
             >
               One platform for Drivers, Agencies & Car Owners earn more with
               flexible work, fleet management, and passive income opportunities
-              powered by AAVORIDE.
+              powered by AAVORide.
             </motion.p>
 
             {/* CTA Button */}
