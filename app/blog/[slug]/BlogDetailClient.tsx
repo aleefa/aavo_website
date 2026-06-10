@@ -202,7 +202,7 @@ export default function BlogDetailClient({
               </div>
             </div>
             <button className="rounded-full bg-[#FF4D30] hover:bg-[#e03d20] px-6 py-3.5 text-xs font-bold text-white shadow-md hover:shadow-lg transition-all w-full sm:w-auto shrink-0 select-none font-semibold">
-              Get Aavoride App
+              Get AAVORide App
             </button>
           </motion.div>
 
