@@ -11,7 +11,7 @@ const testimonials = [
       "AAVORide makes daily travel planning much easier. Instead of calling multiple drivers, I receive several quotations in one place and choose the best option. It saves both time and money.",
     name: "Mayur Pathani",
     role: "Daily Commuter",
-    avatar: "/images/65fdd9e521f2e608e8ae7971ad0d33a6018e215b%20%281%29.jpg ",
+    avatar: "/images/65fdd9e521f2e608e8ae7971ad0d33a6018e215b (1).jpg ",
   },
     {
     quote:
@@ -39,7 +39,7 @@ const testimonials = [
       "Booking travel for family outings used to take a lot of effort. With AAVORide, I simply submit one request and receive several offers. It makes choosing the right driver much easier.",
     name: "Shraddha Prajapati",
     role: "Weekend Explorer",
-    avatar: "/images/65fdd9e521f2e608e8ae7971ad0d33a6018e215b%20%281%29.jpg ",
+    avatar: "/images/65fdd9e521f2e608e8ae7971ad0d33a6018e215b (1).jpg ",
   },
       {
     quote:
