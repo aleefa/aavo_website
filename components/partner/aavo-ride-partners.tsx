@@ -98,9 +98,9 @@ export const AavoRidePartners = () => {
         {/* Badge */}
         <motion.span
           variants={itemVariants}
-          className="bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest rounded-full px-4 py-1.5 leading-none"
+          className="bg-primary/10 text-primary text-xs font-bold  tracking-widest rounded-full px-4 py-1.5 leading-none"
         >
-          AAVORide Partners
+          AAVORide PARTNERS
         </motion.span>
 
         {/* Title */}

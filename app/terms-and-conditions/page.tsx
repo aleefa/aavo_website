@@ -11,7 +11,7 @@ const termsData = [
     desc: (
       <>
         <p className="mb-3">
-          Aavoride is a driver listing and lead generation platform designed to
+          AAVORide is a driver listing and lead generation platform designed to
           connect service seekers with independent providers. Specifically:
         </p>
         <ul className="list-disc pl-5 space-y-2 ">
@@ -21,7 +21,7 @@ const termsData = [
           <li>
             We facilitate initial contact but do not moderate the relationship.
           </li>
-          <li>Aavoride is NOT a transportation company or a fleet owner.</li>
+          <li>AAVORide is NOT a transportation company or a fleet owner.</li>
         </ul>
       </>
     ),
@@ -46,7 +46,7 @@ const termsData = [
   {
     num: "2",
     title: "No Ride Booking or Transport Responsibility",
-    desc: "Aavoride does not confirm rides, assign drivers, or guarantee the availability of any listed service. The platform merely facilitates information exchange; the actual arrangement of transport is a private agreement between the user and the driver.",
+    desc: "AAVORide does not confirm rides, assign drivers, or guarantee the availability of any listed service. The platform merely facilitates information exchange; the actual arrangement of transport is a private agreement between the user and the driver.",
     // icon: (
     //   <svg
     //     width="18"
@@ -68,7 +68,7 @@ const termsData = [
   {
     num: "3",
     title: "Independent Drivers",
-    desc: "Drivers are independent service providers and not employees, agents, or contractors of Aavoride. They maintain full control over their schedules, routes, and pricing outside of platform suggestions.",
+    desc: "Drivers are independent service providers and not employees, agents, or contractors of AAVORide. They maintain full control over their schedules, routes, and pricing outside of platform suggestions.",
     // icon: (
     //   <svg
     //     width="18"
@@ -91,7 +91,7 @@ const termsData = [
   {
     num: "4",
     title: "Platform Role Limitation",
-    desc: "Aavoride acts only as a technology intermediary between users and drivers. We do not provide vehicle insurance, safety training, or mechanical inspections of the vehicles listed.",
+    desc: "AAVORide acts only as a technology intermediary between users and drivers. We do not provide vehicle insurance, safety training, or mechanical inspections of the vehicles listed.",
     // icon: (
     //   <svg
     //     width="18"
@@ -111,7 +111,7 @@ const termsData = [
   {
     num: "5",
     title: "Payments & Fees",
-    desc: "Our revenue model is based on listing fees for service providers. Aavoride charges no ride commission to ensure maximum value for both parties. All financial transactions for services must be handled directly between the user and driver.",
+    desc: "Our revenue model is based on listing fees for service providers. AAVORide charges no ride commission to ensure maximum value for both parties. All financial transactions for services must be handled directly between the user and driver.",
     // icon: (
     //   <svg
     //     width="18"
@@ -154,7 +154,7 @@ const termsData = [
   {
     num: "7",
     title: "No Partnership or Employment",
-    desc: "Nothing in these terms shall be construed as creating an employment relationship, joint venture, or partnership between the user, the driver, and Aavoride.",
+    desc: "Nothing in these terms shall be construed as creating an employment relationship, joint venture, or partnership between the user, the driver, and AAVORide.",
     // icon: (
     //   <svg
     //     width="18"
@@ -197,7 +197,7 @@ const termsData = [
   {
     num: "9",
     title: "Acceptance of Terms",
-    desc: "By accessing or using Aavoride services, users confirm they have read, understood, and agreed to be bound by these Terms & Conditions.",
+    desc: "By accessing or using AAVORide services, users confirm they have read, understood, and agreed to be bound by these Terms & Conditions.",
     // icon: (
     //   <svg
     //     width="18"
@@ -216,7 +216,7 @@ const termsData = [
   {
     num: "10",
     title: "Suspension & Removal",
-    desc: "Aavoride reserves the right to suspend or block users or drivers at our sole discretion if they violate platform policies, receive poor feedback, or engage in unlawful behavior.",
+    desc: "AAVORide reserves the right to suspend or block users or drivers at our sole discretion if they violate platform policies, receive poor feedback, or engage in unlawful behavior.",
     // icon: (
     //   <svg
     //     width="18"
@@ -284,7 +284,7 @@ export default function TermsAndConditions() {
               animationFillMode: "forwards",
             }}
           >
-            Please read these terms carefully before using Aavoride services. We
+            Please read these terms carefully before using AAVORide services. We
             believe in transparency and mutual respect between our platform,
             drivers, and travelers.
           </p>

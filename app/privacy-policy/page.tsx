@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 const NAV_ITEMS = [
-  { id: "about", label: "About Aavoride", num: "01" },
+  { id: "about", label: "About AAVORide", num: "01" },
   { id: "info-collect", label: "Information We Collect", num: "02" },
   { id: "how-we-use", label: "How We Use", num: "03" },
   { id: "our-commitment", label: "Our Commitment", num: "04" },
@@ -214,7 +214,7 @@ export default function PrivacyPolicy() {
               animationFillMode: "forwards",
             }}
           >
-            AAVORIDE LEGAL
+            AAVORide LEGAL
           </span>
           <h1 className="text-white text-3xl leading-16 md:text-[56px] font-extrabold mb-6 sm:leading-tight tracking-tight flex justify-center flex-wrap">
             {"Privacy Policy".split("").map((char, index) => (
@@ -283,10 +283,10 @@ export default function PrivacyPolicy() {
             id="about"
             className="scroll-mt-6 lg:p-8 md:p-6 scroll-reveal"
           >
-            <SectionHeader num="01" iconKey="about" title="About Aavoride" />
+            <SectionHeader num="01" iconKey="about" title="About AAVORide" />
             <div>
               <p className="text-[#444748] text-base md:text-[15px] leading-relaxed">
-                Aavoride provides a modern transportation platform connecting
+                AAVORide provides a modern transportation platform connecting
                 users with reliable drivers. This policy describes how we
                 collect, use, and protect your information across our mobile app
                 and website.
@@ -646,7 +646,7 @@ export default function PrivacyPolicy() {
                   //   </svg>
                   // ),
                   title: "Legal Authorities:",
-                  desc: "When required by law or to protect the safety and rights of Aavoride and its users.",
+                  desc: "When required by law or to protect the safety and rights of AAVORide and its users.",
                 },
               ].map((item) => (
                 <div key={item.title} className="flex gap-3 items-start">
