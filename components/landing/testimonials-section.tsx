@@ -11,7 +11,7 @@ const testimonials = [
       "AAVORide makes daily travel planning much easier. Instead of calling multiple drivers, I receive several quotations in one place and choose the best option. It saves both time and money.",
     name: "Mayur Pathani",
     role: "Daily Commuter",
-    avatar: "/images/831ee7667b037b80573f122c53c53aff4e87f947%20(1).jpg",
+    avatar: "/images/65fdd9e521f2e608e8ae7971ad0d33a6018e215b%20%281%29.jpg ",
   },
     {
     quote:
@@ -39,7 +39,7 @@ const testimonials = [
       "Booking travel for family outings used to take a lot of effort. With AAVORide, I simply submit one request and receive several offers. It makes choosing the right driver much easier.",
     name: "Shraddha Prajapati",
     role: "Weekend Explorer",
-    avatar: "/images/831ee7667b037b80573f122c53c53aff4e87f947%20(1).jpg",
+    avatar: "/images/65fdd9e521f2e608e8ae7971ad0d33a6018e215b%20%281%29.jpg ",
   },
       {
     quote:
@@ -66,16 +66,16 @@ const testimonials = [
 
 function TestimonialCard({ testimonial }: { testimonial: (typeof testimonials)[number] }) {
   return (
-    <article className="testimonial-card motion-card-hover h-[300px] w-[380px] shrink-0 rounded-[24px] border border-transparent bg-white p-7 shadow-[0_18px_36px_rgba(31,27,24,0.06)] md:p-8">
+    <article className="testimonial-card motion-card-hover flex h-[340px] w-[380px] shrink-0 flex-col rounded-[24px] border border-transparent bg-white p-7 shadow-[0_18px_36px_rgba(31,27,24,0.06)] md:p-8">
       <div className="flex items-center gap-1 text-[var(--primary)]">
         {Array.from({ length: 5 }).map((_, index) => (
           <Star key={index} className="h-4 w-4 fill-current" strokeWidth={1.8} />
         ))}
       </div>
 
-      <p className="mt-6 text-[15px] leading-8 text-[#625d5a] line-clamp-4">{testimonial.quote}</p>
+      <p className="mt-6 text-[15px] leading-8 text-[#625d5a]">{testimonial.quote}</p>
 
-      <div className="mt-7 flex items-center gap-3.5">
+      <div className="mt-auto flex items-center gap-3.5">
         <div className="relative h-11 w-11 overflow-hidden rounded-full">
           <Image alt={testimonial.name} className="object-cover" fill sizes="44px" src={testimonial.avatar} />
         </div>
@@ -112,7 +112,7 @@ export function TestimonialsSection() {
   } as CSSProperties;
 
   return (
-    <section className="relative overflow-hidden pb-24 pt-18 md:pb-28 md:pt-20">
+    <section className="relative overflow-hidden pb-6 pt-18 md:pb-6 md:pt-20">
       <AmbientGlow
         className="right-[-252px] top-1/2 -translate-y-1/2"
         style={{ width: "570px", height: "570px" }}
