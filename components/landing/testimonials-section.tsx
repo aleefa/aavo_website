@@ -11,56 +11,56 @@ const testimonials = [
       "AAVORide makes daily travel planning much easier. Instead of calling multiple drivers, I receive several quotations in one place and choose the best option. It saves both time and money.",
     name: "Mayur Pathani",
     role: "Daily Commuter",
-    avatar: "/images/profile6.jpg",
+    avatar: "/images/profile-female1.jpg",
   },
     {
     quote:
       "I used AAVORide for a weekend getaway with friends. Comparing offers from different drivers helped us find the perfect vehicle within our budget. The process was simple and hassle-free.",
     name: "Jenish Panchal",
     role: "Weekend Explorer",
-    avatar: "/images/831ee7667b037b80573f122c53c53aff4e87f947%20(1).jpg",
+    avatar: "/images/profile-male1.jpg",
   },
     {
     quote:
       "As someone who travels regularly, AAVORide has become my go-to platform. Getting multiple quotations from verified service providers gives me confidence that I'm getting competitive rates every time",
     name: "Prince Patel",
     role: "Frequent Traveler",
-    avatar: "/images/profile1.jpg",
+    avatar: "/images/profile-male1.jpg",
   },
     {
     quote:
       "What I like most about AAVORide is the transparency. I can compare different travel options before making a decision, which helps me plan trips more effectively",
     name: "Hiren Padsala",
     role: "Weekend Explorer",
-    avatar: "/images/profile2.jpg",
+    avatar: "/images/profile-male1.jpg",
   },
       {
     quote:
       "Booking travel for family outings used to take a lot of effort. With AAVORide, I simply submit one request and receive several offers. It makes choosing the right driver much easier.",
     name: "Shraddha Prajapati",
     role: "Weekend Explorer",
-    avatar: "/images/profile.jpg",
+    avatar: "/images/profile-female1.jpg",
   },
       {
     quote:
       "The platform is straightforward and user-friendly. I appreciate having multiple options instead of depending on a single service provider. It gives me better control over my travel choices.",
     name: "Ashokbhai Shah",
     role: "Daily Commuter",
-    avatar: "/images/profile3.jpg",
+    avatar: "/images/profile-male1.jpg",
   },
       {
     quote:
       "AAVORide offers a smart way to book outstation and local travel. The ability to compare quotations from different drivers ensures I always find a suitable option for my requirements.",
     name: "Harsh Sharma",
     role: "Frequent Traveler",
-    avatar: "/images/profile4.jpg",
+    avatar: "/images/profile-male1.jpg",
   },
       {
     quote:
       "Excellent concept and easy to use. I received multiple quotations within a short time and was able to select the one that matched my budget and travel needs perfectly.",
     name: "Abhishek Malhotra",
     role: "Weekend Explorer",
-    avatar: "/images/profile5.jpg",
+    avatar: "/images/profile-male1.jpg",
   },
 ];
 

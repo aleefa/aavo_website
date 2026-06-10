@@ -72,10 +72,9 @@ export function MobileHeaderNav({
             <Link
               href="/about/partner"
               onClick={() => setIsOpen(false)}
-              className="flex w-full items-center justify-center gap-2.5 text-[18px] font-extrabold tracking-[-0.02em] text-[var(--primary)] sm:text-[15px]"
+              className="inline-flex items-center justify-center w-full px-4 py-2 text-[14px] font-semibold text-white bg-[#FF4D30] rounded-full hover:bg-[#e03d20] transition-all duration-200 active:scale-[0.98] cursor-pointer text-center"
             >
-              <PartnerIcon className="h-4 w-4" />
-              <span>{ctaLabel}</span>
+              {ctaLabel}
             </Link>
           </div>
         </div>

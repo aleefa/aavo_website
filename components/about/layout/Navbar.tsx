@@ -155,7 +155,7 @@ export const Navbar: React.FC = () => {
             animate={{ opacity: 1, height: "auto", y: 0 }}
             exit={{ opacity: 0, height: 0, y: -8 }}
             transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-            className="md:hidden overflow-hidden fixed inset-x-0 top-16 bg-white border-b border-slate-100 shadow-lg"
+            className="md:hidden fixed inset-x-0 top-16 z-40 bg-white border-b border-slate-100 shadow-lg"
           >
             <motion.div
               className="p-6 flex flex-col gap-6"
@@ -191,16 +191,15 @@ export const Navbar: React.FC = () => {
                 ))}
               </nav>
 
-              <Button
-                variant="primary"
-                size="md"
-                asLink
-                href="/about/partner"
-                onClick={() => setIsOpen(false)}
-                className="w-full text-center"
+              <button
+                onClick={() => {
+                  setIsOpen(false);
+                  window.location.href = '/about/partner';
+                }}
+                className="inline-flex items-center justify-center w-full px-4 py-2 text-[14px] font-semibold text-white bg-[#FF4D30] rounded-full hover:bg-[#e03d20] transition-all duration-200 active:scale-[0.98] cursor-pointer text-center border-none"
               >
                 Join as a AAVORide Partner
-              </Button>
+              </button>
             </motion.div>
           </motion.div>
         )}
