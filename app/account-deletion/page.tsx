@@ -232,7 +232,7 @@ export default function AccountDeletion() {
               animationFillMode: "forwards",
             }}
           >
-            Please read these terms carefully before using Aavoride services. We
+            Please read these terms carefully before using AAVORide services. We
             believe in transparency and mutual respect between our platform,
             drivers, and travelers.
           </p>

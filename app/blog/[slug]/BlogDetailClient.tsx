@@ -145,7 +145,7 @@ export default function BlogDetailClient({
 
       {/* 2. BODY CONTENT SECTION */}
       <section className="px-4 py-12 md:px-8 md:py-16">
-        <article className="mx-auto max-w-3xl bg-white py-8 relative z-20 space-y-8">
+        <article className="mx-auto max-w-6xl bg-white py-8 relative z-20 space-y-8">
           
           {/* Render blog body sections */}
           {blog.sections.map((section, idx) => {
@@ -242,7 +242,7 @@ export default function BlogDetailClient({
       </section>
 
       {/* 3. RECENT STORIES LIST SECTION */}
-      <section className="mx-auto max-w-4xl px-4 py-8 md:px-8 space-y-8 z-10 relative">
+      <section className="mx-auto max-w-7xl px-4 py-8 md:px-8 space-y-8 z-10 relative">
         
         {/* Category Tabs Navigation */}
         <div className="w-full overflow-x-auto flex scrollbar-none space-x-2 py-2 border-b-0 md:border-b border-slate-200 justify-start md:justify-center">
