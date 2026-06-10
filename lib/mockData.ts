@@ -214,7 +214,7 @@ export const MOCK_BLOGS: Blog[] = [
       },
       {
         type: 'image',
-        imageUrl: '/manali.png',
+        imageUrl: '/manali1.png',
         caption: 'Misty winter mornings along the pine-lined ridges of Manali.'
       },
       {

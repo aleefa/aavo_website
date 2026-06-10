@@ -145,14 +145,14 @@ export default function BlogDetailClient({
 
       {/* 2. BODY CONTENT SECTION */}
       <section className="px-4 py-12 md:px-8 md:py-16">
-        <article className="mx-auto max-w-6xl bg-white py-8 relative z-20 space-y-8">
+        <article className="mx-auto max-w-7xl bg-white py-8 relative z-20 space-y-8">
           
           {/* Render blog body sections */}
           {blog.sections.map((section, idx) => {
             switch (section.type) {
               case 'paragraph':
                 return (
-                  <p key={idx} className="text-slate-600 font-medium text-base md:text-lg leading-relaxed">
+                  <p key={idx} className="text-slate-600 font-medium text-base md:text-base leading-relaxed">
                     {section.content}
                   </p>
                 );
@@ -174,7 +174,7 @@ export default function BlogDetailClient({
                     <Image
                       src={section.imageUrl || ''}
                       alt={section.caption || 'Article image'}
-                      width={800}
+                      width={850}
                       height={450}
                       className="w-full h-auto object-cover max-h-[380px]"
                     />
@@ -213,7 +213,7 @@ export default function BlogDetailClient({
                 <span className="block h-5 w-1.5 bg-[#FF4D30] rounded-full" />
                 <span>Must-Visit Spots</span>
               </h3>
-              <div className="space-y-4 text-slate-600 font-medium text-base md:text-lg leading-relaxed">
+              <div className="space-y-4 text-slate-600 font-medium text-base md:text-base leading-relaxed">
                 
                 {blog.mustVisitSpots.map((spot, spotIdx) => (
                   <p key={spotIdx}>
@@ -242,7 +242,7 @@ export default function BlogDetailClient({
       </section>
 
       {/* 3. RECENT STORIES LIST SECTION */}
-      <section className="mx-auto max-w-7xl px-4 py-8 md:px-8 space-y-8 z-10 relative">
+      <section className="mx-auto max-w-8xl px-4 py-8 md:px-8 space-y-8 z-10 relative">
         
         {/* Category Tabs Navigation */}
         <div className="w-full overflow-x-auto flex scrollbar-none space-x-2 py-2 border-b-0 md:border-b border-slate-200 justify-start md:justify-center">
