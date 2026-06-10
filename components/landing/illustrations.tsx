@@ -7,7 +7,7 @@ export function AvatarStack() {
   const avatars = [
     {
       alt: "Happy traveler portrait one",
-      src: "/images/65fdd9e521f2e608e8ae7971ad0d33a6018e215b%20(1).jpg",
+      src: "/images/profile3.jpg",
     },
     {
       alt: "Happy traveler portrait two",
@@ -15,7 +15,7 @@ export function AvatarStack() {
     },
     {
       alt: "Happy traveler portrait three",
-      src: "/images/831ee7667b037b80573f122c53c53aff4e87f947%20(1).jpg",
+      src: "/images/profile4.jpg",
     },
   ];
 
