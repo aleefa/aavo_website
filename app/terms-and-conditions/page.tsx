@@ -21,7 +21,7 @@ const termsData = [
           <li>
             We facilitate initial contact but do not moderate the relationship.
           </li>
-          <li>AAVORide is Not a transportation company or a fleet owner.</li>
+          <li>AAVORide is not a transportation company or a fleet owner.</li>
         </ul>
       </>
     ),
