@@ -10,7 +10,7 @@ import { cn } from "./shared";
 export function MobileHeaderNav({
   items,
   brand = "AAVORide",
-  ctaLabel = "Become a Partner",
+  ctaLabel = "Join as a AAVORide Partner",
   activeLabel,
 }: {
   items: NavItem[];
