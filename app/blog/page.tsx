@@ -128,7 +128,7 @@ export default function BlogListingPage() {
       )}
 
       <section className="space-y-6">
-        <h2 className="text-2xl font-black text-slate-800 tracking-tight flex items-center space-x-2">
+        <h2 className="w-[906px] h-[82px] opacity-100 pb-4 text-2xl font-semibold text-slate-800 leading-[33px] tracking-normal flex items-center space-x-2">
           <span className="block h-6 w-1 bg-[#FF4D30] rounded-full" />
           <span>{activeCategory === 'All Stories' ? 'Recent Stories' : `${activeCategory} Articles`}</span>
         </h2>

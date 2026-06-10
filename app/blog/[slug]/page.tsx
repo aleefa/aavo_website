@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { MOCK_BLOGS } from '@/lib/mockData';
+import { MOCK_BLOGS, MOCK_FEATURED_STORIES } from '@/lib/mockData';
 import BlogDetailClient from './BlogDetailClient';
 
 interface Props {
@@ -8,7 +8,7 @@ interface Props {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const blog = MOCK_BLOGS.find((b) => b.slug === slug);
+  const blog = MOCK_BLOGS.find((b) => b.slug === slug) || MOCK_FEATURED_STORIES.find((b) => b.slug === slug);
   if (!blog) {
     return {
       title: 'Article Not Found | AAVORide Blog',

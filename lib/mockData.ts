@@ -45,27 +45,27 @@ export const CATEGORIES = [
 export const MOCK_DESTINATIONS: Destination[] = [
   {
     id: '1',
-    title: 'Varanasi',
-    category: 'Spiritual',
-    image: '/images/',
-  },
-  {
-    id: '2',
-    title: 'Rishikesh',
-    category: 'Adventure',
-    image: '/images/rishikesh.jpg',
-  },
-  {
-    id: '3',
-    title: 'Jaipur',
+    title: "Jaipur's Hidden Haveli Stays",
     category: 'Culture',
     image: '/images/jaipur.jpg',
   },
   {
+    id: '2',
+    title: 'Varanasi: Dawn on the Ganges',
+    category: 'Spiritual',
+    image: '/images/varanasi.jpg',
+  },
+  {
+    id: '3',
+    title: 'Leh: High Altitude Comfort',
+    category: 'Luxury Adventure',
+    image: '/images/high-altitude.jpg',
+  },
+  {
     id: '4',
-    title: 'Goa',
-    category: 'Luxury',
-    image: '/images/goa.jpg',
+    title: 'Hampi: Ruins Reimagined',
+    category: 'History',
+    image: '/images/hampi.jpg',
   },
 ];
 
@@ -76,13 +76,13 @@ export const MOCK_FEATURED_STORIES: Blog[] = [
     title: 'The Sacred Path: A Soulful Guide to Amritsar',
     excerpt: '',
     coverImage: '/images/featured-guide1.jpg',
-    tag: 'Pilgrimage',
+    tag: 'Spiritual',
     readTime: '15 min read',
     publishDate: 'Jan 20, 2026',
     author: {
       name: 'Priya Sharma',
       role: 'Travel Writer',
-      avatar: '',
+      avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&auto=format&fit=crop&q=80',
     },
     sections: [
       {
@@ -121,7 +121,7 @@ export const MOCK_FEATURED_STORIES: Blog[] = [
     author: {
       name: 'Rahul Mehta',
       role: 'Luxury Travel Expert',
-      avatar: '/images/author-rahul.jpg',
+      avatar: 'https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=100&auto=format&fit=crop&q=80',
     },
     sections: [
       {
@@ -152,7 +152,7 @@ export const MOCK_FEATURED_STORIES: Blog[] = [
     id: 'featured-3',
     slug: 'hidden-gems-himalayas',
     title: 'Hidden Gems of the Himalayas: Off the Beaten Path',
-    excerpt: 'Discover lesser-known destinations in the Himalayas that offer pristine beauty and authentic experiences away from the crowds.',
+    excerpt: '',
     coverImage: '/images/featured-guide2.jpg',
     tag: 'Adventure',
     readTime: '10 min read',
@@ -160,7 +160,7 @@ export const MOCK_FEATURED_STORIES: Blog[] = [
     author: {
       name: 'Ankit Patel',
       role: 'Adventure Guide',
-      avatar: '/images/author-ankit.jpg',
+      avatar: 'https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=100&auto=format&fit=crop&q=80',
     },
     sections: [
       {
@@ -189,184 +189,457 @@ export const MOCK_FEATURED_STORIES: Blog[] = [
   },
 ];
 
+// export const MOCK_BLOGS: Blog[] = [
+//   {
+//     id: '1',
+//     slug: 'spiritual-journey-varanasi',
+//     title: 'The Golden Triangle: Redefining the Classic Indian Circuit',
+//     excerpt: 'Discover how luxury road travel is changing the way tourists experience the timeless heritage of Delhi, Agra,…',
+//     coverImage: '/images/varanasi-blog.jpg',
+//     tag: 'Culture',
+//     readTime: '8 min read',
+//     publishDate: 'Jan 15, 2026',
+//     author: {
+//       name: 'Vikram Malhotra',
+//       role: 'Cultural Historian',
+//       avatar: '/images/author1.png',
+//     },
+//     sections: [
+//       {
+//         type: 'paragraph',
+//         content: 'Varanasi, also known as Kashi or Benaras, is one of the oldest continuously inhabited cities in the world. Situated on the banks of the sacred Ganges River, this city has been a center of spirituality, learning, and culture for thousands of years.',
+//       },
+//       {
+//         type: 'heading',
+//         content: 'The Sacred Ghats',
+//       },
+//       {
+//         type: 'paragraph',
+//         content: 'The ghats of Varanasi are the heart of the city. With over 80 ghats stretching along the riverbank, each has its own unique story and significance. The Dashashwamedh Ghat is the most famous, known for its grand evening Ganga Aarti ceremony that attracts thousands of devotees and tourists daily.',
+//       },
+//       {
+//         type: 'quote',
+//         content: 'Varanasi is older than history, older than tradition, older even than legend and looks twice as old as all of them put together.',
+//       },
+//       {
+//         type: 'image',
+//         content: '',
+//         imageUrl: '/images/varanasi-ghat.jpg',
+//         caption: 'Evening Ganga Aarti at Dashashwamedh Ghat',
+//       },
+//     ],
+//     mustVisitSpots: [
+//       {
+//         name: 'Kashi Vishwanath Temple',
+//         description: 'One of the twelve Jyotirlingas, dedicated to Lord Shiva.',
+//       },
+//       {
+//         name: 'Sarnath',
+//         description: 'Where Buddha gave his first sermon after enlightenment.',
+//       },
+//       {
+//         name: 'Assi Ghat',
+//         description: 'A peaceful ghat perfect for meditation and sunrise views.',
+//       },
+//     ],
+//   },
+//   {
+//     id: '2',
+//     slug: 'luxury-road-trip-rajasthan',
+//     title: 'Planning Your First Char Dham Yatra: A Complete Guide',
+//     excerpt: 'The spiritual journey of a lifetime requires meticulous planning. From routes to luxury stays, here is everythin…',
+//     coverImage: '/images/rajasthan-blog.jpg',
+//     tag: 'Luxury',
+//     readTime: '10 min read',
+//     publishDate: 'Jan 10, 2026',
+//     author: {
+//       name: 'Sanjay Gupta',
+//       role: 'Pilgrimage Specialist',
+//       avatar: '/images/author1.png',
+//     },
+//     sections: [
+//       {
+//         type: 'paragraph',
+//         content: 'Rajasthan, the land of kings, offers a perfect blend of history, culture, and luxury. From the pink city of Jaipur to the blue city of Jodhpur, every destination tells a story of royal grandeur.',
+//       },
+//       {
+//         type: 'heading',
+//         content: 'The Golden Triangle',
+//       },
+//       {
+//         type: 'paragraph',
+//         content: 'Start your journey in Delhi, then travel to Agra to witness the Taj Mahal, and finally arrive in Jaipur. This classic route offers the best introduction to Rajasthan\'s rich heritage.',
+//       },
+//     ],
+//     mustVisitSpots: [
+//       {
+//         name: 'City Palace, Jaipur',
+//         description: 'A stunning blend of Rajasthani and Mughal architecture.',
+//       },
+//       {
+//         name: 'Mehrangarh Fort, Jodhpur',
+//         description: 'One of the largest forts in India with breathtaking views.',
+//       },
+//     ],
+//   },
+//   {
+//     id: '3',
+//     slug: 'adventure-rishikesh',
+//     title: 'Planning Your First Char Dham Yatra: A Complete Guide',
+//     excerpt: 'The spiritual journey of a lifetime requires meticulous planning. From routes to luxury stays, here is everythin…',
+//     coverImage: '/images/rajasthan-blog.jpg',
+//     tag: 'Adventure',
+//     readTime: '7 min read',
+//     publishDate: 'Jan 5, 2026',
+//     author: {
+//       name: 'Ankit Patel',
+//       role: 'Adventure Guide',
+//       avatar: '/images/author1.png',
+//     },
+//     sections: [
+//       {
+//         type: 'paragraph',
+//         content: 'Nestled in the foothills of the Himalayas along the sacred Ganges River, Rishikesh is a unique destination that combines adventure sports with spiritual practices.',
+//       },
+//       {
+//         type: 'heading',
+//         content: 'White Water Rafting',
+//       },
+//       {
+//         type: 'paragraph',
+//         content: 'The Ganges offers some of the best white water rafting experiences in India. From gentle stretches for beginners to challenging rapids for experts, there\'s something for everyone.',
+//       },
+//     ],
+//   },
+//   {
+//     id: '4',
+//     slug: 'cultural-kerala',
+//     title: 'God\'s Own Country: A Cultural Journey Through Kerala',
+//     excerpt: 'Explore the backwaters, tea plantations, and rich cultural heritage of Kerala on this unforgettable journey through South India.',
+//     coverImage: '/images/kerala-blog.jpg',
+//     tag: 'Culture',
+//     readTime: '9 min read',
+//     publishDate: 'Dec 28, 2025',
+//     author: {
+//       name: 'Sneha Nair',
+//       role: 'South India Expert',
+//       avatar: '/images/author-sneha.jpg',
+//     },
+//     sections: [
+//       {
+//         type: 'paragraph',
+//         content: 'Kerala, known as God\'s Own Country, is a tropical paradise with a rich cultural heritage. From the serene backwaters of Alleppey to the tea plantations of Munnar, every corner of Kerala offers a unique experience.',
+//       },
+//       {
+//         type: 'heading',
+//         content: 'The Backwaters',
+//       },
+//       {
+//         type: 'paragraph',
+//         content: 'A houseboat cruise through the backwaters of Kerala is a must-do experience. Gliding through the tranquil waters surrounded by coconut palms and paddy fields is the perfect way to unwind.',
+//       },
+//     ],
+//   },
+//   {
+//     id: '5',
+//     slug: 'road-trip-leh-ladakh',
+//     title: 'Epic Road Trip: Leh Ladakh - The Land of High Passes',
+//     excerpt: 'Embark on an unforgettable road trip through the breathtaking landscapes of Ladakh, crossing high mountain passes and visiting ancient monasteries.',
+//     coverImage: '/images/ladakh-blog.jpg',
+//     tag: 'Road Trips',
+//     readTime: '12 min read',
+//     publishDate: 'Dec 20, 2025',
+//     author: {
+//       name: 'Vikram Singh',
+//       role: 'Road Trip Enthusiast',
+//       avatar: '/images/author-vikram.jpg',
+//     },
+//     sections: [
+//       {
+//         type: 'paragraph',
+//         content: 'Ladakh, often called the Land of High Passes, is a dream destination for road trip enthusiasts. With its stunning landscapes, ancient monasteries, and unique culture, it offers an experience like no other.',
+//       },
+//       {
+//         type: 'heading',
+//         content: 'Khardung La Pass',
+//       },
+//       {
+//         type: 'paragraph',
+//         content: 'At 5,359 meters, Khardung La is one of the highest motorable passes in the world. The journey to the top offers breathtaking views of the surrounding mountains and valleys.',
+//       },
+//     ],
+//   },
+// ];
 export const MOCK_BLOGS: Blog[] = [
   {
     id: '1',
-    slug: 'spiritual-journey-varanasi',
-    title: 'The Golden Triangle: Redefining the Classic Indian Circuit',
-    excerpt: '',
-    coverImage: '/images/varanasi-blog.jpg',
-    tag: 'Culture',
-    readTime: '8 min read',
-    publishDate: 'Jan 15, 2026',
+    slug: 'manali-beyond-tourist-trails',
+    title: 'Manali: Beyond the Tourist Trails',
+    excerpt: 'Discover the hidden valleys, quaint local cafes, and snow-filled pine forests that make Manali a true adventure haven.',
+    // category: 'Hill Stations Tour',
+    tag: 'ADVENTURE',
+    coverImage: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1200&auto=format&fit=crop&q=80',
+    readTime: '10 min read',
+    publishDate: 'Nov 15, 2026',
     author: {
-      name: 'Vikram Malhotra',
-      role: 'Cultural Historian',
-      avatar: '/images/author1.png',
+      name: 'Amit Sen',
+      avatar: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&auto=format&fit=crop&q=80',
+      role: 'Travel Explorer'
     },
+    
     sections: [
       {
         type: 'paragraph',
-        content: 'Varanasi, also known as Kashi or Benaras, is one of the oldest continuously inhabited cities in the world. Situated on the banks of the sacred Ganges River, this city has been a center of spirituality, learning, and culture for thousands of years.',
-      },
-      {
-        type: 'heading',
-        content: 'The Sacred Ghats',
-      },
-      {
-        type: 'paragraph',
-        content: 'The ghats of Varanasi are the heart of the city. With over 80 ghats stretching along the riverbank, each has its own unique story and significance. The Dashashwamedh Ghat is the most famous, known for its grand evening Ganga Aarti ceremony that attracts thousands of devotees and tourists daily.',
-      },
-      {
-        type: 'quote',
-        content: 'Varanasi is older than history, older than tradition, older even than legend and looks twice as old as all of them put together.',
+        content: 'Manali, nestled in the mountains of the Indian state of Himachal Pradesh near the northern end of the Kullu Valley, is more than just a tourist destination. It\'s an emotion for the adventurous soul. As winter sets in, the valley transforms into a crystalline wonderland, offering experiences that stay with you forever.'
       },
       {
         type: 'image',
-        content: '',
-        imageUrl: '/images/varanasi-ghat.jpg',
-        caption: 'Evening Ganga Aarti at Dashashwamedh Ghat',
+        imageUrl: 'https://images.unsplash.com/photo-1486916856992-e4db22c8df33?w=1200&auto=format&fit=crop&q=80',
+        caption: 'Misty winter mornings along the pine-lined ridges of Manali.'
       },
+      {
+        type: 'heading',
+        content: 'The Best Time to Visit'
+      },
+      {
+        type: 'paragraph',
+        content: 'While Manali is a year-round destination, the months of December to February are truly magical. This is when the snowfall is frequent, and the entire landscape turns into a playground for winter sports. Whether you\'re into skiing in Solang Valley or simply enjoying a hot cup of tea by the Beas River, winter in Manali is unparalleled.'
+      },
+      {
+        type: 'quote',
+        content: 'To travel is to discover that everyone is wrong about other countries. In Manali, you discover that nature has its own way of redefining luxury.'
+      }
     ],
     mustVisitSpots: [
       {
-        name: 'Kashi Vishwanath Temple',
-        description: 'One of the twelve Jyotirlingas, dedicated to Lord Shiva.',
+        name: 'Rohtang Pass',
+        description: 'A high mountain pass providing connection between the Kullu Valley and Lahaul and Spiti Valleys, known for breathtaking panoramic snow views.'
       },
       {
-        name: 'Sarnath',
-        description: 'Where Buddha gave his first sermon after enlightenment.',
+        name: 'Hadimba Devi Temple',
+        description: 'An ancient wooden temple located in the middle of a dense cedar forest (Dhungri Van Vihar), showcasing unique architectural style.'
       },
       {
-        name: 'Assi Ghat',
-        description: 'A peaceful ghat perfect for meditation and sunrise views.',
-      },
-    ],
+        name: 'Old Manali',
+        description: 'Famous for its quaint stone cafes, slow-paced lifestyle, apple orchards, and vibrant local handicraft shopping streets.'
+      }
+    ]
   },
   {
     id: '2',
-    slug: 'luxury-road-trip-rajasthan',
-    title: 'Planning Your First Char Dham Yatra: A Complete Guide',
-    excerpt: 'The spiritual journey of a lifetime requires meticulous planning. From routes to luxury stays, here is everythin…',
-    coverImage: '/images/rajasthan-blog.jpg',
-    tag: 'Luxury',
-    readTime: '10 min read',
-    publishDate: 'Jan 10, 2026',
+    slug: 'sacred-path-guide-to-amritsar',
+    title: 'The Sacred Path: A Soulful Guide to Amritsar',
+    excerpt: 'Embark on a spiritual journey to the golden city, exploring the Golden Temple and savoring Punjab\'s rich culture.',
+    // category: 'Pilgrimage Tour',
+    tag: 'SPIRITUAL',
+    coverImage: 'https://images.unsplash.com/photo-1514222134-b57cbb8ce073?w=1200&auto=format&fit=crop&q=80',
+    readTime: '12 min read',
+    publishDate: 'Oct 10, 2026',
     author: {
-      name: 'Sanjay Gupta',
-      role: 'Pilgrimage Specialist',
-      avatar: '/images/author1.png',
+      name: 'Rahul Sharma',
+      avatar: 'https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=100&auto=format&fit=crop&q=80',
+      role: 'Cultural Documentarian'
     },
+   
     sections: [
       {
         type: 'paragraph',
-        content: 'Rajasthan, the land of kings, offers a perfect blend of history, culture, and luxury. From the pink city of Jaipur to the blue city of Jodhpur, every destination tells a story of royal grandeur.',
+        content: 'Amritsar, home to the spectacular Golden Temple, is the spiritual and cultural center of the Sikh religion. Walking through the narrow streets of the old city is like stepping back in time, where the aroma of fresh ghee and devotional hymns fill the air.'
       },
       {
         type: 'heading',
-        content: 'The Golden Triangle',
+        content: 'The Divine Experience of Harmandir Sahib'
       },
       {
         type: 'paragraph',
-        content: 'Start your journey in Delhi, then travel to Agra to witness the Taj Mahal, and finally arrive in Jaipur. This classic route offers the best introduction to Rajasthan\'s rich heritage.',
+        content: 'The Golden Temple, or Sri Harmandir Sahib, is not just a building; it is a symbol of human equality and peace. The gold-plated structure is surrounded by a massive holy pool (sarovar) where devotees take cleansing dips. At night, the reflection of the illuminated temple in the still water is a sight that heals the restless mind.'
       },
+      {
+        type: 'heading',
+        content: 'The World\'s Largest Free Kitchen'
+      },
+      {
+        type: 'paragraph',
+        content: 'One cannot visit Amritsar without experiencing the Langar at the Golden Temple. Feeding over 100,000 people daily regardless of race, religion, or background, the kitchen is entirely run by volunteers. The discipline and devotion involved in preparing and serving these hot, simple meals will leave you deeply humbled.'
+      }
     ],
     mustVisitSpots: [
       {
-        name: 'City Palace, Jaipur',
-        description: 'A stunning blend of Rajasthani and Mughal architecture.',
+        name: 'The Golden Temple',
+        description: 'The holiest shrine of Sikhism, reflecting elegance, spirituality, and infinite peace.'
       },
       {
-        name: 'Mehrangarh Fort, Jodhpur',
-        description: 'One of the largest forts in India with breathtaking views.',
+        name: 'Jallianwala Bagh',
+        description: 'A historic public garden housing a memorial of national importance, reminding us of India\'s struggle for freedom.'
       },
-    ],
+      {
+        name: 'Wagah Border Ceremony',
+        description: 'A daily military practice that the security forces of India and Pakistan have jointly followed since 1959.'
+      }
+    ]
   },
   {
     id: '3',
-    slug: 'adventure-rishikesh',
-    title: 'Planning Your First Char Dham Yatra: A Complete Guide',
-    excerpt: 'The spiritual journey of a lifetime requires meticulous planning. From routes to luxury stays, here is everythin…',
-    coverImage: '/images/rajasthan-blog.jpg',
-    tag: 'Adventure',
-    readTime: '7 min read',
-    publishDate: 'Jan 5, 2026',
+    slug: 'future-of-road-travel-india',
+    title: 'The Future of Road Travel in India',
+    excerpt: 'Explore how luxury caravans, premium highway corridors, and app-based cab rentals are revolutionizing the Indian traveler\'s journey.',
+    // category: 'Cab Rental Tips',
+    tag: 'LUXURY',
+    coverImage: 'https://images.unsplash.com/photo-1513313778780-9ae4807465f0?w=1200&auto=format&fit=crop&q=80',
+    readTime: '8 min read',
+    publishDate: 'Nov 3, 2026',
     author: {
-      name: 'Ankit Patel',
-      role: 'Adventure Guide',
-      avatar: '/images/author1.png',
+      name: 'Priya Verma',
+      avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&auto=format&fit=crop&q=80',
+      role: 'Automotive Journalist'
     },
+    
     sections: [
       {
         type: 'paragraph',
-        content: 'Nestled in the foothills of the Himalayas along the sacred Ganges River, Rishikesh is a unique destination that combines adventure sports with spiritual practices.',
+        content: 'India\'s highway infrastructure is expanding at an unprecedented rate. With new expressways connecting major metros, long-distance road trips are no longer tedious chores but premium, scenic journeys. Modern travelers are choosing comfort and personalization over crowded flights and rigid train schedules.'
       },
       {
         type: 'heading',
-        content: 'White Water Rafting',
+        content: 'The Rise of Chauffeur-Driven Luxury'
       },
       {
         type: 'paragraph',
-        content: 'The Ganges offers some of the best white water rafting experiences in India. From gentle stretches for beginners to challenging rapids for experts, there\'s something for everyone.',
+        content: 'Why drive when you can ride in style? Premium cab rental services like AAVORide are redefining the road trip experience by offering luxury SUVs and sedans driven by highly trained, courteous professional chauffeurs. Passengers can take video calls, read books, or sleep comfortably while cruising smoothly on high-speed express corridors.'
       },
+      {
+        type: 'heading',
+        content: 'Smart Highways and Connected Cars'
+      },
+      {
+        type: 'paragraph',
+        content: 'From automated toll plazas to GPS-tracked connected vehicle fleets, technology has made road trips exceptionally safe. Real-time updates on weather, road conditions, and dining stops mean you can customize your itinerary on the fly, creating a truly bespoke travel experience.'
+      }
     ],
+    mustVisitSpots: [
+      {
+        name: 'Delhi-Mumbai Expressway',
+        description: 'India\'s longest greenfield expressway reducing travel time between the capital and financial hub to just 12 hours.'
+      },
+      {
+        name: 'Mumbai-Pune Expressway',
+        description: 'A scenic 6-lane concrete highway cutting through the beautiful Western Ghats.'
+      }
+    ]
   },
   {
     id: '4',
-    slug: 'cultural-kerala',
-    title: 'God\'s Own Country: A Cultural Journey Through Kerala',
-    excerpt: 'Explore the backwaters, tea plantations, and rich cultural heritage of Kerala on this unforgettable journey through South India.',
-    coverImage: '/images/kerala-blog.jpg',
-    tag: 'Culture',
-    readTime: '9 min read',
-    publishDate: 'Dec 28, 2025',
+    slug: 'golden-triangle-redefining-classic-circuit',
+    title: 'The Golden Triangle: Redefining the Classic Indian Circuit',
+    excerpt: 'Discover how luxury road travel is changing the way tourists experience the timeless heritage of Delhi, Agra, and Jaipur.',
+    // category: 'Rajasthan Tour',
+    tag: 'CULTURE',
+    coverImage: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?w=800&auto=format&fit=crop&q=80',
+    readTime: '6 min read',
+    publishDate: 'Nov 24, 2026',
     author: {
-      name: 'Sneha Nair',
-      role: 'South India Expert',
-      avatar: '/images/author-sneha.jpg',
+      name: 'Vikas Malhotra',
+      avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&auto=format&fit=crop&q=80',
+      role: 'Heritage Specialist'
     },
+    
     sections: [
       {
         type: 'paragraph',
-        content: 'Kerala, known as God\'s Own Country, is a tropical paradise with a rich cultural heritage. From the serene backwaters of Alleppey to the tea plantations of Munnar, every corner of Kerala offers a unique experience.',
-      },
-      {
-        type: 'heading',
-        content: 'The Backwaters',
-      },
-      {
-        type: 'paragraph',
-        content: 'A houseboat cruise through the backwaters of Kerala is a must-do experience. Gliding through the tranquil waters surrounded by coconut palms and paddy fields is the perfect way to unwind.',
-      },
-    ],
+        content: 'The Golden Triangle – comprising Delhi, Agra, and Jaipur – is India\'s most iconic tourist route. While traditionally covered by trains, smart travelers are shifting to luxury road transfers to absorb the transitioning landscapes, stop at heritage dhabas, and customize their travel pacing.'
+      }
+    ]
   },
   {
     id: '5',
-    slug: 'road-trip-leh-ladakh',
-    title: 'Epic Road Trip: Leh Ladakh - The Land of High Passes',
-    excerpt: 'Embark on an unforgettable road trip through the breathtaking landscapes of Ladakh, crossing high mountain passes and visiting ancient monasteries.',
-    coverImage: '/images/ladakh-blog.jpg',
-    tag: 'Road Trips',
-    readTime: '12 min read',
-    publishDate: 'Dec 20, 2025',
+    slug: 'planning-first-char-dham-yatra',
+    title: 'Planning Your First Char Dham Yatra: A Complete Guide',
+    excerpt: 'The spiritual journey of a lifetime requires meticulous planning. From routes to luxury stays, here is everything you need to know.',
+    // category: 'Pilgrimage Tour',
+    tag: 'PILGRIMAGE',
+    coverImage: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800&auto=format&fit=crop&q=80',
+    readTime: '15 min read',
+    publishDate: 'Oct 20, 2026',
     author: {
-      name: 'Vikram Singh',
-      role: 'Road Trip Enthusiast',
-      avatar: '/images/author-vikram.jpg',
+      name: 'Sanjay Gupta',
+      avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&auto=format&fit=crop&q=80',
+      role: 'Pilgrimage Coordinator'
     },
+    
     sections: [
       {
         type: 'paragraph',
-        content: 'Ladakh, often called the Land of High Passes, is a dream destination for road trip enthusiasts. With its stunning landscapes, ancient monasteries, and unique culture, it offers an experience like no other.',
-      },
-      {
-        type: 'heading',
-        content: 'Khardung La Pass',
-      },
+        content: 'Embarking on the Char Dham Yatra (Yamunotri, Gangotri, Kedarnath, and Badrinath) high in the Himalayas is a deeply transformative experience. With high altitudes and challenging terrain, securing a premium cab and experienced driver is paramount to a safe, comfortable pilgrimage.'
+      }
+    ]
+  },
+  {
+    id: '6',
+    slug: 'rajasthan-road-trip-desert-land',
+    title: 'Rajasthan Road Trip: A Week in the Desert Land',
+    excerpt: 'Exploring Rajasthan by road is an experience like no other. From royal Havelis to sunset sand dunes, here is your definitive travel guide.',
+    // category: 'Rajasthan Tour',
+    tag: 'ROAD TRIP',
+    coverImage: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?w=800&auto=format&fit=crop&q=80',
+    readTime: '9 min read',
+    publishDate: 'Dec 5, 2026',
+    author: {
+      name: 'Sanjay Gupta',
+      avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&auto=format&fit=crop&q=80',
+      role: 'Pilgrimage Coordinator'
+    },
+    
+    sections: [
       {
         type: 'paragraph',
-        content: 'At 5,359 meters, Khardung La is one of the highest motorable passes in the world. The journey to the top offers breathtaking views of the surrounding mountains and valleys.',
-      },
-    ],
+        content: 'From the pink facades of Jaipur to the golden sands of Jaisalmer, Rajasthan represents the pinnacle of Indian royalty and culture. Driving through the desert state exposes you to scenic fortresses rising from plains and rich traditions in small, local communities along the highway.'
+      }
+    ]
   },
+  {
+    id: '7',
+    slug: 'budget-travel-tips-explore-india',
+    title: 'Budget Travel Tips: How to Explore India Smartly',
+    excerpt: 'Think you need a fortune to travel India? These smart cab-sharing, hostelling, and planning tips will help you travel more for less.',
+    // category: 'Budget Travel Tips',
+    tag: 'BUDGET',
+    coverImage: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&auto=format&fit=crop&q=80',
+    readTime: '7 min read',
+    publishDate: 'Dec 12, 2026',
+    author: {
+      name: 'Neha Patel',
+      avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&auto=format&fit=crop&q=80',
+      role: 'Backpacker Advocate'
+    },
+    
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'India is one of the most budget-friendly destinations globally if you know how to plan. By booking outstation cabs in advance with transparent pricing model and splitting rides, you can enjoy premium comfort without breaking the bank.'
+      }
+    ]
+  },
+  {
+    id: '8',
+    slug: 'coorg-scotland-of-india-guide',
+    title: 'Coorg: A Detailed Travel Guide to the Scotland of India',
+    excerpt: 'Coorg is famous for its coffee plantations, misty hills, and lush forests. Here is how to plan your perfect weekend getaway.',
+    // category: 'Hill Stations Tour',
+    tag: 'NATURE',
+    coverImage: 'https://images.unsplash.com/photo-1661492359562-419ba0ebaece?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    readTime: '8 min read',
+    publishDate: 'Dec 18, 2026',
+    author: {
+      name: 'Amit Sen',
+      avatar: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&auto=format&fit=crop&q=80',
+      role: 'Travel Explorer'
+    },
+    
+    sections: [
+      {
+        type: 'paragraph',
+        content: 'Located in Karnataka, Coorg is a nature lover\'s paradise. Surrounded by coffee estates and misty waterfalls, it offers a peaceful respite from the urban hustle. Exploring Coorg by road is the best option to navigate the winding mountain turns at your own leisure.'
+      }
+    ]
+  }
 ];

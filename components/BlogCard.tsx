@@ -33,7 +33,7 @@ export default function BlogCard({ blog, index }: BlogCardProps) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
       whileHover={{ y: -8 }}
-      className="group relative overflow-hidden rounded-3xl bg-slate-900 shadow-xl border border-slate-800 h-[450px] cursor-pointer flex flex-col justify-end"
+      className="group relative overflow-hidden rounded-3xl bg-slate-900 shadow-xl border border-slate-800 h-[550px] cursor-pointer flex flex-col justify-end"
     >
       <Link href={`/blog/${blog.slug}`} className="absolute inset-0 z-10">
         <span className="sr-only">Read {blog.title}</span>
@@ -70,19 +70,12 @@ export default function BlogCard({ blog, index }: BlogCardProps) {
 
         <div className="h-[1px] w-full bg-slate-800 my-2" />
 
-        <div className="flex items-center justify-between text-[11px] text-slate-400 font-semibold">
+        <div className="flex items-center space-x-4 text-[11px] text-slate-400 font-semibold">
           <div className="flex items-center space-x-1.5">
             <Clock className="h-3.5 w-3.5 text-[#FF4D30]" />
             <span>{blog.readTime}</span>
           </div>
           <div className="flex items-center space-x-1.5">
-            <Image
-              src={blog.author.avatar}
-              alt={blog.author.name}
-              width={20}
-              height={20}
-              className="rounded-full object-cover"
-            />
             <span>By {blog.author.name}</span>
           </div>
         </div>

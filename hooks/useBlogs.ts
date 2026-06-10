@@ -1,5 +1,5 @@
 import { useQuery, useInfiniteQuery } from '@tanstack/react-query';
-import { MOCK_BLOGS, Blog } from '@/lib/mockData';
+import { MOCK_BLOGS, MOCK_FEATURED_STORIES, Blog } from '@/lib/mockData';
 
 // Simulate API delay
 const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
@@ -9,7 +9,7 @@ export function useBlogDetail(slug: string) {
     queryKey: ['blog', slug],
     queryFn: async () => {
       await delay(500); // Simulate API call
-      return MOCK_BLOGS.find(blog => blog.slug === slug) || null;
+      return MOCK_BLOGS.find(blog => blog.slug === slug) || MOCK_FEATURED_STORIES.find(blog => blog.slug === slug) || null;
     },
   });
 }

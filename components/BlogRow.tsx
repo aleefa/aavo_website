@@ -47,7 +47,7 @@ export default function BlogRow({ blog, index }: BlogRowProps) {
         <div className="absolute inset-0 bg-orange-950/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
 
-      <div className="flex-grow flex flex-col space-y-2.5 w-full">
+      <div className="flex-grow flex flex-col space-y-4 w-full">
 
         <div className="flex items-center space-x-3 text-xs font-semibold">
           <span className={`px-2.5 py-0.5 rounded-full tracking-wider uppercase text-[10px] ${getTagColor(blog.tag)}`}>
