@@ -499,7 +499,7 @@ export default function PrivacyPolicy() {
                 </p>
                 <div className="flex flex-wrap gap-3 mb-8 max-sm:justify-center max-sm:flex-col">
                  
-                  <button onClick={handleDeleteAccountClick} className="flex items-center gap-2 max-sm:justify-center bg-gray-900 text-white rounded-full px-5 py-2.5 text-sm font-semibold border border-gray-200 cursor-pointer hover-secondary group">
+                  <button onClick={handleDeleteAccountClick} className="flex items-center gap-2 max-sm:justify-center bg-gray-900 text-white rounded-full px-5 py-2.5 text-sm font-semibold border border-gray-200 cursor-pointer group transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]">
                     <svg
                       width="10"
                       height="11"
